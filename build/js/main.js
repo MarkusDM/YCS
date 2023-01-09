@@ -86,3 +86,81 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
     
   
  });
+
+
+ const bannerSwiper = new Swiper('.banner__swiper', {
+  wrapperClass: 'banner__swiper-wrapper',
+  slideClass: 'banner__slide',
+  speed: 500,
+  slidesPerView: 1,
+  freeMode: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: true,
+  autoplay: {
+      delay: 7000,
+  },
+  navigation: {
+    prevEl: '.banner__prev',
+    nextEl: '.banner__next',
+  },
+
+  pagination: {
+    el: ".banner__fraction",
+    type: "fraction",
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
+  },
+  
+
+});
+
+
+const blogSwiper = new Swiper('.blog__swiper', {
+  wrapperClass: 'blog__swiper-wrapper',
+  slideClass: 'blog__slide',
+  speed: 500,
+  slidesPerView: 4,
+  navigation: {
+    prevEl: '.blog__prev',
+    nextEl: '.blog__next',
+  },
+
+  pagination: {
+    el: ".blog__fraction",
+    type: "fraction",
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
+  },
+  
+
+});
+
+
+
+const modelsSwiper = new Swiper('.models__swiper', {
+  wrapperClass: 'models__swiper-wrapper',
+  slideClass: 'models__slide',
+  speed: 500,
+  slidesPerView: 6,
+  grid: {
+    rows: 2,
+  },
+ 
+
+  pagination: {
+    el: ".blog__fraction",
+    type: "fraction",
+   
+  },
+  
+
+});
+
+
+
+function addZero(num) {
+  return (num > 9) ? num : '0' + num;
+}

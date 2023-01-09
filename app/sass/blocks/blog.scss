@@ -1,0 +1,16 @@
+.blog {
+    margin-bottom: 20rem;
+    .container {
+        width: 162rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4.5rem;
+    }
+
+    &__slide {
+        margin-right: 4rem;
+    }
+}

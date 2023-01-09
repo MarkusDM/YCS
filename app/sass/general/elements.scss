@@ -25,3 +25,115 @@
 }
 
 
+.title {
+	font-family: 'Kyiv Type Serif';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 8rem;
+	line-height: 9.6rem;
+	text-transform: uppercase;
+	
+	span {
+		font-family: 'EuropeExt',sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 8rem;
+		line-height: 8.9rem;
+		text-transform: uppercase;
+		
+	}
+}
+
+.pagination {
+	width: 20.4rem;
+	position: relative;
+	&__arrows {
+		display: flex;
+		position: relative;
+		z-index: 3;
+	}
+
+
+	&__next {
+		width: 9.6rem;
+		height: 9.6rem;
+		background: none;
+		border: 1.5px solid rgba(189, 191, 197, 0.4);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		padding-top: 3rem;
+		svg {
+			width: 3.4rem;
+			height: 1rem;
+			fill: #242424;
+		}
+
+		
+	}
+
+	&__prev {
+		width: 9.6rem;
+		height: 9.6rem;
+		background: none;
+		border: 1.5px solid rgba(189, 191, 197, 0.4);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		margin-right: 1.1rem;
+		padding-top: 3rem;
+		svg {
+			width: 3.4rem;
+			height: 1rem;
+			fill: #242424;
+		}
+	}
+
+	.swiper-button-disabled {
+		svg {
+			width: 3.4rem;
+			height: 1rem;
+			fill: #969696;
+		}
+	}
+
+	&__fraction {
+		position: absolute;
+		justify-content: space-between;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		font-size: 0;
+		top: 1.2rem;
+		display: flex;
+		.swiper-pagination-current,
+		.swiper-pagination-total  {
+			
+			font-family: 'EuropeExt',sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 1.7rem;
+			line-height: 176%;
+			color: #242424;
+
+		}
+
+
+		.swiper-pagination-current {
+			position: relative;
+			
+		}
+
+		.swiper-pagination-total {
+			position: relative;
+		}
+
+	}
+
+	
+}

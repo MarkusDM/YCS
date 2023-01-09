@@ -1,4 +1,94 @@
 .footer {
- 
+    background: #242424;
+    padding-top: 8.1rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 8.7rem;
+    &__wrapper {
+        display: flex;
+    }
+
+    &__nav-desk {
+        display: flex;
+        ul {
+            margin-right: 8rem;
+        }
+        ul:last-child {
+            margin-right: 0;
+        }
+        li {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.7rem;
+            line-height: 171% ;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 2rem;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__social {
+        display: flex;
+
+        a {
+            width: 6rem;
+            height: 6rem;
+            margin-right: 2.8rem;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+
+   &__right {
+    margin-left: auto;
+   }
+
+   &__right-inf {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.7rem;
+            line-height: 2.1rem;
+            margin-bottom: 1.2rem;
+            display: block;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            display: block;
+            color: #FFFFFF;
+
+        }
+   }
+
+   &__policy {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    display: inline-block;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    margin-top: 4.6rem;
+   }
 }
 
