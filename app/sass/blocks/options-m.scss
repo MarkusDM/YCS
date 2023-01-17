@@ -1,0 +1,94 @@
+.options-m {
+    margin-bottom: 18rem;
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left {
+        width: 76.9rem;
+        margin-right: 6.9rem;
+    }
+
+    
+
+    &__title {
+        margin-bottom: 4.5rem;
+
+    strong {
+        display: block;
+        font-family: 'EuropeExt';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 4.6rem;
+        color: #242424;
+        }
+	
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.7rem;
+            line-height: 171%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #969696;
+            display: block;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__lists {
+        li {
+            display: block;
+            position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 127% ;
+            letter-spacing: 0.02em;
+            text-transform: lowercase;
+            margin-bottom: 2rem;
+            padding-left: 2.8rem;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                background: #242424;
+                top: 50%;
+                transform: translateY(50% ,-50%);
+                left: 0;
+            }
+        }
+    }
+
+    &__video {
+        width: 75.443rem;
+        height: 50rem;
+        position: relative;
+    }
+
+    &__video-play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.378rem;
+        height: 8.376rem;
+        background: rgba(250, 250, 250, 0.67);
+        border: 0.398936px solid #FFFFFF;
+        border-radius: 50%;
+        backdrop-filter: blur(3.98936px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+       
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+       
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}

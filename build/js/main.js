@@ -297,6 +297,82 @@ const entrySwiperTwo = new Swiper('.entry__swiper-two', {
 
 
 
+
+ const typesModelNav = new Swiper('.types-model__nav', {
+  wrapperClass: 'types-model__nav-wrapper',
+  slideClass: 'types-model__nav-slide ',  
+  slidesPerView: 3,
+  direction: 'vertical',
+  watchSlidesProgress: true,
+  freeMode: true,
+
+  pagination: {
+      
+      clickable: true,
+     
+    }
+
+});
+
+const swiperTypesModel = new Swiper('.types-model__swiper', {
+  wrapperClass: 'types-model__swiper-wrapper',
+  slideClass: 'types-model__slide ',  
+  slidesPerView: 1,
+  
+  
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+
+  pagination: {
+    el: ".types-model__bullets",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+
+
+  thumbs: {
+      swiper: typesModelNav
+    }
+  
+
+});
+
+
+
+
+
+
+const cardModelSwiper = new Swiper('.card-model__swiper', {
+  wrapperClass: 'card-model__swiper-wrapper',
+  slideClass: 'card-model__slide',
+  speed: 500,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween:17,
+
+
+  navigation: {
+    prevEl: '.card-model__prev',
+    nextEl: '.card-model__next',
+  },
+
+  pagination: {
+    el: ".card-model__fraction",
+    type: "fraction",
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
+  },
+
+
+  
+
+});
+
 function addZero(num) {
   return (num > 9) ? num : '0' + num;
 }

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+
+<body>
+
+@@include('./template/header-two.html')
+<main>
+    <section class="personal">
+        <div class="container personal__container active">
+            <nav class="personal__navigation">
+                <p class="personal__title title mobile">
+                    <span>личный</span> кабинет
+                </p>
+                <div class="personal__tabs">
+                    <label for="personal-form" class="personal__tab active">
+                        <span>Личные данные</span>
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
+                        </svg>
+                    </label>
+                    <label for="personal-orders" class="personal__tab">
+                        <span>Мои заказы</span>
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
+                        </svg>
+                    </label>
+                    <a href="" class="personal__tab">
+                        <span>Выйти</span>
+                    </a>
+                </div>
+                <div class="personal__nav-links">
+                    <a href="" class="personal__nav-link">
+                        <img src="img/personal-nav-img1.webp" alt="" class="personal__nav-link-bg">
+                        <p class="personal__nav-link-sub-title">Ваши фото</p>
+                        <p class="personal__nav-link-title">
+                            Невидимый манекен/предметка
+                        </p>
+                    </a>
+                    <a href="" class="personal__nav-link">
+                        <img src="img/personal-nav-img2.webp" alt="" class="personal__nav-link-bg">
+                        <p class="personal__nav-link-sub-title">Ваши фото</p>
+                        <p class="personal__nav-link-title">
+                            Сборная съемка
+                        </p>
+                    </a>
+                    <a href="" class="personal__nav-link">
+                        <img src="img/personal-nav-img3.webp" alt="" class="personal__nav-link-bg">
+                        <p class="personal__nav-link-title">
+                            Форма на ретушь
+                        </p>
+                    </a>
+                </div>
+            </nav>
+            <div class="personal__content">
+                <div class="personal__tab-content form active">
+                    <input id="personal-form" type="radio" name="personal" checked>
+                    <button type="button" class="personal__back-link">
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
+                    <div class="personal__tab-header">
+                        <div class="personal__title-box">
+                            <p class="personal__title title">
+                                <span>личные</span> данные
+                            </p>
+                        </div>
+                    </div>
+                    <form class="form__wrap">
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                Контактное лицо
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="ФИО" type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                Номер телефона
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="Телефон" type="tel" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                E-mail
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="Почта" type="email" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                Название бренда
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="Бренд" type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                Ссылка на ваш бренд
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="Ссылка на сайт" type="text" class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__filter-item">
+                            <p class="form__filter-name">
+                                Адрес для отправки изделий
+                            </p>
+                            <label class="form__filter-label">
+                                <input placeholder="Адрес офиса или адрес ПВЗ СДЭК" type="text" class="form__input">
+                            </label>
+                        </div>
+                    </form>
+                    <div class="form__filter-footer">
+                        <button class="form__filter-reset">отменить</button>
+                        <button class="form__filter-submit link">
+                            <span>Сохранить</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="personal__tab-content orders">
+                    <input id="personal-orders" type="radio" name="personal">
+                    <button type="button" class="personal__back-link">
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
+                    <div class="personal__tab-header">
+                        <div class="personal__title-box">
+                            <p class="personal__title title">
+                                <span>Мои Заказы</span>
+                            </p>
+                            <button type="button" class="orders__filter-btn">
+                                <span class="filter-hide desktop">Раскрыть фильтр</span>
+                                <span class="filter-open desktop">скрыть фильтр</span>
+                                <span class="filter-hide mobile">Фильтр</span>
+                                <span class="filter-open mobile">скрыть</span>
+                            </button>
+                        </div>
+                        <form class="orders__filter">
+                            <div class="orders__filter-item">
+                                <p class="orders__filter-name">
+                                    Статус заказа
+                                </p>
+                                <label class="orders__filter-label">
+                                    <select class="orders__input">
+                                        <option value="">Все</option>
+                                        <option value="">Не все</option>
+                                    </select>
+                                    <svg class="orders__filter-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.0332L6 6.0332L11 1.0332" stroke="#242424" stroke-width="2"/>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="orders__filter-item">
+                                <p class="orders__filter-name">
+                                    Статус фото
+                                </p>
+                                <label class="orders__filter-label">
+                                    <select class="orders__input">
+                                        <option value="">Все</option>
+                                        <option value="">Не все</option>
+                                    </select>
+                                    <svg class="orders__filter-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.0332L6 6.0332L11 1.0332" stroke="#242424" stroke-width="2"/>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="orders__filter-item">
+                                <p class="orders__filter-name">
+                                    Дата съемки
+                                </p>
+                                <div class="orders__dates-box">
+                                    <label class="orders__filter-label">
+                                        <input placeholder="С" type="text" class="orders__input input-date">
+                                        <input type="date">
+                                        <svg class="orders__dates-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 8.24992V16.4999C2.75 18.525 4.39162 20.1666 6.41667 20.1666H15.5833C17.6084 20.1666 19.25 18.525 19.25 16.4999V8.24992M2.75 8.24992V6.87492C2.75 4.84987 4.39162 3.20825 6.41667 3.20825H15.5833C17.6084 3.20825 19.25 4.84987 19.25 6.87492V8.24992M2.75 8.24992H19.25M14.6667 1.83325V4.58325M7.33333 1.83325V4.58325" stroke="#969696" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    </label>
+                                    <label class="orders__filter-label">
+                                        <input placeholder="По" type="text" class="orders__input input-date">
+                                        <input type="date">
+                                        <svg class="orders__dates-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 8.24992V16.4999C2.75 18.525 4.39162 20.1666 6.41667 20.1666H15.5833C17.6084 20.1666 19.25 18.525 19.25 16.4999V8.24992M2.75 8.24992V6.87492C2.75 4.84987 4.39162 3.20825 6.41667 3.20825H15.5833C17.6084 3.20825 19.25 4.84987 19.25 6.87492V8.24992M2.75 8.24992H19.25M14.6667 1.83325V4.58325M7.33333 1.83325V4.58325" stroke="#969696" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="orders__filter-footer">
+                                <button type="button" class="orders__filter-reset">Сбросить</button>
+                                <button class="orders__filter-submit link">
+                                    <span>пРИМЕНИТЬ</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="orders__content">
+                        <li class="orders__item">
+                            <div class="orders__item-img-box desktop">
+                                <img src="img/personal-img1.webp" alt="">
+                                <div class="orders__item-date">25/12/2022</div>
+                            </div>
+                            <div class="orders__item-content">
+                                <div class="orders__item-header">
+                                    <div class="orders__item-img-box mobile">
+                                        <img src="img/personal-img1.webp" alt="">
+                                        <div class="orders__item-date">25/12/2022</div>
+                                    </div>
+                                    <div class="orders__header-box">
+                                        <div class="orders__header-item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>тип заказа</p>
+                                            <p>сборная съемка</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>общ. стоимость</p>
+                                            <p>23 900 ₽</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>статус</p>
+                                            <p>заказ оплачен</p>
+                                        </div>
+                                        <button type="button" class="orders__price-btn desktop">
+                                            <span class="price-hide">Подробнее</span>
+                                            <span class="price-open">скрыть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="orders__price-box">
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>модель</p>
+                                            <p>Ekaterina R</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>кол-во артикулов</p>
+                                            <p>25</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>сумка (20 шт)</p>
+                                            <p>1 200 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>украшения (25 шт)</p>
+                                            <p>1 600 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>проходка для wb (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>динамичная проходка (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>имиджевое для инстаграм (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <p class="orders__price-title">Доп. услуги</p>
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>цветные стеночки</p>
+                                            <p>990 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>дополнительные образы</p>
+                                            <p>2 990 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="orders__price-btn mobile">
+                                <span class="price-hide">Подробнее</span>
+                                <span class="price-open">скрыть</span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="orders__item">
+                            <div class="orders__item-img-box desktop">
+                                <img src="img/personal-img2.webp" alt="">
+                                <div class="orders__item-date">25/12/2022</div>
+                            </div>
+                            <div class="orders__item-content">
+                                <div class="orders__item-header">
+                                    <div class="orders__item-img-box mobile">
+                                        <img src="img/personal-img2.webp" alt="">
+                                        <div class="orders__item-date">25/12/2022</div>
+                                    </div>
+                                    <div class="orders__header-box">
+                                        <div class="orders__header-item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>тип заказа</p>
+                                            <p>сборная съемка</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>общ. стоимость</p>
+                                            <p>23 900 ₽</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>статус</p>
+                                            <p>заказ оплачен</p>
+                                        </div>
+                                        <button type="button" class="orders__price-btn desktop">
+                                            <span class="price-hide">Подробнее</span>
+                                            <span class="price-open">скрыть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="orders__price-box">
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>модель</p>
+                                            <p>Ekaterina R</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>кол-во артикулов</p>
+                                            <p>25</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>сумка (20 шт)</p>
+                                            <p>1 200 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>украшения (25 шт)</p>
+                                            <p>1 600 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>проходка для wb (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>динамичная проходка (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>имиджевое для инстаграм (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <p class="orders__price-title">Доп. услуги</p>
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>цветные стеночки</p>
+                                            <p>990 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>дополнительные образы</p>
+                                            <p>2 990 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="orders__price-btn mobile">
+                                <span class="price-hide">Подробнее</span>
+                                <span class="price-open">скрыть</span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="orders__item">
+                            <div class="orders__item-img-box desktop">
+                                <img src="img/personal-img3.webp" alt="">
+                                <div class="orders__item-date">25/12/2022</div>
+                            </div>
+                            <div class="orders__item-content">
+                                <div class="orders__item-header">
+                                    <div class="orders__item-img-box mobile">
+                                        <img src="img/personal-img3.webp" alt="">
+                                        <div class="orders__item-date">25/12/2022</div>
+                                    </div>
+                                    <div class="orders__header-box">
+                                        <div class="orders__header-item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>тип заказа</p>
+                                            <p>сборная съемка</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>общ. стоимость</p>
+                                            <p>23 900 ₽</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>статус</p>
+                                            <p>заказ оплачен</p>
+                                        </div>
+                                        <button type="button" class="orders__price-btn desktop">
+                                            <span class="price-hide">Подробнее</span>
+                                            <span class="price-open">скрыть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="orders__price-box">
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>модель</p>
+                                            <p>Ekaterina R</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>кол-во артикулов</p>
+                                            <p>25</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>сумка (20 шт)</p>
+                                            <p>1 200 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>украшения (25 шт)</p>
+                                            <p>1 600 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>проходка для wb (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>динамичная проходка (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>имиджевое для инстаграм (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <p class="orders__price-title">Доп. услуги</p>
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>цветные стеночки</p>
+                                            <p>990 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>дополнительные образы</p>
+                                            <p>2 990 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="orders__price-btn mobile">
+                                <span class="price-hide">Подробнее</span>
+                                <span class="price-open">скрыть</span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="orders__item">
+                            <div class="orders__item-img-box desktop">
+                                <img src="img/personal-nav-img2.webp" alt="">
+                                <div class="orders__item-date">25/12/2022</div>
+                            </div>
+                            <div class="orders__item-content">
+                                <div class="orders__item-header">
+                                    <div class="orders__item-img-box mobile">
+                                        <img src="img/personal-nav-img2.webp" alt="">
+                                        <div class="orders__item-date">25/12/2022</div>
+                                    </div>
+                                    <div class="orders__header-box">
+                                        <div class="orders__header-item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>тип заказа</p>
+                                            <p>сборная съемка</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>общ. стоимость</p>
+                                            <p>23 900 ₽</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>статус</p>
+                                            <p>заказ оплачен</p>
+                                        </div>
+                                        <button type="button" class="orders__price-btn desktop">
+                                            <span class="price-hide">Подробнее</span>
+                                            <span class="price-open">скрыть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="orders__price-box">
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>модель</p>
+                                            <p>Ekaterina R</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>кол-во артикулов</p>
+                                            <p>25</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>сумка (20 шт)</p>
+                                            <p>1 200 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>украшения (25 шт)</p>
+                                            <p>1 600 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>проходка для wb (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>динамичная проходка (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>имиджевое для инстаграм (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <p class="orders__price-title">Доп. услуги</p>
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>цветные стеночки</p>
+                                            <p>990 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>дополнительные образы</p>
+                                            <p>2 990 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="orders__price-btn mobile">
+                                <span class="price-hide">Подробнее</span>
+                                <span class="price-open">скрыть</span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="orders__item">
+                            <div class="orders__item-img-box desktop">
+                                <img src="img/personal-img4.webp" alt="">
+                                <div class="orders__item-date">25/12/2022</div>
+                            </div>
+                            <div class="orders__item-content">
+                                <div class="orders__item-header">
+                                    <div class="orders__item-img-box mobile">
+                                        <img src="img/personal-img4.webp" alt="">
+                                        <div class="orders__item-date">25/12/2022</div>
+                                    </div>
+                                    <div class="orders__header-box">
+                                        <div class="orders__header-item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>тип заказа</p>
+                                            <p>сборная съемка</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>общ. стоимость</p>
+                                            <p>23 900 ₽</p>
+                                        </div>
+                                        <div class="orders__header-item">
+                                            <p>статус</p>
+                                            <p>заказ оплачен</p>
+                                        </div>
+                                        <button type="button" class="orders__price-btn desktop">
+                                            <span class="price-hide">Подробнее</span>
+                                            <span class="price-open">скрыть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="orders__price-box">
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>модель</p>
+                                            <p>Ekaterina R</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>кол-во артикулов</p>
+                                            <p>25</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>сумка (20 шт)</p>
+                                            <p>1 200 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>украшения (25 шт)</p>
+                                            <p>1 600 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>проходка для wb (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>динамичная проходка (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>имиджевое для инстаграм (1 шт)</p>
+                                            <p>1 800 ₽</p>
+                                        </li>
+                                    </ul>
+                                    <p class="orders__price-title">Доп. услуги</p>
+                                    <ul class="orders__price-list">
+                                        <li class="orders__price-item">
+                                            <p>цветные стеночки</p>
+                                            <p>990 ₽</p>
+                                        </li>
+                                        <li class="orders__price-item">
+                                            <p>дополнительные образы</p>
+                                            <p>2 990 ₽</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="orders__price-btn mobile">
+                                <span class="price-hide">Подробнее</span>
+                                <span class="price-open">скрыть</span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00012L7.5 7.00012L14 1.00012" stroke="#242424" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('./template/footer.html')
+
+
+
+
+
+</body>
+
+</html>

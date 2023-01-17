@@ -1,0 +1,25 @@
+.example {
+    padding-bottom: 18.1rem;
+    .title {
+        text-align: center;
+        margin-bottom: 8.84rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .product-model {
+            margin-right: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .product-model:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        .product-model:nth-last-of-type(-n +4) {
+            margin-bottom: 0;
+        }
+    }
+}
