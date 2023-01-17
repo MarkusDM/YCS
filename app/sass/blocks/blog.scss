@@ -1,5 +1,5 @@
 .blog {
-    margin-bottom: 20rem;
+    margin-bottom: 19.5rem;
     .container {
         width: 162rem;
     }
@@ -12,5 +12,13 @@
 
     &__slide {
         margin-right: 4rem;
+    }
+
+    &__swiper-mob {
+        display: none;
+    }
+
+    &__bullets {
+        display: none;
     }
 }

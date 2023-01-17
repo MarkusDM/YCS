@@ -101,23 +101,38 @@
 
 
 @font-face {
-	font-family: "EuropeExt Bold";
-	src: url("../fonts/europeext-bold/europeext-bold.eot"),
-		url("../fonts/europeext-bold/europeext-bold.woff") format("woff"), /* Modern Browsers */
-		url("../fonts/europeext-bold/europeext-bold.woff2") format("woff2"); /* Modern Browsers */
-	font-weight: normal;
+	font-family: 'EuropeExt';
+	src: url('EuropeExtBold.eot');
+	src: local('EuropeExt Bold'), local('EuropeExtBold'),
+		url('../fonts/EuropeExtBold.eot') format('embedded-opentype'),
+		url('../fonts/EuropeExtBold.woff') format('woff'),
+		url('../fonts/EuropeExtBold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
 }
 
+
+
+
 @font-face {
-    font-family: 'KyivType Serif';
-    src: url('KyivTypeSerif-Light3.eot');
-    src: local('KyivType Serif Light3'), local('KyivTypeSerif-Light3'),
-        url('../fonts/KyivTypeSerif-Light3.eot') format('embedded-opentype'),
-        url('../fonts/KyivTypeSerif-Light3.woff2') format('woff2'),
-        url('../fonts/KyivTypeSerif-Light3.woff') format('woff'),
-        url('../fonts/KyivTypeSerif-Light3.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'EuropeExt';
+	src: url('EuropeExtBold.eot');
+	src: local('EuropeExt Bold'), local('EuropeExtBold'),
+		url('../fonts/EuropeExtBold.eot') format('embedded-opentype'),
+		url('../fonts/EuropeExtBold.woff') format('woff'),
+		url('../fonts/EuropeExtBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Kyiv*Type Serif';
+	
+	src:
+        url('../fonts/KyivTypeSerif-Light3.woff2') format('wof2'),
+		url('../fonts/KyivTypeSerif-Light3.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
 }

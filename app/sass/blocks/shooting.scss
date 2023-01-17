@@ -1,6 +1,6 @@
 .shooting {
     padding-top: 21rem;
-    margin-bottom: 19.6rem;
+    margin-bottom: 18.8rem;
     .container {
         width: 100%;
         padding-left: 6.3rem;
@@ -79,7 +79,7 @@
     }
 
     &__swiper {
-        width: 115.7rem;
+        width: 150.7rem;
     }
 
     &__slide-content {
@@ -88,8 +88,9 @@
     }
 
     &__slide-content-inner {
-        width: 55.3rem;
-        max-width: 55.3rem;
+        width: 60.3rem;
+        max-width: 60.3rem;
+        padding-top: 7.4rem;
         padding-left: 8rem;
         height: fit-content;
         position: relative;
@@ -100,15 +101,22 @@
             background: rgba(189, 191, 197, 0.4);
             height: 50%;
             left: 0;
-            top: 50%;
-            transform: translate(50%,-50%);
+            top: 30%;
+           
         }
     }
 
+    &__bullets {
+        display: none;
+    }
+
     &__slide-image {
-        width: 55.2rem;
-        min-width: 55.2rem;
-        max-width: 55.2rem;
+        width: 55rem;
+        min-width: 55rem;
+        position: relative;
+        max-width: 55rem;
+        left: 8.1rem;
+        top: -1rem;
         height: 58.2rem;
 
         img {
@@ -118,14 +126,15 @@
     }
 
     &__slide-title {
-        font-family: 'Kyiv Type Serif';
+        font-family: 'Kyiv*Type Serif';
         font-style: normal;
         font-weight: 200;
         font-size: 8rem;
-        line-height: 9.6rem;
+        line-height: 10rem;
         text-transform: uppercase;
-        margin-bottom: 4rem;
-
+        margin-bottom: 4.2rem;
+        line-height: 10rem;
+     
         span {
             font-family: 'EuropeExt',sans-serif;
             font-style: normal;
@@ -152,9 +161,10 @@
     }
 
     &__nav {
-        width: 35.4rem;
-        height: 31.6rem;
+        width: 44.4rem;
+        height: 33.5rem;
         margin-right: 6.5rem;
+        margin-top: 12.5rem;
     }
 
     &__nav-slide {

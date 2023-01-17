@@ -1,0 +1,92 @@
+.publication {
+    width: 51.3rem;
+    height: 44rem;
+    position: relative;
+    display: block;
+    background: #EAECED;
+    &:hover {
+        .publication__image {
+            visibility: visible;
+            transition-delay: 0s;
+            opacity: 1;
+        }
+
+        .publication__text {
+            visibility: visible;
+            transition-delay: 0s;
+            opacity: 1;
+        }
+
+        .publication__title {
+            transition: color 0.4s;
+            color: #FFFFFF;
+        }
+
+        .publication__date {
+            transition: color 0.4s;
+            color: #fff;
+        }
+    }
+    &__title {
+        font-family: 'EuropeExt',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 130%;
+        text-transform: uppercase;
+        width: 20rem;
+        transition: color 0.4s;
+        
+    }
+
+    &__content {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        height: 44rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.4s, visibility 0s linear 0.4s;
+        visibility: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 156% ;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-top: 3rem;
+        width: 30.8rem;
+        opacity: 0;
+        transition: opacity 0.4s, visibility 0s linear 0.4s;
+        visibility: hidden;
+    }
+
+    &__date {
+        font-family: 'Kyiv Type Serif';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 1.8rem;
+        line-height: 161% ;
+        letter-spacing: 0.02em;
+        color: #969696;
+        display: block;
+        margin-top: auto;
+        transition: color 0.4s;
+    }
+}

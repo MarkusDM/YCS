@@ -1,0 +1,27 @@
+.read-also {
+    padding-bottom: 20rem;
+    .container {
+        width: 162rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6rem;
+        .title {
+            font-size: 5rem;
+                line-height: 170% ;
+            span {
+                font-size: 5rem;
+                line-height: 170% ;
+               
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

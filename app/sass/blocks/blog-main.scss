@@ -1,0 +1,90 @@
+.blog-main {
+    margin-top: 19.5rem;
+    padding-bottom: 20rem;
+
+    .title {
+        margin-bottom: 6rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    .container {
+       width: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15rem;
+        padding-right: 13rem;
+        .publication {
+            margin-right: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .publication:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .publication:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+
+    }
+
+ &__title {
+    font-family: 'Kyiv Type Serif';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 8rem;
+	line-height: 9.6rem;
+	text-transform: uppercase;
+	text-align: center;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 8rem;
+    &::before {
+        position: absolute;
+        content:'';
+        width: 53.9rem;
+        background: rgba(142, 142, 142, 0.6);
+        height: 1px;
+        top: 50%;
+        left: 0;
+    }
+    &::after {
+        position: absolute;
+        content:'';
+        width: 53.9rem;
+        background: rgba(142, 142, 142, 0.6);
+        height: 1px;
+        top: 50%;
+        right: 0;
+    }
+	span {
+		font-family: 'EuropeExt',sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 8rem;
+		line-height: 8.9rem;
+		text-transform: uppercase;
+		
+	}
+ }
+
+
+ &__btn-all {
+    font-family: 'EuropeExt',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #242424;
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: 4.5rem;
+}
+}

@@ -1,7 +1,7 @@
 .link {
 	display: inline-block;
 	position: relative;
-	padding-right: 4.6rem;
+	padding-right: 3.6rem;
 	font-family: 'EuropeExt',sans-serif;
 	font-style: normal;
 	font-weight: 700;
@@ -10,23 +10,31 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: #242424;
+
+	&:hover {
+		&::before {
+			transform: translateX(0.4rem);
+			transition: transform .5s ease;
+		}
+	}
 	&::before {
 		position: absolute;
 		content:'';
 		width: 3.4rem;
-		height: 1rem;
+		height: 1.2rem;
 		background-image: url(../img/icon/arrowblacklink.svg);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		right: 0;
-		top: 50%;
-        transform: translate(50%,-50%);
+		right: -0.6rem;
+    	top: 0.5rem;
+        transition: transform .5s ease;
+		
 	}
 }
 
 
 .title {
-	font-family: 'Kyiv Type Serif';
+	font-family: 'Kyiv*Type Serif';
 	font-style: normal;
 	font-weight: 200;
 	font-size: 8rem;
@@ -66,10 +74,16 @@
 		cursor: pointer;
 		position: relative;
 		padding-top: 3rem;
+		&:hover {
+			> svg {
+			  transform: translateX(0.4rem);
+			}
+		  }
 		svg {
 			width: 3.4rem;
 			height: 1rem;
 			fill: #242424;
+			transition: transform .5s ease;
 		}
 
 		
@@ -88,10 +102,19 @@
 		position: relative;
 		margin-right: 1.1rem;
 		padding-top: 3rem;
+
+		&:hover {
+			> svg {
+			  transform: translateX(-0.4rem);
+			}
+		  }
+		
+
 		svg {
 			width: 3.4rem;
 			height: 1rem;
 			fill: #242424;
+			transition: transform .5s ease;
 		}
 	}
 
@@ -106,11 +129,13 @@
 	&__fraction {
 		position: absolute;
 		justify-content: space-between;
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding-left: 3.4rem;
+		padding-right: 3.4rem;
 		font-size: 0;
-		top: 1.2rem;
+		top: 2rem;
 		display: flex;
+		z-index: 5;
+		height: fit-content;
 		.swiper-pagination-current,
 		.swiper-pagination-total  {
 			
@@ -136,4 +161,38 @@
 	}
 
 	
+
+	
 }
+.bullet__pagination {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 6.4rem;
+	.swiper-pagination-bullet {
+		border: 1px solid #969696;
+		background: #fff;
+		width: 2.2rem;
+		height: 2.2rem;
+	
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #242424;
+	}
+}
+
+
+@keyframes paginationAnimation {   
+    from {     
+        stroke-dashoffset: 140;
+        
+    }   
+    to {
+        stroke-dashoffset: 0;
+       
+     }
+  }
+
+
+

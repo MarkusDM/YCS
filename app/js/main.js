@@ -38,6 +38,13 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
         delay: 7000,
     },
 
+    pagination: {
+      el: ".main__swiper-two-pagination",
+      type: "fraction",
+      formatFractionCurrent: addZero,
+      formatFractionTotal: addZero
+    },
+
 
     thumbs: {
         swiper: mainSwiper
@@ -77,6 +84,15 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
+    },
+
+
+    pagination: {
+      el: ".shooting__bullets",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
     },
 
 
@@ -127,6 +143,7 @@ const blogSwiper = new Swiper('.blog__swiper', {
     prevEl: '.blog__prev',
     nextEl: '.blog__next',
   },
+  
 
   pagination: {
     el: ".blog__fraction",
@@ -134,7 +151,30 @@ const blogSwiper = new Swiper('.blog__swiper', {
     formatFractionCurrent: addZero,
     formatFractionTotal: addZero
   },
+
+
+});
+
+
+const blogSwiperMob = new Swiper('.blog__swiper-mob', {
+  wrapperClass: 'blog__swiper-wrapper-mob',
+  slideClass: 'blog__slide-mob',
+  speed: 500,
+  slidesPerView: 1,
+  navigation: {
+    prevEl: '.blog__prev',
+    nextEl: '.blog__next',
+  },
   
+
+  pagination: {
+    el: ".blog__bullets",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+
 
 });
 
@@ -144,20 +184,116 @@ const modelsSwiper = new Swiper('.models__swiper', {
   wrapperClass: 'models__swiper-wrapper',
   slideClass: 'models__slide',
   speed: 500,
-  slidesPerView: 6,
+  
+  slidesPerView: 2,
+  slidesPerGroup: 2,
   grid: {
     rows: 2,
   },
  
 
   pagination: {
-    el: ".blog__fraction",
+    el: ".models__bullets",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+
+  breakpoints: {
+
+    748: {
+     
+      slidesPerView: 6,
+      slidesPerGroup: 6,
+
+
+    },
+
+  },
+  
+  
+
+});
+
+
+
+
+
+const entrySwiper = new Swiper('.entry__swiper', {
+  wrapperClass: 'entry__swiper-wrapper',
+  slideClass: 'entry__slide',
+  speed: 500,
+  slidesPerView: 1,
+  watchSlidesProgress: true,
+  loop: true,
+  freeMode: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: true,
+  autoplay: {
+      delay: 7000,
+  },
+
+
+  navigation: {
+    prevEl: '.entry__prev',
+    nextEl: '.entry__next',
+  },
+
+  pagination: {
+    el: ".entry__fraction",
     type: "fraction",
-   
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
   },
   
 
 });
+
+
+const entrySwiperTwo = new Swiper('.entry__swiper-two', {
+    wrapperClass: 'entry__swiper-wrapper-two',
+    slideClass: 'entry__slide-two',
+    speed: 500,
+    slidesPerView: 1,
+    loop: true,
+    freeMode: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay: true,
+    autoplay: {
+        delay: 7000,
+    },
+
+
+    navigation: {
+      prevEl: '.entry__prev',
+      nextEl: '.entry__next',
+    },
+
+    pagination: {
+      el: ".entry__swiper-two-pagination",
+      type: "fraction",
+      formatFractionCurrent: addZero,
+      formatFractionTotal: addZero
+    },
+
+
+    thumbs: {
+        swiper: entrySwiper
+      }
+    
+  
+ });
+
+
+ entrySwiper.params.control = entrySwiperTwo;
+ entrySwiperTwo.params.control = entrySwiper;
 
 
 
