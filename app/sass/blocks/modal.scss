@@ -1,0 +1,78 @@
+.modal {
+  position: relative;
+  display: none;
+  margin-bottom: 0;
+  background-color: #ECEDF0;
+  box-shadow: 0.5rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  cursor: default;
+
+  &__close {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    z-index: 5;
+    display: flex;
+    width: 5.4rem;
+    height: 5.4rem;
+    border: 1px solid rgba(189, 191, 197, 0.4);
+    border-radius: 100%;
+    background-color: transparent;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      border-radius: 10rem;
+      background-color: #242424;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: background-color .2s ease;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      border-radius: 10rem;
+      background-color: #242424;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      transition: background-color .2s ease;
+    }
+  }
+
+  &__stage {
+    .fancybox-content {
+      overflow: hidden;
+    }
+  }
+}
+
+.fancybox-bg {
+  background: rgba(191, 198, 205, 0.29);
+  backdrop-filter: blur(1.2rem);
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 1;
+}
+
+@media (max-width: 48em) {
+  .modal {
+    box-shadow: 1rem 0.8rem 3.2rem rgba(0, 0, 0, 0.1);
+
+    &__close {
+      right: 3rem;
+      top: 3rem;
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+
+    &__stage {
+    }
+  }
+}

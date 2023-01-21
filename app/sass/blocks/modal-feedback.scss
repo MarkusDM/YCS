@@ -1,0 +1,50 @@
+.modal-feedback {
+  width: 162rem;
+  padding: 16.2rem 18.8rem;
+
+  @media (min-width: 48.01em) {
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+.modal-fb-complete {
+  width: 162rem;
+  padding: 16.2rem 18.8rem;
+
+  .feedback__text {
+    margin-bottom: 3.2rem;
+  }
+
+  .feedback__submit {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .modal-feedback {
+    width: 72rem;
+    padding: 12rem 4rem 8rem 4rem;
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  .modal-fb-complete {
+    width: 72rem;
+    padding: 8rem 3.6rem;
+
+    .feedback__title {
+      text-align: center;
+    }
+
+    .feedback__text {
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .card-model {
     margin-top: 10rem;
-    padding-bottom: 18rem;
+    padding-bottom: 21.3rem;
 
     .container {
         position: relative;
@@ -60,6 +60,7 @@
         font-size: 1.7rem;
         line-height: 2.1rem;
         padding: 1rem;
+        width: 28.8rem;
         text-transform: uppercase;
         background: #EAECED;
     }
@@ -69,7 +70,8 @@
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         flex-grow: 1;
-        margin-bottom: 3.2rem;
+        margin-bottom: 0rem;
+        width: 43rem;
     }
 
     &__data {
@@ -85,6 +87,7 @@
             text-transform: uppercase;
             color: #969696;
             display: block;
+            margin-bottom: 1rem;
         }
 
         strong {
@@ -146,6 +149,7 @@
     &__swiper {
         width: 120.5rem;
         overflow: hidden;
+        padding-top: 8rem;
         
     }
 
@@ -232,7 +236,7 @@
 
     &__pagination {
         position: absolute;
-        bottom: 5rem;
+        bottom: 3.2rem;
         right: 0;
         z-index: 4;
     }
@@ -262,5 +266,57 @@
             width: 1.5rem;
             height: 1.5rem;
         }
+    }
+
+
+    &__right {
+        .card-model__link {
+            display: none;
+        }
+
+        .card-model__title {
+            display: none;
+        }
+
+        .card-model__status {
+            display: none;
+        }
+    }
+
+    &__national {
+        font-family: 'EuropeExt';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 4.6rem;
+        text-transform: uppercase;
+        color: #242424;
+        position: absolute;
+        top: 7rem;
+    }
+
+    .mob {
+        display: none;
+    }
+
+
+    &__mswiper {
+        display: none;
+    }
+
+    &__bullets {
+        display: none;
+    }
+}
+
+
+.card-model--two {
+    padding-bottom: 7.3rem;
+    .card-model__link {
+        margin-bottom: 16.5rem;
+    }
+
+    .card-model__right {
+        padding-top: 10rem;
     }
 }

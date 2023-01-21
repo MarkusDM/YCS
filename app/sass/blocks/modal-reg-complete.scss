@@ -1,0 +1,71 @@
+.modal-reg-complete {
+  width: 122.8rem;
+  padding: 8.8rem 18.2rem 11.5rem 18.2rem;
+
+  &__sub-title {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 3.3rem;
+    color: #969696;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+    font-family: 'EuropeExt';
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 4.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .modal-reg-complete {
+    width: 72rem;
+    padding: 10rem 3rem;
+
+    &__sub-title {
+      font-family: 'EuropeExt';
+      font-weight: 700;
+      font-size: 4.4rem;
+      line-height: 5rem;
+      color: #242424;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+      font-family: 'Gilroy';
+      font-weight: 500;
+      font-size: 2.6rem;
+      line-height: 4rem;
+    }
+
+    &__text {
+      margin-bottom: 6rem;
+      font-size: 2.6rem;
+      line-height: 3.8rem;
+    }
+
+    &__buttons {
+      flex-wrap: wrap;
+      row-gap: 5rem;
+      column-gap: 3rem;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .blog-main {
-    margin-top: 19.5rem;
-    padding-bottom: 20rem;
+    margin-top: 17.2rem;
+    padding-bottom: 20.4rem;
 
     .title {
         margin-bottom: 6rem;
@@ -32,12 +32,6 @@
     }
 
  &__title {
-    font-family: 'Kyiv Type Serif';
-	font-style: normal;
-	font-weight: 200;
-	font-size: 8rem;
-	line-height: 9.6rem;
-	text-transform: uppercase;
 	text-align: center;
     margin-top: 8rem;
     position: relative;
@@ -64,11 +58,21 @@
 		font-family: 'EuropeExt',sans-serif;
 		font-style: normal;
 		font-weight: 700;
-		font-size: 8rem;
-		line-height: 8.9rem;
+		font-size: 5rem;
+        line-height: 4.6rem;
+        display: block;
 		text-transform: uppercase;
 		
 	}
+
+    p {
+        font-family: 'Kyiv*Type Serif';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 5rem;
+        line-height: 6rem;
+        text-transform: uppercase;
+    }
  }
 
 

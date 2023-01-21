@@ -23,28 +23,19 @@
         padding-left: 15.8rem;
         position: relative;
         &::before {
+            content: '';
             position: absolute;
-            content:'';
+            right: calc(100% - 12.3rem);
+            top: 60%;
             width: 12.6rem;
-            height: 0.1rem;
-            display: block;
-            background: #242424;
-            left: 0;
-            top: 50%;
-            opacity: 0;
-            
+            height: 1px;
+            transform: translateY(-2px) scaleX(0.31);
+            transform-origin: right;
+            background-color: #969696;
+            transition: transform .4s cubic-bezier(0.680, -0.550, 0.265, 1.550), background-color .4s ease;
         }
 
-        &::after {
-            position: absolute;
-            content:'';
-            width: 4rem;
-            height: 0.1rem;
-            display: block;
-            background: #969696;
-            left: 8.8rem;
-            top: 50%;
-        }
+       
     }
 
     .swiper-slide-thumb-active {
@@ -53,34 +44,16 @@
             color: #000000;
             
             &::before {
-                position: absolute;
-                content:'';
-                width: 12.6rem;
-                height: 0.1rem;
-                display: block;
-                background: #242424;
-                left: 0;
-                top: 50%;
-                opacity: 1;
+                transform: translateY(-2px);
+                background-color: #242424;
                 
             }
     
-            &::after {
-                position: absolute;
-                content:'';
-                width: 4rem;
-                height: 0.1rem;
-                display: block;
-                background: #969696;
-                left: 8.8rem;
-                top: 50%;
-                opacity: 0;
-            }
         }
     }
 
     &__swiper {
-        width: 120.8rem;
+        width: 149.8rem;
     }
 
     &__slide-content {
@@ -106,9 +79,13 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid rgba(189, 191, 197, 0.4);
-        padding-bottom: 1rem;
-        margin-bottom: 1.97rem;
+        padding-bottom: 0rem;
+        margin-bottom: 2.3rem;
 
+    }
+
+    &__slide-title-mob {
+        display: none;
     }
 
    
@@ -143,10 +120,10 @@
  
 
     &__nav {
-        width: 44.4rem;
-        height:auto;
-        margin-right: 6.5rem;
-        margin-top: 12.5rem;
+        width: 47.4rem;
+        height: auto;
+        margin-right: 3.5rem;
+        margin-top: 22.5rem;
     }
 
     &__nav-slide {

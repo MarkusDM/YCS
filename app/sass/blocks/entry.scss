@@ -1,4 +1,5 @@
 .entry {
+    position: relative;
     .container {
         width: 100%;
     }
@@ -27,7 +28,7 @@
 
     &__image-slide {
         width: 64.357rem;
-        height: 105rem;
+        height: 100%;
         img {
             width: 100%;
             height: 100%;
@@ -35,11 +36,28 @@
         }
     }
 
+    &__image-slide-content {
+        height: 105rem; 
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        
+    }
+
+    &__next-photo {
+        display: none;
+    }
+
+    &__select {
+        display: none;
+    }
+
     &__block {
         padding-top: 20.729rem;
         padding-left: 15.239rem;
         padding-right: 15.3rem;
-        padding-bottom: 12rem;
+        padding-bottom: 13rem;
         position: relative;
         z-index: 2;
     }
@@ -52,7 +70,8 @@
         line-height: 120%;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: 5.44rem;
+        margin-bottom: 5.1rem;
+
 
     }
 
@@ -60,7 +79,7 @@
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         flex-grow: 1;
-        width: 65.259rem;
+        width: 49.259rem;
        
     }
 
@@ -117,14 +136,14 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
-        align-items:center;
+      
         margin-bottom: 4.1rem;
     }
 
     &__style {
         display: flex;
         flex-direction: column;
-       
+       padding-top: 7rem;
         span {
             font-style: normal;
             font-weight: 500;
@@ -245,7 +264,7 @@
         margin-right: initial;
         position: absolute;
         right: 15rem;
-        top: 27.1rem;
+        top: 18.1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -344,8 +363,8 @@
 
     &__pagination {
         position: absolute;
-        right: 15.1rem;
-        bottom: -10rem;
+        right: 14.8rem;
+        bottom: 40rem;
         z-index: 4;
     }
 

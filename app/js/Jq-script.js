@@ -66,7 +66,84 @@ $(document).ready(function () {
      });
 
 
+
+     $(".catalog__filter-btn > svg").on('click', function() {
+        $(".catalog-filter").addClass("active");
+        $(".header").addClass("header--two");
+        $(".catalog__wrapper").css("display", 'none');
+        $(".main").css("display", 'none');
+        $(".catalog__title").css("display", 'none');
+        $(".catalog__btn-all").css("display", 'none');
+    });
+
+
+    $(".catalog-filter__content-title-close").on('click', function() {
+        $(".catalog-filter").removeClass("active");
+        $(".header").removeClass("header--two");
+        $(".catalog__wrapper").css("display", 'flex');
+        $(".main").css("display", 'block');
+        $(".catalog__title").css("display", 'flex');
+        $(".catalog__btn-all").css("display", 'block');
+    });
+
+
+
+
+
+   
+
+
+
+   
+
+
+    //  $('.record__checkbox > input[name=checkbox]').each(function () {
+    //     $(this).parents('.record-form__block').toggleClass('active').next().slideToggle();
+    //     $('.record__custom-checkbox').not(this).parent('.record-form__block').removeClass('active').next().slideUp();
+    //  });
+
+
 });
+
+
+
+
+$(document).ready(function() {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 0 ? 0 : count;
+        $input.val(count > 9 ? count : '0' + count);
+        $input.change();
+        
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) + 1;
+        count = count < 0 ? 0 : count;
+        $input.val(count > 9 ? count : '0' + count);
+        $input.change();
+        
+        return false ;
+        
+    });
+});
+
+
+
+
+
+$('.record__checkbox > input[name=checkbox]').change(function () {
+    $(this).parents('.record-form').toggleClass('active');
+    $('.record__checkbox > input[name=checkbox]').not(this).parent('.record-form').removeClass('active');
+  });
+
+
+  $('.record__checkbox > input[name=checkbox]').change(function () {
+    $(this).parents('.record__photo-article').toggleClass('active');
+    $('.record__checkbox > input[name=checkbox]').not(this).parent('.record__photo-article').removeClass('active');
+  });
 
 
 

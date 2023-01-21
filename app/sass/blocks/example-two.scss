@@ -1,0 +1,31 @@
+.example-two {
+  &__image {
+    &--notBg {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 8rem auto 0 auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .example-two {
+    .product-model {
+      margin: 0;
+    }
+
+    .example__wrapper {
+      justify-content: space-between;
+      row-gap: 4rem;
+    }
+
+    &__link {
+      margin-top: 6.4rem;
+    }
+  }
+}

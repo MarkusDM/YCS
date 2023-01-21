@@ -1,8 +1,8 @@
 .contacts {
-    margin-top: 16.5rem;
+    margin-top: 11.5rem;
     padding-bottom: 23.1rem;
     .container {
-        width: 162.8rem;
+        width: 162rem;
     }
 
     .title {
@@ -60,6 +60,14 @@
             line-height: 127%;
             letter-spacing: 0.02em;
             text-transform: capitalize;
+            transition: color 0.2s;
+            &:hover {
+                
+                &::placeholder {
+                    color: #242424;
+                    transition: color 0.2s;
+                }
+            }
             &::placeholder  {
                 color: #969696;
             }
@@ -92,6 +100,14 @@
             text-transform: uppercase;
         }
 
+        a {
+            transition: color 0.25s;
+            &:hover {
+                transition: color 0.25s;
+                color: #969696;
+            }
+        }
+
         
     }
 
@@ -112,10 +128,47 @@
             width: 6rem;
             height: 6rem;
             margin-right: 2.8rem;
+            position: relative;
+            &:hover {
+                
+                &::after {
+                    animation-play-state: paused;
+                    transition: 0.25s linear infinite;
+                    
+                }
+            }
+            &::after {
+                content: ''; // Нужно для отображения псевдокласса
+                position: absolute;
+                border: 0.1rem solid #242424; // Ширину обводки можете выбрать сами
+                transition: 0.25s linear infinite;
+                left: -0.2rem;
+                opacity: 0;
+                right: -0.2rem;
+                top: -0.2rem;
+                bottom: -0.2rem;
+                border-radius: 50%;
+                animation: pulse 2.5s linear infinite;
+            }
         }
 
         a:last-child {
             margin-right: 0;
+        }
+    }
+
+
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
         }
     }
 }

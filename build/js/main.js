@@ -238,17 +238,7 @@ const entrySwiper = new Swiper('.entry__swiper', {
   },
 
 
-  navigation: {
-    prevEl: '.entry__prev',
-    nextEl: '.entry__next',
-  },
 
-  pagination: {
-    el: ".entry__fraction",
-    type: "fraction",
-    formatFractionCurrent: addZero,
-    formatFractionTotal: addZero
-  },
   
 
 });
@@ -271,10 +261,7 @@ const entrySwiperTwo = new Swiper('.entry__swiper-two', {
     },
 
 
-    navigation: {
-      prevEl: '.entry__prev',
-      nextEl: '.entry__next',
-    },
+ 
 
     pagination: {
       el: ".entry__swiper-two-pagination",
@@ -342,7 +329,45 @@ const swiperTypesModel = new Swiper('.types-model__swiper', {
 
 });
 
+const entrySwiperImage = new Swiper('.entry__image-swiper', {
+  wrapperClass: 'entry__image-swiper-wrapper',
+  slideClass: 'entry__image-slide',
+  speed: 500,
+  slidesPerView: 1,
+  initialSlide: 3,
+  freeMode: true,
+  autoplay: true,
+  autoplay: {
+      delay: 7000,
+  },
 
+  navigation: {
+    prevEl: '.entry__prev',
+    nextEl: '.entry__next',
+  },
+  
+
+  pagination: {
+    el: ".entry__fraction",
+    type: "fraction",
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
+  },
+
+
+  breakpoints: {
+
+    748: {
+
+      slidesPerView: 3,
+      
+    },
+
+  },
+ 
+  
+
+});
 
 
 
@@ -351,10 +376,11 @@ const cardModelSwiper = new Swiper('.card-model__swiper', {
   wrapperClass: 'card-model__swiper-wrapper',
   slideClass: 'card-model__slide',
   speed: 500,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   spaceBetween:17,
-
+  watchSlidesProgress: true,
+  freeMode: true,
 
   navigation: {
     prevEl: '.card-model__prev',
@@ -368,6 +394,42 @@ const cardModelSwiper = new Swiper('.card-model__swiper', {
     formatFractionTotal: addZero
   },
 
+  breakpoints: {
+
+    748: {
+
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      
+    },
+
+  },
+  
+
+});
+
+
+
+const cardModelSwiperMob = new Swiper('.card-model__mswiper', {
+  wrapperClass: 'card-model__mswiper-wrapper',
+  slideClass: 'card-model__mswiper-slide',
+  speed: 500,
+  slidesPerView: 3,
+  spaceBetween:17,
+
+
+  pagination: {
+    el: ".card-model__bullets",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+
+
+  thumbs: {
+      swiper: cardModelSwiper
+    }
 
   
 
@@ -376,3 +438,61 @@ const cardModelSwiper = new Swiper('.card-model__swiper', {
 function addZero(num) {
   return (num > 9) ? num : '0' + num;
 }
+
+
+
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [55.720702, 37.630104],
+          zoom: 9
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Собственный значок метки',
+          balloonContent: 'Это красивая метка'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'images/myIcon.gif',
+          // Размеры метки.
+          iconImageSize: [30, 42],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      }),
+
+      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+          hintContent: 'Собственный значок метки с контентом',
+          balloonContent: 'А эта — новогодняя',
+          iconContent: '12'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'images/ball.png',
+          // Размеры метки.
+          iconImageSize: [48, 48],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-24, -24],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
+      });
+
+  myMap.geoObjects
+      .add(myPlacemark)
+      .add(myPlacemarkWithContent);
+});

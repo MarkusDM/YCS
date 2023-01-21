@@ -11,6 +11,7 @@
     }
     &__lists {
         margin-right: 17.3rem;
+        padding-top: 1rem;
     }
     &__item {
         font-style: normal;
@@ -26,38 +27,29 @@
         position: relative;
         cursor: pointer;
         &::before {
+            content: '';
             position: absolute;
-            content:'';
-            background:  #242424;
-            width: 11.3rem;
+            right: calc(100% - 11.3rem);
+            top: 60%;
+            width: 12.6rem;
             height: 1px;
-            top: 50%;
-            opacity: 0;
-            left: 0;
+            transform: translateY(-2px) scaleX(0.31);
+            transform-origin: right;
+            background-color: #969696;
+            transition: transform .4s cubic-bezier(0.680, -0.550, 0.265, 1.550), background-color .4s ease;
         }
 
-        &::after {
-            position: absolute;
-            content:'';
-            background:  #969696;
-            width: 4rem;
-            height: 1px;
-            top: 50%;
-            opacity: 1;
-            left: 7.2rem;
-            
-        }
+       
     }
 
     &__item.active {
         color: #242424;
         &::before {
-            opacity: 1;
+            transform: translateY(-2px);
+            background-color: #242424;
         }
 
-        &::after {
-            opacity: 0;
-        }
+        
     }
     
     &__item:last-child {
@@ -262,6 +254,7 @@
         border-top: 1px solid rgba(189, 191, 197, 0.4);
         border-bottom: 1px solid rgba(189, 191, 197, 0.4);
         padding-right: 1rem;
+        padding-top: 4rem;
 
     }
     &__btn-cancellation {
@@ -273,6 +266,27 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #969696;
+    }
+
+    &__content-title {
+        display: none;
+    }
+
+    &__content-title-close {
+        width: 12rem;
+        height: 12rem;
+        margin-right: 0.5rem;
+        margin-top: -0.4rem;
+        border-radius: 50%;
+        border: 1px solid #242424;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        img {
+            width: 3.6rem;
+            height: 3.6rem;
+        }
     }
     
 }

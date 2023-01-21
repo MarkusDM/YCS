@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+
+<body>
+    @@include('./template/header-two.html')
+<main>
+    <section class="example portfolio">
+        <div class="container">
+            <p class="portfolio__title">портфолио</p>
+            <ul class="portfolio__filter">
+                <li class="portfolio__filter-item active">
+                    <div class="portfolio__filter-item-wrap">
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio1">
+                            <span class="desktop">предметная съемка</span>
+                            <span class="mobile">предметная съемка</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio1">
+                            <span class="desktop">сборная съемка</span>
+                            <span class="mobile">сборная съемка</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio1">
+                            <span class="desktop">съемка манекен</span>
+                            <span class="mobile">съемка манекен</span>
+                        </label>
+                        <label class="portfolio__filter-label desktop">
+                            <input type="checkbox" name="portfolio1">
+                            <span class="desktop">Смотреть все</span>
+                            <span class="mobile">Смотреть все</span>
+                        </label>
+                    </div>
+                </li>
+                <li class="portfolio__filter-item">
+                    <div class="portfolio__filter-item-wrap">
+                        <p class="portfolio__filter-item-name mobile">
+                            Вид сборных съемок:
+                        </p>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">Выездные съемки</span>
+                            <span class="mobile">Выездные</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">стандартный</span>
+                            <span class="mobile">стандартный</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">asos каталог</span>
+                            <span class="mobile">asos</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">имиджевые съемки</span>
+                            <span class="mobile">имиджевые</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">Стрит съемка</span>
+                            <span class="mobile">Стрит</span>
+                        </label>
+                        <label class="portfolio__filter-label desktop">
+                            <input type="checkbox" name="portfolio2">
+                            <span class="desktop">Смотреть все</span>
+                            <span class="mobile">Смотреть все</span>
+                        </label>
+                    </div>
+                </li>
+                <li class="portfolio__filter-item">
+                    <div class="portfolio__filter-item-wrap">
+                        <p class="portfolio__filter-item-name mobile">
+                            Раздел:
+                        </p>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio3">
+                            <span class="desktop">съемка в интерьере</span>
+                            <span class="mobile">в интерьере</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio3">
+                            <span class="desktop">съемка с цветными стеночками</span>
+                            <span class="mobile">с цветными стеночками</span>
+                        </label>
+                        <label class="portfolio__filter-label">
+                            <input type="checkbox" name="portfolio3">
+                            <span class="desktop">съемка в белой плоскости</span>
+                            <span class="mobile">в белой плоскости</span>
+                        </label>
+                        <label class="portfolio__filter-label desktop">
+                            <input type="checkbox" name="portfolio3">
+                            <span class="desktop">Смотреть все</span>
+                            <span class="mobile">Смотреть все</span>
+                        </label>
+                    </div>
+                </li>
+                <li class="portfolio__filter-item mobile">
+                    <button class="portfolio__filter-hide">
+                        <span class="filter-open">Свернуть</span>
+                        <span class="filter-hide">Развернуть фильтры</span>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.49414 6L5.49414 2L9.49414 6" stroke="#242424" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <div class="example__wrapper">
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman1.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman2.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman3.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman4.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman5.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman6.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman7.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman8.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman1.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman2.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman3.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman4.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman5.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman6.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman7.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+                <div class="product-model example-open">
+                    <div class="product-model__image">
+                        <img src="./img/womans/woman8.png" alt="">
+                    </div>
+                    <div class="product-model__name">Каталог в стиле asos</div>
+                    <div class="modal modal-example">
+                        <div class="modal-example__content-wrap">
+                            <div class="modal-example__content">
+                                <div class="modal-example__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img3.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img4.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img1.webp" alt="">
+                                        </div>
+                                        <div class="modal-example__slide swiper-slide">
+                                            <img src="img/modal-example-img2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-example__footer">
+                                    <div class="modal-example__thumb-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img3.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img4.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img1.webp" alt="">
+                                            </div>
+                                            <div class="modal-example__thumb-slide swiper-slide">
+                                                <img src="img/modal-example-img2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination modal-example__pagination">
+                                        <div class="pagination__fraction modal-example__fraction"></div>
+                                        <div class="pagination__arrows modal-example__pagination-arrows">
+                                            <div class="pagination__prev modal-example__prev">
+                                                <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="pagination__next modal-example__next">
+                                                <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="modal-example__title">
+                                Каталог в стиле asos
+                            </p>
+                        </div>
+                        <button type="button" class="modal__close" data-fancybox-close></button>
+                    </div>
+                </div>
+            </div>
+            <button class="portfolio__btn">Загрузить еще</button>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__box">
+                <p class="feedback__sub-title">
+                    мы подберем для вас удобную дату съемок
+                </p>
+                <p class="feedback__title">
+                    Оставьте заявку
+                </p>
+                <p class="feedback__text">
+                    НАШ МЕНЕДЖЕР ПЕРЕЗВОНИТ ВАМ, ЧТОБЫ ОБСУДИТЬ СТОИМОСТЬ И УСЛОВИЯ СЪЁМКИ
+                </p>
+                <form class="feedback__form">
+                    <div class="feedback__form-item">
+                        <p class="feedback__form-name">
+                            введите имя
+                        </p>
+                        <label class="feedback__form-label">
+                            <input placeholder="Например: Алексей" type="text" class="feedback__input">
+                        </label>
+                    </div>
+                    <div class="feedback__form-item">
+                        <p class="feedback__form-name">
+                            введите номер телефона
+                        </p>
+                        <label class="feedback__form-label">
+                            <input placeholder="+ 7" type="text" class="feedback__input">
+                        </label>
+                    </div>
+                    <button class="feedback__submit link feedback-complete">
+                        <span>отправить</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+@@include('./template/footer.html')
+
+
+
+</body>
+
+</html>

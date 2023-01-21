@@ -1,6 +1,6 @@
 .card-news {
-    margin-top: 19.5rem;
-    padding-bottom: 20rem;
+    margin-top: 19.2rem;
+    padding-bottom: 22rem;
     .container {
         width: 162rem;
     }
@@ -16,8 +16,8 @@
             font-size: 5rem;
             line-height: 100%;
             text-transform: uppercase;
-            padding-left: 14.4rem;
-            margin-bottom: 3rem;
+            padding-left: 15.4rem;
+            margin-bottom: 3.5rem;
             &::before {
                 position: absolute;
                 content:'';
@@ -35,14 +35,15 @@
             font-size: 1.8rem;
             line-height: 161%;
             letter-spacing: 0.02em;
-            padding-left: 14.4rem;
+            padding-left: 15.4rem;
             color: #969696;
         }
     }
 
     &__text {
-        width: 89.1rem;
+        width: 85.7rem;
         margin: 0 auto;
+        margin-left: 42rem;
         strong {
             display: block;
             font-family: 'EuropeExt';
@@ -98,6 +99,10 @@
 
     &__inner {
         display: flex;
+
+        .card-news__text {
+            margin-left: 4.2rem;
+        }
     }
     &__note {
         width: 36.9rem;
