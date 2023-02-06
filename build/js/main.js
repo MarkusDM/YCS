@@ -79,7 +79,7 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
     wrapperClass: 'shooting__swiper-wrapper',
     slideClass: 'shooting__slide ',  
     slidesPerView: 1,
-    
+   
     
     effect: 'fade',
     fadeEffect: {
@@ -285,21 +285,7 @@ const entrySwiperTwo = new Swiper('.entry__swiper-two', {
 
 
 
- const typesModelNav = new Swiper('.types-model__nav', {
-  wrapperClass: 'types-model__nav-wrapper',
-  slideClass: 'types-model__nav-slide ',  
-  slidesPerView: 3,
-  direction: 'vertical',
-  watchSlidesProgress: true,
-  freeMode: true,
 
-  pagination: {
-      
-      clickable: true,
-     
-    }
-
-});
 
 const swiperTypesModel = new Swiper('.types-model__swiper', {
   wrapperClass: 'types-model__swiper-wrapper',
@@ -322,10 +308,6 @@ const swiperTypesModel = new Swiper('.types-model__swiper', {
   },
 
 
-  thumbs: {
-      swiper: typesModelNav
-    }
-  
 
 });
 
@@ -496,3 +478,7 @@ ymaps.ready(function () {
       .add(myPlacemark)
       .add(myPlacemarkWithContent);
 });
+
+
+
+

@@ -237,7 +237,16 @@
         color: #FFFFFF;
         padding-top: 4.25rem;
         border-top: 1.5px solid rgba(255, 255, 255, 0.6);
+        text-align: right;
+        &:hover {
 
+            span {
+                &::before {
+                    transform: translateX(0.4rem);
+                }
+            }
+			
+		  }
         span {
             padding-right: 5.4rem;
             position: relative;
@@ -251,6 +260,7 @@
                 background-size: 100% 100%;
                 right: 0;
                 top: 32%;
+                transition: transform .5s ease;
             }
         }
     }
@@ -363,8 +373,8 @@
 
     &__pagination {
         position: absolute;
-        right: 14.8rem;
-        bottom: 40rem;
+       left: 15rem;
+        bottom: 5rem;
         z-index: 4;
     }
 

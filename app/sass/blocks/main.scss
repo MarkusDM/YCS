@@ -27,18 +27,53 @@
         text-transform: uppercase;
         color: #FFFFFF;
         position: relative;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: 10.5rem;
+        transition: all .2s;
+        &:hover {
+            transition: all .2s;
+            color: #242424;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            &::after {
+                left: 0;
+              
+                transition: left  2s;
+            }
+
+            &::before {
+                transition: all .2s;
+                background-image: url(../img/icon/arrowblacklink.svg);
+                right: 2rem;
+            }
+        }
         &::before {
             position: absolute;
             content:'';
             width: 3.4rem;
             height: 1.2rem;
-            top: 0.42rem;
+            top: 50%;
+            transform: translate(0, -50%);
             right: 0;
             background-image: url(../img/icon/arrowwhitenext.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
+            transition: all .2s;
         }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -200%;
+            width: 200%;
+            z-index: -1;
+            height: 100%;
+            background: #EAECED;
+            transition: left  2s;
+          }
     }
 
 
@@ -48,7 +83,7 @@
         border-bottom: 1.5px solid rgba(255, 255, 255, 0.6);
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 4rem;
+       
     }
 
     &__slide-title-text{

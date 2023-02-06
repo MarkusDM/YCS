@@ -4,14 +4,24 @@
     width: 23.7rem;
     height: 29.9rem;
     position: relative;
+    &:hover {
+        .model__image {
+           img {
+            transform: scale(1.2);
+            transition: 1s;
+           }
+        }
+    }
     &__image {
         width: 100%;
         height: 100%;
         position: absolute;
         z-index: -1;
+        overflow: hidden;
         img {
             width: 100%;
             height: 100%;
+            transition: 1s;
         }
     }
 

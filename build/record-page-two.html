@@ -153,37 +153,41 @@
                                 <!-- slide -->
                             </div>
                         </div>
-                        <div class="pagination card-model__pagination">
-                            <div class="pagination__fraction card-model__fraction">
-            
-                            </div>
-                            <div class="pagination__arrows card-model__pagination-arrows">
-                                <div class="pagination__prev card-model__prev">
-                                    <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
-                                        </svg>
-                                        
-                                </div>
-                                <div class="pagination__next card-model__next">
-                                    <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
-                                    </svg>
-                                        
-                                </div>
-                            </div>
-                        </div>
+                     
                         <div class="card-model__right-inner">
                             <div class="card-model__date">
                                 <div class="card-model__date-title">Дата записи</div>
-                                <div class="card-model__date-table">
-                                    <strong>10.10.22</strong>
-                                    <span>среда</span>
+                                <div class="card-model__date-table-wrapper">
+                                    <div class="card-model__date-table">
+                                        <strong>10.10.22</strong>
+                                        <span>среда</span>
+                                    </div>
+                                   
                                 </div>
                             </div>
                             <!-- date -->
                             <div class="card-model__right-text">
                                 <span>Комментарий продакшена</span>
                                 <strong>хорошо смотрятся леггинсы, красивая улыбка</strong>
+                            </div>
+                            <div class="pagination card-model__pagination">
+                                <div class="pagination__fraction card-model__fraction">
+                
+                                </div>
+                                <div class="pagination__arrows card-model__pagination-arrows">
+                                    <div class="pagination__prev card-model__prev">
+                                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                                            </svg>
+                                            
+                                    </div>
+                                    <div class="pagination__next card-model__next">
+                                        <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                                        </svg>
+                                            
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,13 +225,13 @@
                         <!-- inner -->
                     </div>
                     <div class="record__form-wrap">
-                        <div class="record__form-inner">
+                        <!-- <div class="record__form-inner">
                             <label for="">количество артикулов на съемку</label>
                             <input type="text" placeholder="Количество артикулов">
                             <span class="record__form-crib">Кол-во свободных артикулов: <b>32</b></span>
-                        </div>
-                        <!-- inner -->
-                        <div class="record__form-inner">
+                        </div> -->
+                        
+                        <div class="record__form-inner record__form-inner--radio">
                             <label for="">Присутствие на съемке</label>
                             <div class="record__form-radio">
                                 <input id="radio-1" type="radio" name="radio" value="1" checked>
@@ -302,12 +306,6 @@
                         <div class="record-form__price">
                             1800 <span><b>₽</b>/видео</span>
                         </div>
-                        <div class="record-form__video">
-                            <img src="./img/record/record1.png" alt="">
-                            <div class="record-form__video-play">
-                                <img src="./img/options/tringle.svg" alt="">
-                            </div>
-                        </div>
                         <div class="record-form__block">
                             <div class="record-form__block-text">
                                 выберите количество<br> видео
@@ -321,6 +319,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="record-form__video">
+                            <img src="./img/record/record1.png" alt="">
+                            <div class="record-form__video-play">
+                                <img src="./img/options/tringle.svg" alt="">
+                            </div>
+                        </div>
+                        
                     </article>
                     <article class="record-form">
                         <div class="record__checkbox">
@@ -330,12 +335,6 @@
                         <div class="record-form__price">
                             1800 <span><b>₽</b>/видео</span>
                         </div>
-                        <div class="record-form__video">
-                            <img src="./img/record/record2.png" alt="">
-                            <div class="record-form__video-play">
-                                <img src="./img/options/tringle.svg" alt="">
-                            </div>
-                        </div>
                         <div class="record-form__block">
                             <div class="record-form__block-text">
                                 выберите количество<br> видео
@@ -349,6 +348,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="record-form__video">
+                            <img src="./img/record/record2.png" alt="">
+                            <div class="record-form__video-play">
+                                <img src="./img/options/tringle.svg" alt="">
+                            </div>
+                        </div>
+                      
                     </article>
                     <article class="record-form">
                         <div class="record__checkbox">
@@ -358,12 +364,6 @@
                         <div class="record-form__price">
                             1800 <span><b>₽</b>/видео</span>
                         </div>
-                        <div class="record-form__video">
-                            <img src="./img/record/record3.png" alt="">
-                            <div class="record-form__video-play">
-                                <img src="./img/options/tringle.svg" alt="">
-                            </div>
-                        </div>
                         <div class="record-form__block">
                             <div class="record-form__block-text">
                                 выберите количество<br> видео
@@ -377,6 +377,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="record-form__video">
+                            <img src="./img/record/record3.png" alt="">
+                            <div class="record-form__video-play">
+                                <img src="./img/options/tringle.svg" alt="">
+                            </div>
+                        </div>
+                       
                     </article>
                 </div>
                 <!-- wrapper -->
@@ -396,7 +403,39 @@
                     </div>
                    
                 </form>
-                <div class="record__select">
+                <div class="record__locations-title">
+                    Выберите локацию:
+                </div>
+                <div class="record__locations">
+                    <div class="record__location">
+                        <div class="record__checkbox">
+                            <input class="record__custom-checkbox" type="checkbox" id="color-14" name="checkbox" value="">
+                            <label for="color-14">На циклораме</label>
+                        </div>
+                        <div class="record__location-image">
+                            <img src="./img/record/location.png" alt="">
+                        </div>
+                    </div>
+                    <div class="record__location">
+                        <div class="record__checkbox">
+                            <input class="record__custom-checkbox" type="checkbox" id="color-13" name="checkbox" value="">
+                            <label for="color-13">На циклораме и фонах</label>
+                        </div>
+                        <div class="record__location-image">
+                            <img src="./img/record/location.png" alt="">
+                        </div>
+                    </div>
+                    <div class="record__location">
+                        <div class="record__checkbox">
+                            <input class="record__custom-checkbox" type="checkbox" id="color-12" name="checkbox" value="">
+                            <label for="color-12">На циклораме и фонах</label>
+                        </div>
+                        <div class="record__location-image">
+                            <img src="./img/record/location.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="record__select">
                     <span>Выберите локацию</span>
                     <div class="select">
                         <input class="select-input" type="hidden" name="">
@@ -406,7 +445,7 @@
                             <li class="select-item"> и фонах</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                
                 <div class="record__price-block">
                     <div class="record__total"><span>Итоговая сумма:</span>1800<b>₽</b></div>

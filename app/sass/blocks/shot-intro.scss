@@ -1,11 +1,11 @@
 .shot-intro {
   margin-bottom: 18rem;
   background-color: #EAECED;
-
+  margin-top: -9rem;
   .main {
     &__slide-content-image {
-      top: 18rem;
-      left: calc(50% + 10rem);
+      top: 19rem;
+      left: calc(54% + 10rem);
       width: 60rem;
       height: 67rem;
       transform: translateX(-50%);
@@ -17,9 +17,16 @@
       }
     }
 
+    &__link {
+      &::after {
+        background: #969696;
+      }
+    }
+
     &__slide-content-inner {
       @media(min-width: 48.01em) {
-        padding-top: 71rem;
+        padding-top: 67rem;
+        padding-bottom: 3rem;
       }
     }
 
@@ -93,7 +100,7 @@
   }
 
   &__form-title {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
     font-family: 'EuropeExt';
     font-weight: 700;
     font-size: 3.5rem;
@@ -157,9 +164,16 @@
         padding-bottom: 8rem;
       }
 
+
+      &__link {
+        &::before {
+          top: 6.1rem;
+        }
+      }
+
       &__slide-content-image {
-        top: 26rem;
-        left: 50%;
+        top: 32rem;
+        left: 58%;
         width: 46.8rem;
         height: 64rem;
         transform: translateX(-50%);
@@ -222,4 +236,6 @@
       margin-top: 6.4rem;
     }
   }
+
+ 
 }

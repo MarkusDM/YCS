@@ -3,30 +3,15 @@
     height: 44rem;
     position: relative;
     display: block;
-    background: #EAECED;
     &:hover {
         .publication__image {
-            visibility: visible;
-            transition-delay: 0s;
-            opacity: 1;
-        }
-
-        .publication__text {
-            visibility: visible;
-            transition-delay: 0s;
-            opacity: 1;
-        }
-
-        .publication__title {
-            transition: color 0.4s;
-            color: #FFFFFF;
-        }
-
-        .publication__date {
-            transition: color 0.4s;
-            color: #fff;
+           img {
+            transform: scale(1.05);
+            transition: 1s;
+           }
         }
     }
+   
     &__title {
         font-family: 'EuropeExt',sans-serif;
         font-style: normal;
@@ -36,6 +21,7 @@
         text-transform: uppercase;
         width: 31rem;
         transition: color 0.4s;
+        color: #FFFFFF;
         
     }
 
@@ -54,12 +40,12 @@
         width: 100%;
         height: 100%;
         top: 0;
-        opacity: 0;
-        transition: opacity 0.4s, visibility 0s linear 0.4s;
-        visibility: hidden;
+        opacity: 1;
+        overflow: hidden;
         img {
             width: 100%;
             height: 100%;
+            transition: 1s;
         }
     }
 
@@ -72,9 +58,7 @@
         color: #FFFFFF;
         margin-top: 3rem;
         width: 30.8rem;
-        opacity: 0;
-        transition: opacity 0.4s, visibility 0s linear 0.4s;
-        visibility: hidden;
+       display: none;
     }
 
     &__date {
@@ -84,9 +68,9 @@
         font-size: 1.8rem;
         line-height: 161% ;
         letter-spacing: 0.02em;
-        color: #969696;
+        color: #FFFFFF;
         display: block;
         margin-top: auto;
-        transition: color 0.4s;
+       
     }
 }

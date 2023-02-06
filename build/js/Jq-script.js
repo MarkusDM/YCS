@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
+   
 
+    $(".entry__btn").hover(function() {
+        $(".pagination").addClass("active-pag");
+    }, function() {
+      $(".pagination").removeClass("active-pag");
+    });
 
     $(".header__burger").on('click', function() {
         $(".header__nav").toggleClass("open-nav");
@@ -56,14 +62,17 @@ $(document).ready(function () {
      });
     
     
-     $('.catalog__filter-btn').click(function(){
-        $('.catalog-filter').addClass('active');
+    
+
+     $(".catalog__filter-btn > span").on('click', function() { 
+        $('.catalog-filter').toggleClass('active');
+
      });
     
     
-     $('.catalog-filter__btn-cancellation').click(function(){
-        $('.catalog-filter').removeClass('active');
-     });
+    //  $('.catalog-filter__btn-cancellation').click(function(){
+    //     $('.catalog-filter').removeClass('active');
+    //  });
 
 
 
@@ -134,6 +143,7 @@ $(document).ready(function() {
 
 
 
+
 $('.record__checkbox > input[name=checkbox]').change(function () {
     $(this).parents('.record-form').toggleClass('active');
     $('.record__checkbox > input[name=checkbox]').not(this).parent('.record-form').removeClass('active');
@@ -148,3 +158,13 @@ $('.record__checkbox > input[name=checkbox]').change(function () {
 
 
 
+  $('.types-model__nav-text').click(function() {
+    var id = $(this).attr('data-tab'),
+        content = $('.types-model__js[data-tab="'+ id +'"]');
+    
+    $('.types-model__nav-text.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+    
+    $('.types-model__js.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+ });

@@ -28,11 +28,10 @@
   }
 
   &__slide-title {
-    margin-bottom: 1.6rem;
-    font-family: 'EuropeExt';
-    font-weight: 700;
+    margin-bottom: 1.7rem;
+    font-weight: 600;
     font-size: 3.5rem;
-    line-height: 4.5rem;
+    line-height: 130%;
     text-transform: uppercase;
   }
 
@@ -42,6 +41,7 @@
     font-size: 1.8rem;
     line-height: 2.9rem;
     color: #969696;
+    letter-spacing: 0.02em;
   }
 
   &__img-box {

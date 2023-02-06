@@ -7,9 +7,17 @@
         padding-right: 15rem;
     }
 
+    &__nav {
+        width: 47.4rem;
+        height: auto;
+        margin-right: 4rem;
+       
+    }
+
     &__wrapper {
         display: flex;
         align-self: stretch;
+        align-items: center;
     }
 
     &__nav-text {
@@ -21,7 +29,9 @@
         text-transform: uppercase;
         color: #969696;
         padding-left: 15.8rem;
+        cursor: pointer;
         position: relative;
+        margin-bottom: 2rem;
         &::before {
             content: '';
             position: absolute;
@@ -38,22 +48,47 @@
        
     }
 
-    .swiper-slide-thumb-active {
-        .types-model__nav-text {
-            
+    &__nav-text.active{
             color: #000000;
-            
             &::before {
                 transform: translateY(-2px);
                 background-color: #242424;
                 
             }
     
-        }
+    }
+
+    &__js {
+        display: none;
+    }
+    &__js.active {
+        display: block;
     }
 
     &__swiper {
         width: 149.8rem;
+        display: none;
+    }
+
+    
+
+    &__wrap {
+        width: 149.8rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 6.2rem;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 0.1rem;
+            background: rgba(189, 191, 197, 0.4);
+            height: 30%;
+            
+            top: 45%;
+            transform: translateY(50% ,-45%);
+            left: 0;
+        }
     }
 
     &__slide-content {
@@ -119,19 +154,9 @@
 
  
 
-    &__nav {
-        width: 47.4rem;
-        height: auto;
-        margin-right: 3.5rem;
-        margin-top: 22.5rem;
-    }
+  
 
-    &__nav-slide {
-        height: fit-content!important;
-        cursor: pointer;
-        max-height: fit-content!important;
-        padding-bottom: 2rem;
-    }
+  
 
     &__price {
         font-style: normal;
