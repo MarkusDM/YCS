@@ -9,7 +9,8 @@ $(document).ready(function () {
     });
 
     $(".header__burger").on('click', function() {
-        $(".header__nav").toggleClass("open-nav");
+        $(".header__nav-mob").toggleClass("open-nav");
+        $(".header").toggleClass("header--active");
         // $("main").toggleClass("main-none")
     });
     

@@ -50,14 +50,14 @@
 
     &__date-table-wrapper {
         display: flex;
-        flex-direction: column;
+       
 
         .card-model__date-table {
-            border-bottom: none; 
+            margin-right: 1rem;
         }
 
         .card-model__date-table:last-child {
-            border-bottom: 1.5px solid #242424;
+            margin-right: 0rem;
         }
     }
     &__title {
@@ -186,12 +186,13 @@
 
     &__right-inner {
         display: flex;
+        justify-content: space-between;
         margin-top: 3.2rem;
     }
 
     
     &__date {
-        margin-right: 18.14rem;
+        
     }
     &__date-title {
         font-style: normal;
