@@ -1537,11 +1537,6 @@ input[type="number"] {
     left: -1rem;
     top: 2rem; }
 
-.model-w {
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-}
 .model {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -6,6 +6,7 @@
   "dependencies": {
     "air-datepicker": "^3.3.3",
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "jquery-zoom": "^1.7.21"
   },
   "devDependencies": {
