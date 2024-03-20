@@ -164,7 +164,9 @@
         font-size: 2.2rem;
         line-height: 150% ;
         color: #242424;
-
+        max-width: 29rem;
+        min-width: 29rem;
+        text-align: left;
         span {
             font-weight: 400;
             color: #969696;

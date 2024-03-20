@@ -76,9 +76,16 @@
     line-height: 2.8rem;
     letter-spacing: .02em;
     cursor: pointer;
-
+    &:hover {
+                
+      &::placeholder {
+          color: #242424;
+          transition: color 0.2s;
+      }
+    }
     &::placeholder {
       color: rgba(82, 82, 82, 0.2);
+      transition: color 0.2s;
     }
   }
 

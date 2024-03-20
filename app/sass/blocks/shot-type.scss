@@ -8,11 +8,17 @@
   &__slider {
   }
 
+  .mobile {
+    display: none;
+  }
+
   &__wrapper {
+    height: auto;
     @media (min-width: 48.01em) {
       display: flex;
       flex-wrap: wrap;
       gap: 4rem;
+      height: auto;
     }
   }
 

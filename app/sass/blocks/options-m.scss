@@ -74,6 +74,61 @@
         position: relative;
     }
 
+    video::-webkit-media-controls {
+        display: none;
+      }
+      
+      /* Could Use thise as well for Individual Controls */
+      video::-webkit-media-controls-play-button {}
+      
+      video::-webkit-media-controls-volume-slider {}
+      
+      video::-webkit-media-controls-mute-button {}
+      
+      video::-webkit-media-controls-timeline {}
+      
+      video::-webkit-media-controls-current-time-display {}
+
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+        background: rgba(250, 250, 250, 0.67);
+        border: 0.398936px solid #FFFFFF;
+        backdrop-filter: blur(3.98936px);
+        width: 8.3rem;
+        height: 8.3rem;
+        z-index: 4;
+      }
+    
+      .plyr__controls {
+         display: none;
+      }
+    
+      .plyr__control svg {
+        fill: #1D1D1D;
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 50%;
+        transform: translate(-50%,0%);
+      }
+    
+      .plyr--video {
+        width: 75.443rem;
+        height: 50rem;
+        display: block;
+        overflow: hidden;
+         
+      }
+    
+      .plyr__poster {
+        background-size: cover;
+        z-index: 4;
+      }
+
+      .plyr__video-wrapper {
+        width: 99.9%;
+      }
+    
+    
+
     &__video-play {
         display: flex;
         justify-content: center;

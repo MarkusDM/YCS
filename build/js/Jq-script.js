@@ -1,6 +1,32 @@
-$(document).ready(function () {
 
-   
+$(document).ready(function () {
+    
+    // $('.header__item').hover(function() {
+    //     $(this).toggleClass('active');
+    //     var isHovered = $(this).is(":hover");
+    //     if (isHovered) {
+    //       $(this).children('.header__down').stop().slideDown(300);
+    //     } else {
+    //       $(this).children('.header__down').stop().slideUp(300);
+    //     }
+    // });
+
+    $('.header__item').hover(function () {
+       
+             clearTimeout($.data(this,'timer'));
+        
+             $('.header__down',this).stop(true,true).slideDown(400);
+       
+          }, function () {
+       
+            $.data(this,'timer', setTimeout($.proxy(function() {
+       
+              $('.header__down',this).stop(true,true).slideUp(400);
+       
+            }, this), 100));
+       
+    });
+        
 
     $(".entry__btn").hover(function() {
         $(".pagination").addClass("active-pag");
@@ -8,14 +34,14 @@ $(document).ready(function () {
       $(".pagination").removeClass("active-pag");
     });
 
-    $(".header__burger").on('click', function() {
+    $(".header__bottom-mob-burger").on('click', function() {
         $(".header__nav-mob").toggleClass("open-nav");
         $(".header").toggleClass("header--active");
         // $("main").toggleClass("main-none")
     });
     
-    $(".header__burger").on('click', function() {
-        $(".header__burger").toggleClass("open");
+    $(".header__bottom-mob-burger").on('click', function() {
+        $(".header__bottom-mob-burger").toggleClass("open");
         // $("main").toggleClass("main-none")
     });
     
@@ -60,13 +86,19 @@ $(document).ready(function () {
         
         $('.catalog-filter__content.active').removeClass('active'); // 3
         content.addClass('active'); // 4
-     });
+    });
     
     
     
 
      $(".catalog__filter-btn > span").on('click', function() { 
         $('.catalog-filter').toggleClass('active');
+
+     });
+
+
+     $(".model__like").on('click', function() { 
+        $(this).toggleClass('active');
 
      });
     
@@ -119,6 +151,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
+    
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
@@ -138,34 +171,152 @@ $(document).ready(function() {
         return false ;
         
     });
+
+
+ 
+
+
+    $('.record__checkbox > input[name=checkbox]').change(function () {
+        $(this).parents('.record-form').toggleClass('active');
+        $('.record__checkbox > input[name=checkbox]').not(this).parent('.record-form').removeClass('active');
+      });
+    
+    
+      $('.record__checkbox > input[name=checkbox]').change(function () {
+        $(this).parents('.record__photo-article').toggleClass('active');
+        $('.record__checkbox > input[name=checkbox]').not(this).parent('.record__photo-article').removeClass('active');
+      });
+    
+    
+    
+    
+      $('.types-model__nav-text').click(function() {
+        var id = $(this).attr('data-tab'),
+            content = $('.types-model__js[data-tab="'+ id +'"]');
+        
+        $('.types-model__nav-text.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+        
+        $('.types-model__js.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+     });
+
+
+     $('.restore-modal__close').click(function() {
+       
+        $('.restore-modal').removeClass('active'); // 3
+        
+     });
+
+
+     $('.restore-open').click(function() {
+       
+        $('.restore-modal').addClass('active'); // 3
+        
+     });
+    
+
+     $('.record__photo-input-file input[type=file]').on('change', function(){
+        let file = this.files[0];
+        $(this).next().html(file.name);
+    });
+
+
+
+    $(".add-modal-open").click(function() {
+        $(".add-popup").addClass("active");
+       
+    });
+
+    $(".add-popup__close").click(function() {
+        $(".add-popup").removeClass("active");
+       
+    });
+
+
+
+    $(".cancellation-modal-open").click(function() {
+        $(".cancellation-modal").addClass("active");
+       
+    });
+
+    $(".cancellation-modal__close").click(function() {
+        $(".cancellation-modal").removeClass("active");
+       
+    });
+
+
+    $(".tt-modal-open").click(function() {
+        $(".tt-modal").addClass("active");
+       
+    });
+
+    $(".tt-modal__close").click(function() {
+        $(".tt-modal").removeClass("active");
+       
+    });
+ 
 });
 
 
+const players = Array.from(document.querySelectorAll('.web-video')).map((p) => new Plyr(p));
 
 
 
-
-$('.record__checkbox > input[name=checkbox]').change(function () {
-    $(this).parents('.record-form').toggleClass('active');
-    $('.record__checkbox > input[name=checkbox]').not(this).parent('.record-form').removeClass('active');
-  });
-
-
-  $('.record__checkbox > input[name=checkbox]').change(function () {
-    $(this).parents('.record__photo-article').toggleClass('active');
-    $('.record__checkbox > input[name=checkbox]').not(this).parent('.record__photo-article').removeClass('active');
+const player = new Plyr('.web-video', {
+    volume: 1,
   });
 
 
 
+//этот код в script.js
+$(document).ready(function(){
+    $(":input").inputmask();
+    $(".phone").inputmask({
+      mask: "+7(999) 999-99-99",
+      clearIncomplete: true //проверка на заполненность 
+    });
+    $('.email').inputmask({
+      mask: "*{1,20}[.*{1,20}]@*{1,20}.*{2,4}",
+      greedy: false,
+      clearIncomplete: true,
+      onBeforePaste: function (pastedValue, opts) {
+        pastedValue = pastedValue.toLowerCase();
+        return pastedValue.replace("mailto:", "");
+      },
+      definitions: {
+        '*': {
+          validator: "[0-9A-Za-z-а-я-_]",
+          casing: "lower"
+        }
+      }
+    }
+    );
+  });
+  
 
-  $('.types-model__nav-text').click(function() {
-    var id = $(this).attr('data-tab'),
-        content = $('.types-model__js[data-tab="'+ id +'"]');
-    
-    $('.types-model__nav-text.active').removeClass('active'); // 1
-    $(this).addClass('active'); // 2
-    
-    $('.types-model__js.active').removeClass('active'); // 3
-    content.addClass('active'); // 4
- });
+
+
+  $(document).on(
+	'change',
+	'.record__custom-checkbox-pers > input[type=checkbox]',
+	function () {
+		var $this = $(this),
+			$chks = $(document.getElementsByName(this.name)),
+			$all = $chks.filter('.chk-all');
+
+		if ($this.hasClass('chk-all')) {
+			$chks.prop('checked', $this.prop('checked'));
+		} else
+			switch ($chks.filter(':checked').length) {
+				case +$all.prop('checked'):
+					$all.prop('checked', false).prop('indeterminate', false);
+					break;
+				case $chks.length - !!$this.prop('checked'):
+					$all.prop('checked', true).prop('indeterminate', false);
+					break;
+				default:
+					$all.prop('indeterminate', true);
+			}
+	},
+);

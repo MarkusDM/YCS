@@ -11,6 +11,10 @@
        
     }
 
+    &__swiper-wrapper {
+        height: auto;
+    }
+
     &__mob {
         display: none;
     }
@@ -21,7 +25,7 @@
         font-family: 'EuropeExt' ,sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         line-height: 2.5rem;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -31,20 +35,20 @@
         align-items: center;
         overflow: hidden;
         height: 10.5rem;
-        transition: all .2s;
+        transition: 2s;
         &:hover {
-            transition: all .2s;
+            transition: 2s;
             color: #242424;
             padding-left: 2rem;
             padding-right: 2rem;
             &::after {
                 left: 0;
               
-                transition: left  2s;
+                transition: left  1s;
             }
 
             &::before {
-                transition: all .2s;
+                transition: 2s;
                 background-image: url(../img/icon/arrowblacklink.svg);
                 right: 2rem;
             }
@@ -60,7 +64,7 @@
             background-image: url(../img/icon/arrowwhitenext.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            transition: all .2s;
+            transition: 2s;
         }
 
         &::after{
@@ -72,7 +76,7 @@
             z-index: -1;
             height: 100%;
             background: #EAECED;
-            transition: left  2s;
+            transition: left  0.5s;
           }
     }
 
@@ -126,7 +130,7 @@
         padding-left: 15rem;
         padding-right: 15rem;
         padding-bottom: 10rem;
-        padding-top: 65.1rem;
+        padding-top: 52.1rem;
     }
 
     &__slide-content-image {

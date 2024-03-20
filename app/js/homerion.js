@@ -25,7 +25,7 @@ $(document).ready(function () {
         },
 
         on: {
-            beforeInit: function (e) {
+            afterInit: function (e) {
                 if ($(window).width() > 768) {
                     e.destroy();
                 }
@@ -49,7 +49,7 @@ $(document).ready(function () {
         },
 
         on: {
-            beforeInit: function (e) {
+            afterInit: function (e) {
                 if ($(window).width() > 768) {
                     e.destroy();
                 }
@@ -68,7 +68,7 @@ $(document).ready(function () {
         },
 
         on: {
-            beforeInit: function (e) {
+            afterInit: function (e) {
                 if ($(window).width() > 768) {
                     e.destroy();
                 }
@@ -92,25 +92,55 @@ $(document).ready(function () {
     $('.modal-example').each(function () {
         let thumb = new Swiper($(this).find('.modal-example__thumb-slider')[0], {
             speed: 500,
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: rem(2),
+            breakpoints: {
+
+                748: {
+                 
+                  slidesPerView: 5,
+                 
+            
+            
+                },
+            }
+            
         });
 
         new Swiper($(this).find('.modal-example__slider')[0], {
             speed: 500,
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: rem(2.8),
 
             pagination: {
                 el: $(this).find('.modal-example__fraction')[0],
-                type: 'fraction',
-                formatFractionCurrent: addZero,
-                formatFractionTotal: addZero
+                type: 'bullets',
+                clickable: true,
+                    renderBullet: function (index, className) {
+                      return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+                
             },
 
             navigation: {
                 prevEl: $(this).find('.modal-example__prev')[0],
                 nextEl: $(this).find('.modal-example__next')[0],
+            },
+
+            breakpoints: {
+
+                748: {
+                 
+                  slidesPerView: 2,
+
+                  pagination: {
+                    el: $(this).find('.modal-example__fraction')[0],
+                    type: 'fraction',
+                    formatFractionCurrent: addZero,
+                    formatFractionTotal: addZero
+                },
+                
+                },
             },
 
             thumbs: {
@@ -149,7 +179,7 @@ $(document).ready(function () {
     });
 
     // Orders filter
-    $('.orders__filter').length ? $('.orders__filter').css('display', 'flex').hide() : false;
+    $('.orders__filter-btn').hasClass('active') ? $('.orders__filter').css('display', 'flex') : $('.orders__filter').hide();
     $('.orders__filter-btn').click(function () {
         $(this).toggleClass('active');
         $('.orders__filter').slideToggle();
@@ -218,17 +248,17 @@ $(document).ready(function () {
             opts : {}
         });
     });
-    $('.feedback__submit').click(function () {
+    /*$('.feedback__submit').click(function () {
         $.fancybox.close();
-    });
+    });*/
 
-    $('.feedback-complete').click(function () {
+    /*$('.feedback-complete').click(function () {
         $.fancybox.open({
             src  : '.modal-fb-complete',
             type : 'inline',
             opts : {},
         });
-    });
+    });*/
 
     $('.order-complete').click(function () {
         $.fancybox.open({
@@ -250,7 +280,7 @@ $(document).ready(function () {
         });
     });
 
-    $('.reg-complete').click(function () {
+    /*$('.reg-complete').click(function () {
         $.fancybox.close();
 
         $.fancybox.open({
@@ -258,6 +288,6 @@ $(document).ready(function () {
             type : 'inline',
             opts : {},
         });
-    });
+    });*/
 
 });

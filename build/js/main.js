@@ -8,14 +8,14 @@ const mainSwiper = new Swiper('.main__swiper', {
   slidesPerView: 1,
   watchSlidesProgress: true,
   loop: true,
-  freeMode: true,
+
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
-  autoplay: true,
   autoplay: {
-      delay: 7000,
+      delay: 6000,
+      disableOnInteraction: false,
   },
   
 
@@ -33,9 +33,9 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
     fadeEffect: {
       crossFade: true
     },
-    autoplay: true,
     autoplay: {
-        delay: 7000,
+        delay: 6000,
+        disableOnInteraction: false,
     },
 
     pagination: {
@@ -46,16 +46,30 @@ const mainSwiperTwo = new Swiper('.main__swiper-two', {
     },
 
 
-    thumbs: {
-        swiper: mainSwiper
-      }
+   
     
   
  });
 
 
- mainSwiper.params.control = mainSwiperTwo;
- mainSwiperTwo.params.control = mainSwiper;
+
+
+ const swipeAllSliders = (index) => {
+  mainSwiper.slideTo(index);
+  mainSwiperTwo.slideTo(index);
+  
+};
+
+
+mainSwiper.on('slideChange', () => swipeAllSliders(mainSwiper.activeIndex));
+mainSwiperTwo.on('slideChange', () => swipeAllSliders(mainSwiperTwo.activeIndex));
+
+
+//  mainSwiper.controller.control = mainSwiperTwo;
+//  mainSwiperTwo.controller.control = mainSwiper;
+
+//  mainSwiper.params.control = mainSwiperTwo;
+//  mainSwiperTwo.params.control = mainSwiper;
 
 
 
@@ -184,11 +198,13 @@ const modelsSwiper = new Swiper('.models__swiper', {
   wrapperClass: 'models__swiper-wrapper',
   slideClass: 'models__slide',
   speed: 500,
-  
+
   slidesPerView: 2,
   slidesPerGroup: 2,
   grid: {
     rows: 2,
+    fill: 'row',
+
   },
  
 
@@ -206,7 +222,11 @@ const modelsSwiper = new Swiper('.models__swiper', {
      
       slidesPerView: 6,
       slidesPerGroup: 6,
-
+      grid: {
+        rows: 2,
+        fill: 'row',
+    
+      },
 
     },
 
@@ -226,15 +246,30 @@ const entrySwiper = new Swiper('.entry__swiper', {
   speed: 500,
   slidesPerView: 1,
   watchSlidesProgress: true,
-  loop: true,
-  freeMode: true,
+
+ 
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
-  autoplay: true,
+ 
   autoplay: {
-      delay: 7000,
+      delay: 6000,
+      disableOnInteraction: false,
+  },
+
+
+  navigation: {
+    prevEl: '.entry__prev',
+    nextEl: '.entry__next',
+  },
+  
+
+  pagination: {
+    el: ".entry__fraction",
+    type: "fraction",
+    formatFractionCurrent: addZero,
+    formatFractionTotal: addZero
   },
 
 
@@ -249,15 +284,16 @@ const entrySwiperTwo = new Swiper('.entry__swiper-two', {
     slideClass: 'entry__slide-two',
     speed: 500,
     slidesPerView: 1,
-    loop: true,
-    freeMode: true,
+
+  
     effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
-    autoplay: true,
+    
     autoplay: {
-        delay: 7000,
+        delay: 6000,
+        disableOnInteraction: false,
     },
 
 
@@ -279,8 +315,20 @@ const entrySwiperTwo = new Swiper('.entry__swiper-two', {
  });
 
 
- entrySwiper.params.control = entrySwiperTwo;
- entrySwiperTwo.params.control = entrySwiper;
+
+
+ const swipeAllSlidersEntry = (index) => {
+  entrySwiper.slideTo(index);
+  entrySwiperTwo.slideTo(index);
+  
+};
+
+
+entrySwiper.on('slideChange', () => swipeAllSlidersEntry(entrySwiper.activeIndex));
+entrySwiperTwo.on('slideChange', () => swipeAllSlidersEntry(entrySwiperTwo.activeIndex));
+
+
+
 
 
 
@@ -323,18 +371,7 @@ const entrySwiperImage = new Swiper('.entry__image-swiper', {
       delay: 7000,
   },
 
-  navigation: {
-    prevEl: '.entry__prev',
-    nextEl: '.entry__next',
-  },
-  
-
-  pagination: {
-    el: ".entry__fraction",
-    type: "fraction",
-    formatFractionCurrent: addZero,
-    formatFractionTotal: addZero
-  },
+ 
 
 
   breakpoints: {
@@ -477,6 +514,12 @@ ymaps.ready(function () {
   myMap.geoObjects
       .add(myPlacemark)
       .add(myPlacemarkWithContent);
+});
+
+
+
+document.querySelectorAll('.card-model__date-table').forEach((n, i, a) => {
+  n.addEventListener('click', () => a.forEach(m => m.classList.toggle('active', m === n)));
 });
 
 

@@ -52,6 +52,12 @@
   }
 }
 
+.model-w {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
 .fancybox-bg {
   background: rgba(191, 198, 205, 0.29);
   backdrop-filter: blur(1.2rem);
@@ -64,7 +70,7 @@
 @media (max-width: 48em) {
   .modal {
     box-shadow: 1rem 0.8rem 3.2rem rgba(0, 0, 0, 0.1);
-
+  
     &__close {
       right: 3rem;
       top: 3rem;
@@ -74,5 +80,14 @@
 
     &__stage {
     }
+  }
+
+
+}
+
+
+.modal-login {
+  &__login-box {
+    min-width: 100%;
   }
 }

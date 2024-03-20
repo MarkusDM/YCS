@@ -15,6 +15,58 @@
 
         
     }
+
+
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+        background: rgba(250, 250, 250, 0.67);
+        border: 0.398936px solid #FFFFFF;
+        backdrop-filter: blur(3.98936px);
+        width: 8.3rem;
+        height: 8.3rem;
+      }
+    
+      .plyr__controls {
+          display: none;
+      }
+    
+      .plyr__control svg {
+        fill: #1D1D1D;
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 50%;
+        transform: translate(-50%,0%);
+      }
+    
+      .plyr--video {
+        height: 52.1rem;
+        width: 39rem;
+          display: block;
+          
+      }
+
+      .web-video {
+        width: 39rem;
+      }
+
+      .plyr__video-wrapper {
+        // background-size: 100% 100%;
+        // background-color: none!important;
+        // background:none;
+        // background-position: 100% 100%;
+        background-color: var(--plyr-video-background,var(--plyr-video-background,none))!important;
+      }
+    
+      .plyr__poster {
+        background-size: 100% 100%;
+        background-color: none!important;
+        background-position: 100% 100%;
+        background-color: var(--plyr-video-background,var(--plyr-video-background,none));
+        width: 40rem;
+       
+        left: -0.1rem;
+        
+      }
+    
     
     &__link {
         font-family: 'EuropeExt';
@@ -166,6 +218,7 @@
     &__video {
         height: 52.1rem;
         width: 39rem;
+        position: relative;
         img {
             width: 100%;
             height: 100%;
@@ -182,6 +235,10 @@
         overflow: hidden;
         padding-top: 8rem;
         
+    }
+
+    &__swiper-wrapper {
+        height: auto;
     }
 
     &__right-inner {
@@ -216,6 +273,12 @@
         padding-bottom: 2rem;
         width: 25.8rem;
         height: 9.8rem;
+        transition: 0.2s;
+        &:hover {
+            background: rgba(189, 191, 197, 0.4);
+            transition: 0.2s;
+            cursor: pointer;
+        }
 
         strong {
             display: block;
@@ -237,6 +300,12 @@
             text-transform: uppercase;
             color: #969696;
         }
+    }
+
+
+    &__date-table.active {
+        background: rgba(189, 191, 197, 0.4);
+        transition: 0.2s;
     }
 
     &__right-text {
@@ -341,6 +410,19 @@
     &__bullets {
         display: none;
     }
+
+    &__video-video {
+        height: 52.1rem;
+        width: 39rem;
+        position: relative;
+        
+    }
+
+
+
+    
+      
+    
 }
 
 

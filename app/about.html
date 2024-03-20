@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
@@ -26,6 +27,7 @@
                     </p>
                     <p class="about__text">
                         Lorem ipsum dolor sit amet consectetur. Pulvinar donec ultrices nibh pretium odio. Venenatis sed nunc lobortis vitae non in imperdiet rutrum laoreet. Viverra eget id euismod ac mauris accumsan amet a. Augue interdum sit massa sagittis habitant. Lorem ipsum dolor sit amet consectetur. Pulvinar donec ultrices nibh pretium odio. Venenatis sed nunc lobortis vitae non in imperdiet rutrum laoreet. Viverra eget id euismod ac mauris accumsan amet a. Augue interdum sit massa sagittis habitant.
+                        
                     </p>
                     <a href="" class="about__link link">оставить заявку</a>
                 </article>
@@ -33,6 +35,11 @@
                     <img src="img/about-img2.webp" alt="">
                 </div>
             </div>
+            <video class="about__video web-video" data-poster="/img/video1.png" id="player" autoplay controls playsinline>
+                <source src="/path/to/video.mp4"  type="video/mp4"  />
+                <source src="/path/to/video.webm" type="video/webm" />
+               
+            </video>
         </div>
     </section>
     <section class="team">
@@ -40,7 +47,10 @@
             <p class="team__title title">
                 <span>наша</span> команда
             </p>
-            <div class="team__slider swiper">
+            <div class="team__big-image">
+                <img src="./img/greybg.png" alt="">
+            </div>
+            <!-- <div class="team__slider swiper">
                 <div class="swiper-wrapper team__wrapper">
                     <div class="team__item swiper-slide">
                         <div class="team__img-box">
@@ -100,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team__pagination bullet__pagination mobile"></div>
+            <div class="team__pagination bullet__pagination mobile"></div> -->
         </div>
     </section>
     <section class="shot-type">
