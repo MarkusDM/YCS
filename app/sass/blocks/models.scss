@@ -1,6 +1,8 @@
 .models {
     margin-bottom: 15.5rem;
     overflow: hidden;
+    position: relative;
+
     .container {
         width: 162rem;
     }
@@ -13,15 +15,37 @@
     }
 
     &__swiper {
-        width: 166rem;
-        height: 68rem;
+        // width: 166rem;
+        // height: 68rem;
+        overflow: visible;
+
+        @media (max-width: 48em){
+            overflow: hidden;
+            height: 48.8rem;
+        }
+
+        .swiper-wrapper{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 4rem;
+
+            @media (max-width: 48em){
+                gap: 2rem;
+            }
+        }
     }
 
     &__slide {
-        margin-bottom: 4rem;
-       
-       
+        // width: 23.7rem !important;
+        // height: 29.9rem !important;
+
+        // @media (max-width: 48em) {
+        //     height: auto !important;
+        //     width: auto !important;
+        // }
         
+        width: fit-content !important;
+        height: fit-content !important;
     }
 
     &__bullets {
@@ -37,7 +61,16 @@
         top: 2rem;
     }
 
-    
+    // .swiper-wrapper{
+    //     display: grid;
+    //     grid-template-columns: repeat(6, 1fr);
+    //     gap: 4rem;
+    //     height: fit-content;
 
-    
+    //     @media (max-width: 48em) {
+    //         display: flex;
+    //         height: 100%;
+          
+    //     }
+    // }
 }
