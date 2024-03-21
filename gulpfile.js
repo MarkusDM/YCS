@@ -1,15 +1,18 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var rename = require("gulp-rename");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var server = require("browser-sync").create();
-var del = require("del");
-const fileinclude  = require('gulp-file-include');
+import gulp from "gulp";
+import plumber from "gulp-plumber";
+import rename from "gulp-rename";
+import sass from "gulp-sass";
+import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
+import csso from "gulp-csso";
+import { create as createServer } from "browser-sync";
+import del from "del";
+import fileinclude from 'gulp-file-include';
+import sourceMaps from 'gulp-sourcemaps';
+
+const server = createServer();
 
 
 gulp.task("html", function () {
@@ -30,10 +33,13 @@ gulp.task("html", function () {
   gulp.task("css", function () {
     return gulp.src("app/sass/style.scss")
       .pipe(plumber())
+      .pipe(sourceMaps.init())
       .pipe(sass())
+      
       .pipe(postcss([autoprefixer()]))
       .pipe(gulp.dest("build/css"))
       .pipe(csso())
+      .pipe(sourceMaps.write())
       .pipe(rename("style.min.css"))
       .pipe(gulp.dest("build/css"))
       .pipe(server.stream());

@@ -204,7 +204,7 @@ const modelsSwiper = new Swiper('.models__swiper', {
   grid: {
     rows: 2,
     fill: 'row',
-
+  
   },
  
 
@@ -521,7 +521,3 @@ ymaps.ready(function () {
 document.querySelectorAll('.card-model__date-table').forEach((n, i, a) => {
   n.addEventListener('click', () => a.forEach(m => m.classList.toggle('active', m === n)));
 });
-
-
-
-
