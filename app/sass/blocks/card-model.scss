@@ -5,6 +5,39 @@
     .container {
         position: relative;
     }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5.4rem;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
+
+        &.mob{
+            @media (max-width: 48em) {
+                display: block;
+                margin-bottom: 0;
+                position: relative;
+            }
+
+            .card-model__like{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+    }
+
+    &__like{
+        .model__like{
+            position: static;
+        }
+    }
+
     &__wrapper {
         display: flex;
     }
@@ -78,7 +111,6 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #969696;
-        margin-bottom: 5.5rem;
         text-decoration: underline;
         position: relative;
         width: fit-content;
@@ -232,9 +264,7 @@
 
     &__swiper {
         width: 120.5rem;
-        overflow: hidden;
-        padding-top: 8rem;
-        
+        overflow: hidden;        
     }
 
     &__swiper-wrapper {

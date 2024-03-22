@@ -2501,6 +2501,7 @@
 
         .card-model__title {
             display: block;
+            max-width: 70rem;
         }
 
         .card-model__status {
@@ -2695,7 +2696,7 @@
             flex-shrink: 0;
             flex-grow: 0;
             border: 0.15rem solid #242424;
-            border-radius: 0.2rem;
+            border-radius: 0.5rem;
             margin-right: 1.6rem;
             background-repeat: no-repeat;
             background-position: center center;
