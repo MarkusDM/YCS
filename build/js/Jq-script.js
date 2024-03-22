@@ -336,3 +336,11 @@ $(function () {
         notifIco.fadeIn(200)
     })
 })
+
+//удаление модели из избранных
+$('.personal__tab-models-wrapper .model__like').on('click', function () {
+    if($(this).hasClass('active')){
+        let modelCard = $(this).closest('.model-wrapper')
+        modelCard.remove()
+    }
+})

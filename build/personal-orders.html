@@ -56,7 +56,7 @@
                     <span>личный</span> кабинет
                 </p>
                 <div class="personal__tabs">
-                    <label for="personal-form" class="personal__tab active">
+                    <label for="personal-form" class="personal__tab">
                         <span>Личные данные</span>
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
@@ -76,6 +76,12 @@
                     </label>
                     <label for="personal-call" class="personal__tab">
                         <span>Уведомления</span>
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
+                        </svg>
+                    </label>
+                    <label for="personal-request" class="personal__tab active">
+                        <span>Обращения</span>
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
                         </svg>
@@ -108,7 +114,7 @@
                 </div>
             </nav>
             <div class="personal__content">
-                <div class="personal__tab-content form active">
+                <div class="personal__tab-content form">
                     <input id="personal-form" type="radio" name="personal" checked>
                     <button type="button" class="personal__back-link">
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -708,12 +714,17 @@
                 </div>
                 <div class="personal__tab-content likes-order">
                     <input id="personal-likes" type="radio" name="personal">
+                    <button type="button" class="personal__back-link">
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
                     <div class="personal__tab-header">
                         <div class="personal__title-box">
+                            
                             <p class="personal__title title">
-                                <span>избранные</span> модели
-
-                               
+                                <span>избранные</span> модели 
                             </p>
                         </div>
                         <div class="personal__tab-models-wrapper">
@@ -1260,38 +1271,316 @@
                 </div>
                 <div class="personal__tab-content call-personal">
                     <input id="personal-call" type="radio" name="personal">
+                    <button type="button" class="personal__back-link">
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
                     <div class="personal__tab-header">
                         <div class="personal__title-box">
                             <p class="personal__title title">
                                 <span>Настройки</span> уведомлений
-
-                               
                             </p>
                         </div>
                         <div class="personal__tab-wrapper-cheks">
                             <div class="record__checkbox record__custom-checkbox-pers">
-                                <input class="record__custom-checkbox  chk-all" type="checkbox" id="color-1" name="checkbox" value="Выбрать все " >
-                                <label for="color-1">Выбрать все </label>
+                                <input class="record__custom-checkbox  chk-all" type="checkbox" id="notif-1" name="checkbox" value="Выбрать все " >
+                                <label for="notif-1"><span>Выбрать все</span></label>
                             </div>
                             <div class="record__checkbox record__custom-checkbox-pers">
-                                <input class="record__custom-checkbox " type="checkbox" id="color-2" name="checkbox" value="Уведомления о готовности съёмки" >
-                                <label for="color-2">Уведомления о готовности съёмкиs</label>
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-2" name="checkbox" value="Анонс каталога стандарт" >
+                                <label for="notif-2"><span>Анонс каталога стандарт</span></label>
                             </div>
                             <div class="record__checkbox record__custom-checkbox-pers">
-                                <input class="record__custom-checkbox " type="checkbox" id="color-3" name="checkbox" value="Уведомление о появлении съёмки в обычном стиле" >
-                                <label for="color-3">Уведомление о появлении съёмки в обычном стиле</label>
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-3" name="checkbox" value="Анонс catalo PRO" >
+                                <label for="notif-3"><span>Анонс catalo PRO</span></label>
                             </div>
                             <div class="record__checkbox record__custom-checkbox-pers">
-                                <input class="record__custom-checkbox " type="checkbox" id="color-4" name="checkbox" value="Уведомление о съёмки в стиле YCS">
-                                <label for="color-4">Уведомление о съёмки в стиле YCS</label>
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-4" name="checkbox" value="Анонс фотоконтента на телефон">
+                                <label for="notif-4"><span>Анонс фотоконтента на телефон</span></label>
                             </div>
                             <div class="record__checkbox record__custom-checkbox-pers">
-                                <input class="record__custom-checkbox " type="checkbox" id="color-5" name="checkbox" value="Уведомления по избранным моделям" >
-                                <label for="color-5">Уведомления по избранным моделям</label>
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-5" name="checkbox" value="Анонс каталога в интерьере" >
+                                <label for="notif-5"><span>Анонс каталога в интерьере</span></label>
+                            </div>
+                            <div class="record__checkbox record__custom-checkbox-pers">
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-6" name="checkbox" value="Анонс на избранных моделей" >
+                                <label for="notif-6"><span>Анонс на избранных моделей</span></label>
+                            </div>
+                            <div class="record__checkbox record__custom-checkbox-pers">
+                                <input class="record__custom-checkbox " type="checkbox" id="notif-7" name="checkbox" value="Анонс готовности отретушированных фотографий" >
+                                <label for="notif-7"><span>Анонс готовности отретушированных фотографий</span></label>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+                <!-- обращения -->
+                <div class="personal__tab-content request-personal active">
+                    <input id="personal-request" type="radio" name="personal">
+                    <button type="button" class="personal__back-link">
+                        <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
+
+                    <!-- <div class="personal__tab-content_box request active">
+                        <div class="personal__tab-header">
+                            <div class="personal__title-box">
+                                <p class="personal__title title">
+                                    <span>обращения</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="request-personal__content">
+                            <a href="#!" class="request__new-request-link link">
+                                <span>создать обращение</span>
+                            </a>
+                            <ul class="request_list">
+                                <li class="request_item">
+                                    <div class="request_item__table">
+                                        <div class="request_item__table_item">
+                                            <p>№ заявки</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>дата</p>
+                                            <p>25/12/2022</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>проблема</p>
+                                            <p>не вернули товар который отправляли на съёмку</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>статус</p>
+                                            <p>открыта</p>
+                                        </div>
+                                    </div>
+                                    
+                                        <a href="#!" class="request_item__chat-link link">
+                                            <span>перейти в чат</span>
+                                        </a>
+                                    
+                                </li>
+                                <li class="request_item">
+                                    <div class="request_item__table">
+                                        <div class="request_item__table_item">
+                                            <p>№ заявки</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>дата</p>
+                                            <p>25/12/2022</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>проблема</p>
+                                            <p>фото в плохом качестве</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>статус</p>
+                                            <p>открыта</p>
+                                        </div>
+                                    </div>
+                                    
+                                        <a href="#!" class="request_item__chat-link link">
+                                            <span>перейти в чат</span>
+                                        </a>
+                                    
+                                </li>
+                                <li class="request_item">
+                                    <div class="request_item__table">
+                                        <div class="request_item__table_item">
+                                            <p>№ заявки</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>дата</p>
+                                            <p>25/12/2022</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>проблема</p>
+                                            <p>фото в плохом качестве</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>статус</p>
+                                            <p>открыта</p>
+                                        </div>
+                                    </div>
+                                    
+                                        <a href="#!" class="request_item__chat-link link">
+                                            <span>перейти в чат</span>
+                                        </a>
+                                    
+                                </li>
+                                <li class="request_item">
+                                    <div class="request_item__table">
+                                        <div class="request_item__table_item">
+                                            <p>№ заявки</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>№ заказа</p>
+                                            <p>572</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>дата</p>
+                                            <p>25/12/2022</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>проблема</p>
+                                            <p>фото в плохом качестве</p>
+                                        </div>
+    
+                                        <div class="request_item__table_item">
+                                            <p>статус</p>
+                                            <p>открыта</p>
+                                        </div>
+                                    </div>
+                                    
+                                        <a href="#!" class="request_item__chat-link link">
+                                            <span>перейти в чат</span>
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="personal__tab-content_box request-create">
+
+                        <button class="link request-back-link">
+                            <svg viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"/>
+                            </svg>
+                            <span>Назад</span>
+                        </button>
+
+                        <div class="request-create_progress">
+                            <div class="progress-line"></div>
+                            <div class="progress-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                            </div>
+
+                        </div>
+
+                        <div class="personal__tab-header">
+                            <div class="personal__title-box">
+                                <p class="personal__title title">
+                                    <span>создание обращения</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="request-create__steps">
+
+                        <!-- step 1 -->
+                        <!-- <div class="request-personal__content request-create__step-1">
+                            <div class="request-create_accordion">
+                                <span class="request-create_accordion__desc">Выберите категорию проблемы из списка</span>
+                                <div class="request-create_accordion__title">
+                                    <span>Проблемы</span>
+                                    <svg viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8L7.5 2L14 8" stroke="#242424" stroke-width="2"/>
+                                    </svg> 
+                                </div>
+                                <ul class="request-create_accordion__list">
+                                    <li>не вернули товар который отправляли на съёмку</li>
+                                    <li>фото в плохом качестве</li>
+                                    <li>фото в плохом качестве</li>
+                                </ul>
+                            </div>
+                            <a href="#!" class="request__create-request-link link">
+                                <span>создать</span>
+                            </a>
+                        </div> -->
+
+                        <!-- step 2 -->
+                        <div class="request-personal__content request-create__step-2">
+                            <div class="request-create_order-num">
+                                <div class="request-create_order-num__desc">Введите номер заказа</div>
+                                <div class="request-create_order-num__input">
+                                    <input type="number" placeholder="Например: 551">
+                                </div>
+                                
+                            </div>
+
+                            <div class="request-create_accordion">
+                                <span class="request-create_accordion__desc">Выберите проблему из списка</span>
+                                <div class="request-create_accordion__title">
+                                    <span>Проблемы</span>
+                                    <svg viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8L7.5 2L14 8" stroke="#242424" stroke-width="2"/>
+                                    </svg> 
+                                </div>
+                                <ul class="request-create_accordion__list">
+                                    <li>не вернули товар который отправляли на съёмку</li>
+                                    <li>не вернули товар который отправляли на съёмку</li>
+                                    <li>не вернули товар который отправляли на съёмку</li>
+                                    <li>не вернули товар который отправляли на съёмку</li>
+                                    <li>фото в плохом качестве</li>
+                                    <li>фото в плохом качестве</li>
+                                </ul>
+                            </div>
+                            <div class="request-create_add-pic">
+                                <div class="request-create_add-pic__desc">Загрузите фото (при желании)</div>
+                                <label>
+                                    <input type="file">
+                                    <span>загрузить</span>
+                                </label>
+                            </div>
+                            <a href="#!" class="request__request-next-link link">
+                                <span>далее</span>
+                            </a>
+                        </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    
+
+
+                </div>
+
+
+
             </div>
         </div>
     </section>
