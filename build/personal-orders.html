@@ -62,7 +62,7 @@
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
                         </svg>
                     </label>
-                    <label for="personal-orders" class="personal__tab">
+                    <label for="personal-orders" class="personal__tab active">
                         <span>Мои заказы</span>
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
@@ -80,7 +80,7 @@
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
                         </svg>
                     </label>
-                    <label for="personal-request" class="personal__tab active">
+                    <label for="personal-request" class="personal__tab">
                         <span>Обращения</span>
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M34.5303 5.46966C34.8232 5.76255 34.8232 6.23743 34.5303 6.53032L29.7574 11.3033C29.4645 11.5962 28.9896 11.5962 28.6967 11.3033C28.4038 11.0104 28.4038 10.5355 28.6967 10.2426L32.9393 5.99999L28.6967 1.75735C28.4038 1.46446 28.4038 0.989584 28.6967 0.69669C28.9896 0.403797 29.4645 0.403797 29.7574 0.69669L34.5303 5.46966ZM-2.21771e-07 5.25L34 5.24999L34 6.74999L2.21771e-07 6.75L-2.21771e-07 5.25Z" fill="#242424"/>
@@ -186,7 +186,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="personal__tab-content orders">
+                <div class="personal__tab-content orders active">
                     <input id="personal-orders" type="radio" name="personal">
                     <button type="button" class="personal__back-link">
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -344,6 +344,9 @@
                                             <p>2 990 ₽</p>
                                         </li>
                                     </ul>
+
+                                    <button class="link cancel-order-btn">Отменить заказ</button>
+
                                 </div>
                             </div>
                             <button type="button" class="orders__price-btn mobile">
@@ -1316,12 +1319,8 @@
                     </div>
                 </div>
 
-
-
-
-
                 <!-- обращения -->
-                <div class="personal__tab-content request-personal active">
+                <div class="personal__tab-content request-personal">
                     <input id="personal-request" type="radio" name="personal">
                     <button type="button" class="personal__back-link">
                         <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1612,7 +1611,7 @@
                                     </div>
                                     <div class="msg msg--outgoing">
                                         <div class="msg__container">
-                                        <div class="msg__pic"><img src="./img/about-img1.webp" alt=""></div>
+                                        <div class="msg__pic"></div>
                                         <div class="msg__text">Если у Вас возник вопрос задайте его в этом чате, и я с удовольствием отвечу на него.</div>
                                         </div>
                                         <div class="msg__time">5:41</div>
@@ -1646,8 +1645,6 @@
 
 
                 </div>
-
-
 
             </div>
         </div>
@@ -1803,10 +1800,6 @@
 <script src="./js/main.js"></script>
 <script src="./js/homerion.js"></script>
 <script src="./js/jquery.maskedinput.min.js"></script>
-
-
-
-
 
 
 </body>

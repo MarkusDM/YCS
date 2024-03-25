@@ -6756,7 +6756,6 @@ input[type="number"] {
 
 .modal {
   position: relative;
-  display: none;
   margin-bottom: 0;
   background-color: #ECEDF0;
   -webkit-box-shadow: 0.5rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
@@ -6833,6 +6832,86 @@ input[type="number"] {
 
 .modal-login__login-box {
   min-width: 100%; }
+
+.modal-cancel-order {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8.4rem 17.1rem 8rem; }
+  .modal-cancel-order .modal__title {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    width: 88.6rem; }
+  .modal-cancel-order .modal__buttons {
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 2.455rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8rem; }
+    .modal-cancel-order .modal__buttons .cancel-btn {
+      color: #969696; }
+
+.modal-cancel-reason {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8.4rem 17.1rem 8rem; }
+  .modal-cancel-reason .modal__title {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    width: 88.6rem;
+    margin: 0 auto 4rem; }
+  .modal-cancel-reason .modal__text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.183rem;
+    max-width: 62.9rem;
+    margin: 0 auto 4rem; }
+  .modal-cancel-reason .modal__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    width: 65.4rem;
+    margin: 0 auto 5.2rem; }
+  .modal-cancel-reason .btn-modal-send {
+    display: block;
+    margin: 0 auto; }
+  .modal-cancel-reason .other-input {
+    display: none;
+    border-bottom: 0.15rem solid #242424;
+    padding-bottom: 0.9rem;
+    width: 61.8rem; }
+    .modal-cancel-reason .other-input input {
+      outline: none;
+      border: none;
+      background-color: inherit;
+      width: 100%; }
 
 .modal-reg-complete {
   width: 122.8rem;
