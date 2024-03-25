@@ -4915,52 +4915,148 @@ input[type="number"] {
             line-height: 2.1rem;
             color: #969696;
             white-space: nowrap; }
-  .personal .request-create_progress {
-    margin-top: 6rem;
-    margin-bottom: 8rem;
-    height: 0.1rem;
-    background-color: #969696;
-    position: relative; }
-    .personal .request-create_progress .progress-line {
-      height: 0.3rem;
-      background-color: #242424;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 29.5rem; }
-    .personal .request-create_progress .progress-numbers {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      gap: 28.4rem;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-      .personal .request-create_progress .progress-numbers span {
-        border-radius: 100%;
-        border: 0.1rem solid #969696;
-        color: #969696;
-        font-size: 1.6rem;
+  .personal .request-create {
+    display: none; }
+    .personal .request-create_progress {
+      margin-top: 6rem;
+      margin-bottom: 8rem;
+      height: 0.1rem;
+      background-color: #969696;
+      position: relative; }
+      .personal .request-create_progress .progress-line {
+        height: 0.3rem;
+        background-color: #242424;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 29.5rem;
+        -webkit-transition: width 0.3s;
+        transition: width 0.3s; }
+      .personal .request-create_progress .progress-numbers {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        gap: 28.4rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        width: 2.4rem;
-        height: 2.4rem;
-        background-color: #fff; }
-  .personal .request-create .request-back-link {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+        .personal .request-create_progress .progress-numbers span {
+          border-radius: 100%;
+          border: 0.1rem solid #969696;
+          color: #969696;
+          font-size: 1.6rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 2.4rem;
+          height: 2.4rem;
+          background-color: #fff; }
+    .personal .request-create_accordion__desc {
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      display: block; }
+    .personal .request-create_accordion__title {
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 2rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .personal .request-create_accordion__title span {
+        font-size: 1.8rem;
+        font-weight: 500; }
+      .personal .request-create_accordion__title svg {
+        width: 1.3rem;
+        height: 0.9rem;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s; }
+    .personal .request-create_accordion__list {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+      .personal .request-create_accordion__list li {
+        cursor: pointer;
+        padding: 1rem 0;
+        border-bottom: 0.1rem solid #969696;
+        font-size: 1.6rem;
+        color: #969696;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s; }
+        .personal .request-create_accordion__list li:hover, .personal .request-create_accordion__list li.active {
+          color: #242424; }
+    .personal .request-create_accordion.open .request-create_accordion__title svg {
+      -webkit-transform: rotate(0);
+              transform: rotate(0); }
+    .personal .request-create_add-pic__desc {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      margin-bottom: 1.2rem;
+      font-weight: 500; }
+    .personal .request-create_add-pic input {
+      display: none; }
+    .personal .request-create_add-pic span {
+      display: block;
+      cursor: pointer;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #969696;
+      text-decoration: underline; }
+    .personal .request-create_order-num {
+      margin-bottom: 4rem; }
+      .personal .request-create_order-num__desc {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500; }
+      .personal .request-create_order-num__input {
+        padding-bottom: 0.9rem;
+        border-bottom: 0.1rem solid #242424;
+        width: 51.3rem; }
+        .personal .request-create_order-num__input input {
+          border: none;
+          outline: none;
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+          font-weight: 500; }
+          .personal .request-create_order-num__input input::-webkit-input-placeholder {
+            color: #969696; }
+          .personal .request-create_order-num__input input::-moz-placeholder {
+            color: #969696; }
+          .personal .request-create_order-num__input input:-ms-input-placeholder {
+            color: #969696; }
+          .personal .request-create_order-num__input input::-ms-input-placeholder {
+            color: #969696; }
+          .personal .request-create_order-num__input input::placeholder {
+            color: #969696; }
+    .personal .request-create__step-1 .request__create-request-link {
+      margin-top: 7rem; }
+    .personal .request-create__step-2 {
+      display: none; }
+      .personal .request-create__step-2 .request__request-next-link {
+        margin-top: 7rem; }
+      .personal .request-create__step-2 .request-create_accordion {
+        margin-bottom: 4rem; }
+  .personal .request-back-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4968,96 +5064,166 @@ input[type="number"] {
         -ms-flex-align: center;
             align-items: center;
     gap: 1rem; }
-    .personal .request-create .request-back-link::before {
+    .personal .request-back-link::before {
       content: none; }
-    .personal .request-create .request-back-link svg {
+    .personal .request-back-link svg {
       width: 3.4rem;
       height: 1.2rem;
       transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
-    .personal .request-create .request-back-link:hover svg {
+    .personal .request-back-link:hover svg {
       -webkit-transform: translateX(-0.6rem);
               transform: translateX(-0.6rem); }
-  .personal .request-create_accordion__desc {
-    font-weight: 500;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    display: block; }
-  .personal .request-create_accordion__title {
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 2rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .personal .request-create_accordion__title span {
-      font-size: 1.8rem;
-      font-weight: 500; }
-    .personal .request-create_accordion__title svg {
-      width: 1.3rem;
-      height: 0.9rem; }
-  .personal .request-create_accordion__list {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content; }
-    .personal .request-create_accordion__list li {
-      cursor: pointer;
-      padding: 1rem 0;
-      border-bottom: 0.1rem solid #969696;
-      font-size: 1.6rem;
-      color: #969696;
-      -webkit-transition: color .2s;
-      transition: color .2s; }
-      .personal .request-create_accordion__list li:hover, .personal .request-create_accordion__list li.active {
-        color: #242424; }
-  .personal .request-create_add-pic__desc {
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    margin-bottom: 1.2rem;
-    font-weight: 500; }
-  .personal .request-create_add-pic input {
+  .personal .chat {
     display: none; }
-  .personal .request-create_add-pic span {
-    display: block;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #969696;
-    text-decoration: underline; }
-  .personal .request-create_order-num {
-    margin-bottom: 4rem; }
-    .personal .request-create_order-num__desc {
+    .personal .chat .personal__tab-header {
+      margin-top: 6rem;
+      margin-bottom: 3.2rem; }
+      .personal .chat .personal__tab-header .request-num {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #969696; }
+    .personal .chat__container {
+      background-color: #eeeeee;
+      border-radius: 1rem;
+      padding: 4rem 3rem 2rem;
+      height: 73.8rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .personal .chat__msgs {
+      overflow: auto;
+      margin-top: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 2rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: -1.5rem;
+      padding-right: 1.5rem; }
+      .personal .chat__msgs::-webkit-scrollbar {
+        width: 0.4rem;
+        background: #fff; }
+      .personal .chat__msgs::-webkit-scrollbar-track {
+        -webkit-box-shadow: #fff; }
+      .personal .chat__msgs::-webkit-scrollbar-thumb {
+        border-radius: 1.2rem;
+        background: #969696; }
+    .personal .chat .msg {
       font-size: 1.8rem;
-      line-height: 2.1rem;
-      margin-bottom: 1.2rem;
-      font-weight: 500; }
-    .personal .request-create_order-num__input {
-      padding-bottom: 0.9rem;
-      border-bottom: 0.1rem solid #242424;
-      width: 51.3rem; }
-      .personal .request-create_order-num__input input {
-        border: none;
+      line-height: 2.183rem;
+      font-weight: 500;
+      max-width: 48.3rem; }
+      .personal .chat .msg__container {
+        padding: 2rem;
+        margin-bottom: 1rem; }
+      .personal .chat .msg__username {
+        margin-bottom: 0.5rem;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+      .personal .chat .msg__pic {
+        width: 44.3rem;
+        height: 19.6rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: #d9d9d9;
+        margin-bottom: 2rem; }
+        .personal .chat .msg__pic img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .personal .chat .msg__time {
+        color: #969696;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+      .personal .chat .msg--incoming {
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+        .personal .chat .msg--incoming .msg__container {
+          border: 0.15rem solid #242424;
+          border-radius: 1rem 1rem 1rem 0; }
+      .personal .chat .msg--outgoing {
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
+        .personal .chat .msg--outgoing .msg__container {
+          background-color: #242424;
+          color: #fff;
+          border-radius: 1rem 1rem 0 1rem; }
+        .personal .chat .msg--outgoing .msg__time {
+          margin-left: auto; }
+    .personal .chat__bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 4rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 1.2rem 2rem 1.6rem;
+      border-radius: 1rem;
+      border: 0.1rem solid #242424;
+      background-color: #fff; }
+    .personal .chat__input {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .personal .chat__input input {
         outline: none;
-        font-size: 2.2rem;
-        line-height: 2.8rem;
-        font-weight: 500; }
-        .personal .request-create_order-num__input input::-webkit-input-placeholder {
+        border: none;
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 2.138rem; }
+        .personal .chat__input input::-webkit-input-placeholder {
           color: #969696; }
-        .personal .request-create_order-num__input input::-moz-placeholder {
+        .personal .chat__input input::-moz-placeholder {
           color: #969696; }
-        .personal .request-create_order-num__input input:-ms-input-placeholder {
+        .personal .chat__input input:-ms-input-placeholder {
           color: #969696; }
-        .personal .request-create_order-num__input input::-ms-input-placeholder {
+        .personal .chat__input input::-ms-input-placeholder {
           color: #969696; }
-        .personal .request-create_order-num__input input::placeholder {
+        .personal .chat__input input::placeholder {
           color: #969696; }
-  .personal .request-create__step-1 .request__create-request-link {
-    margin-top: 7rem; }
-  .personal .request-create__step-2 .request__request-next-link {
-    margin-top: 7rem; }
-  .personal .request-create__step-2 .request-create_accordion {
-    margin-bottom: 4rem; }
+    .personal .chat__btns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 3rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .personal .chat__add-file {
+      position: relative; }
+      .personal .chat__add-file::after {
+        position: absolute;
+        content: "";
+        right: -1.5rem;
+        top: -0.2rem;
+        bottom: -0.2rem;
+        width: 0.1rem;
+        height: 2.6rem;
+        background-color: #969696; }
+      .personal .chat__add-file input {
+        display: none; }
+      .personal .chat__add-file svg {
+        width: 2.2rem;
+        height: 2.2rem; }
+    .personal .chat__send svg {
+      width: 2.2rem;
+      height: 2.2rem; }
   @media (max-width: 48em) {
     .personal .personal {
       margin-bottom: 20rem; }

@@ -283,21 +283,21 @@ function remToPx(remValue) {
 //     });
 // });
 
-//плашка на каждой карточке 
+//плашка на каждой карточке
 $(function () {
     $(".model__like").on("click", function (e) {
         e.preventDefault();
         $(this).toggleClass("active");
-        
+
         if ($(this).hasClass("active")) {
             let cardWrapper = $(this).closest(".model-wrapper");
-            let favBlock = cardWrapper.find('.model__fav-block');
-            
-            $('.model__fav-block').not(favBlock).fadeOut(200);
+            let favBlock = cardWrapper.find(".model__fav-block");
+
+            $(".model__fav-block").not(favBlock).fadeOut(200);
             favBlock.fadeToggle(200);
         } else {
             let cardWrapper = $(this).closest(".model-wrapper");
-            let favBlock = cardWrapper.find('.model__fav-block');
+            let favBlock = cardWrapper.find(".model__fav-block");
             favBlock.fadeOut(200);
         }
     });
@@ -307,40 +307,84 @@ $(function () {
 $(function () {
     $(".model__notif").on("click", function () {
         let cardWrapper = $(this).closest(".model-wrapper");
-        let notifBlock = cardWrapper.find('.model__notif-details');
-        let favIco = cardWrapper.find('.model__like');
+        let notifBlock = cardWrapper.find(".model__notif-details");
+        let favIco = cardWrapper.find(".model__like");
 
-        $(this).fadeOut(200)
-        favIco.fadeOut(200)
-        notifBlock.fadeIn(200)
-
-        
-    })
+        $(this).fadeOut(200);
+        favIco.fadeOut(200);
+        notifBlock.fadeIn(200);
+    });
 });
 
 $(function () {
-    $('.model__notif-details_close').on('click', function (){
+    $(".model__notif-details_close").on("click", function () {
         let cardWrapper = $(this).closest(".model-wrapper");
-        let favIco = cardWrapper.find('.model__like');
-        let notifIco = cardWrapper.find('.model__notif');
-        let notifBlock = $(this).closest('.model__notif-details')
+        let favIco = cardWrapper.find(".model__like");
+        let notifIco = cardWrapper.find(".model__notif");
+        let notifBlock = $(this).closest(".model__notif-details");
 
-        if(notifBlock.find('.record__custom-checkbox:checked').length){
-            notifIco.addClass('active')
-        } else{
-            notifIco.removeClass('active')
+        if (notifBlock.find(".record__custom-checkbox:checked").length) {
+            notifIco.addClass("active");
+        } else {
+            notifIco.removeClass("active");
         }
 
-        notifBlock.fadeOut(200)
-        favIco.fadeIn(200)
-        notifIco.fadeIn(200)
-    })
-})
+        notifBlock.fadeOut(200);
+        favIco.fadeIn(200);
+        notifIco.fadeIn(200);
+    });
+});
 
 //удаление модели из избранных
-$('.personal__tab-models-wrapper .model__like').on('click', function () {
-    if($(this).hasClass('active')){
-        let modelCard = $(this).closest('.model-wrapper')
-        modelCard.remove()
+$(".personal__tab-models-wrapper .model__like").on("click", function () {
+    if ($(this).hasClass("active")) {
+        let modelCard = $(this).closest(".model-wrapper");
+        modelCard.remove();
     }
-})
+});
+
+//создание обращения
+$(".request-create_accordion__title").on("click", function () {
+    let $accordion = $(this).closest(".request-create_accordion");
+    $accordion.toggleClass("open");
+    $accordion.find(".request-create_accordion__list").slideToggle();
+});
+
+let $newRequestBtn = $(".request__new-request-link");
+let $requestStep1 = $(".request-create__step-1");
+let $requestStep2 = $(".request-create__step-2");
+let $progressLine = $(".progress-line");
+let $requestBackBtn = $(".request-back-link");
+let $chatBackBtn = $(".personal__tab-content_box.chat .request-back-link");
+
+$newRequestBtn.on("click", function () {
+    $(".personal__tab-content_box.request").removeClass("active").hide();
+    $(".personal__tab-content_box.request-create").addClass("active").fadeIn(200);
+});
+
+$requestBackBtn.on("click", function () {
+    if ($requestStep2.hasClass("active")) {
+        $requestStep2.removeClass('active').hide();
+        $requestStep1.addClass('active').fadeIn(200);
+        $progressLine.css("width", "29.5rem");
+    } else {
+        $(".personal__tab-content_box.request-create").hide();
+        $(".personal__tab-content_box.request").addClass("active").fadeIn(200);
+    }
+});
+
+$chatBackBtn.on("click", function () {
+    $(".personal__tab-content_box.chat").removeClass("active").hide();
+    $(".personal__tab-content_box.request").addClass("active").fadeIn(200);
+});
+
+$requestStep1.find(".request__create-request-link").on("click", function () {
+    $requestStep1.removeClass('active').hide();
+    $requestStep2.addClass('active').fadeIn(200);
+    $progressLine.css("width", "60.7rem");
+});
+
+$requestStep2.find(".request__request-next-link").on("click", function () {
+    $('.personal__tab-content_box.request-create').removeClass('active').hide();
+    $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
+});
