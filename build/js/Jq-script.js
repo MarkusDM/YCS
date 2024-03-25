@@ -388,3 +388,8 @@ $requestStep2.find(".request__request-next-link").on("click", function () {
     $('.personal__tab-content_box.request-create').removeClass('active').hide();
     $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
 });
+
+$('.request_item__chat-link').on('click', function(){
+    $('.personal__tab-content_box.request').removeClass('active').hide();
+    $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
+})

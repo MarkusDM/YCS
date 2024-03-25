@@ -1,6 +1,6 @@
 .modal {
   position: relative;
-  display: none;
+  // display: none;
   margin-bottom: 0;
   background-color: #ECEDF0;
   box-shadow: 0.5rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
@@ -89,5 +89,88 @@
 .modal-login {
   &__login-box {
     min-width: 100%;
+  }
+}
+
+.modal-cancel-order{
+  height: fit-content;
+  width: fit-content;
+  padding: 8.4rem 17.1rem 8rem;
+
+  .modal__title{
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    width: 88.6rem;
+  }
+
+  .modal__buttons{
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 2.455rem;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    .cancel-btn{
+      color: #969696;
+    }
+  }
+}
+
+.modal-cancel-reason{
+  height: fit-content;
+  width: fit-content;
+  padding: 8.4rem 17.1rem 8rem;
+
+  .modal__title{
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "EuropeExt";
+    text-transform: uppercase;
+    width: 88.6rem;
+    margin: 0 auto 4rem;
+  }
+
+  .modal__text{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.183rem;
+    max-width: 62.9rem;
+    margin: 0 auto 4rem;
+  }
+
+  .modal__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 65.4rem;
+    margin: 0 auto 5.2rem;
+  }
+
+  .btn-modal-send{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .other-input{
+    display: none;
+    border-bottom: 0.15rem solid #242424;
+    padding-bottom: 0.9rem;
+    width: 61.8rem;
+
+    input{
+      outline: none;
+      border: none;
+      background-color: inherit;
+      width: 100%;
+    }
   }
 }

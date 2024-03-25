@@ -1,0 +1,71 @@
+<div class="modal modal-cancel-order">
+    <p class="modal__title">
+        вы уверены, что хотите отменить заказ?
+    </p>
+
+    <div class="modal__buttons">
+        <a href="#!" class="confirm-btn">
+            <span>да</span>
+        </a>
+        <a href="#!" class="cancel-btn">
+            нет
+        </a>
+    </div>
+    <button class="modal__close"></button>
+</div>
+
+
+
+
+<div class="modal modal-cancel-reason">
+    <p class="modal__title">
+        Почему вы решили отменить заказ?
+    </p>
+    <p class="modal__text">
+        Нам очень жаль, что нам не удастся в этот раз с вами посотрудничать. Мы были бы благодарны узнать причину.
+    </p>
+
+    <ul class="modal__list">
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-1" name="checkbox" value="Не успевает доставка">
+                <label for="cancel-1"><span>Не успевает доставка</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-2" name="checkbox" value="Не подошли условия сотрудничества">
+                <label for="cancel-2"><span>Не подошли условия сотрудничества</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-3" name="checkbox" value="Перезаписался YCS на другую модель">
+                <label for="cancel-3"><span>Перезаписался YCS на другую модель</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-4" name="checkbox" value="Нашли съемку раньше в другой студии">
+                <label for="cancel-4"><span>Нашли съемку раньше в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-5" name="checkbox" value="Нашли более подходящий типаж модели в другой студии">
+                <label for="cancel-5"><span>Нашли более подходящий типаж модели в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers record__checkbox-with-input">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-6" name="checkbox" value="Другое">
+                <label for="cancel-6">
+                    <span>Другое</span>
+                    <div class="other-input"><input type="text" placeholder="Укажите свою причину"></div>
+                </label>
+            </div>
+        </li>
+    </ul>
+    <button class="link btn-modal-send">отправить</button>
+    <button class="modal__close"></button>
+</div>
