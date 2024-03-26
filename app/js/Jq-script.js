@@ -393,3 +393,45 @@ $('.request_item__chat-link').on('click', function(){
     $('.personal__tab-content_box.request').removeClass('active').hide();
     $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
 })
+
+//модалки
+$('.modal__close, .cancel-btn, .background-blur').on('click', function(){
+    $('body').removeClass('lock');
+    $('.background-blur').fadeOut(200);
+    $('.modal').removeClass('active');
+});
+
+$('.cancel-order-btn').on('click', function(){
+    $('body').addClass('lock');
+    $('.background-blur').fadeIn(200);
+    $('.modal-cancel_order').addClass('active');
+});
+
+$('.confirm-btn').on('click', function(){
+    $('.modal-cancel_order').removeClass('active');
+    $('.modal-cancel_reason').addClass('active');
+});
+
+$('.btn-modal-send').on('click', function(){
+    $('.modal-cancel_reason').removeClass('active');
+    $('.modal-cancel_thanks').addClass('active');
+});
+
+$('.record__custom-checkbox').on('change', function() {
+    if ($(this).is(':checked') && $(this).val() === 'Другое') {
+        $(this).closest('.record__checkbox-with-input').find('label span').hide();
+        $(this).closest('.record__checkbox-with-input').find('.other-input').fadeIn(200);
+    } else {
+        $(this).closest('.record__checkbox-with-input').find('label span').show();
+        $(this).closest('.record__checkbox-with-input').find('.other-input').hide();
+    }
+});
+
+//заполнение тз
+new AirDatepicker('#input-date');
+
+$(".dropdown_top").on("click", function () {
+    let $formItem = $(this).closest(".tz_form__item");
+    $formItem.toggleClass("open");
+    $formItem.find(".dropdown_list").slideToggle();
+});
