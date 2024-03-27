@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+        <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Карточка заказа</title>
+    </head>
+
+    <body>
+        @@include('./template/header-two.html')
+
+        <main>
+            <section class="order-detail">
+                <div class="container">
+                    <div class="order-detail_top">
+                        <a href="#!" class="go-back-link order-detail_btn">
+                            <span>Назад</span>
+                        </a>
+                        <a href="#!" class="change-order-link order-detail_btn active">изменить заказ</a>
+                    </div>
+
+                    <div class="order-detail_content">
+                        <div class="order-detail_left">
+                            <div class="order-detail_img">
+                                <img src="./img/personal-img1.webp" alt="" />
+                            </div>
+                            <div class="order-detail_name">Модель eKATERINA</div>
+                            <div class="order-detail_info">
+                                <div class="order-detail_info__item">
+                                    <span class="title">Дата</span>
+                                    <span>25.12.2022</span>
+                                </div>
+                                <div class="order-detail_info__item">
+                                    <span class="title">Тип заказа</span>
+                                    <span>Сборная съёмка</span>
+                                </div>
+                                <div class="order-detail_info__item">
+                                    <span class="title">Статус</span>
+                                    <span>Предоплачен</span>
+                                </div>
+                                <div class="order-detail_info__price">
+                                    <div class="order-detail_info__item">
+                                        <span class="title">Предоплата</span>
+                                        <span>12 000 ₽</span>
+                                    </div>
+                                    <div class="order-detail_info__item">
+                                        <span class="title">Стоимость</span>
+                                        <span>23 900 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-detail_right">
+                            <div class="order-detail_pricelist">
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>сумка (20 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">
+                                                Артикул сумок до 3ёх штук считается по стоимости как одежда
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item-price">1 200 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>украшения (25 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">
+                                                Артикул сумок до 3ёх штук считается по стоимости как одежда
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item-price">1 600 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>проходка для wb (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">
+                                                Артикул сумок до 3ёх штук считается по стоимости как одежда
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>динамичная проходка (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">
+                                                Артикул сумок до 3ёх штук считается по стоимости как одежда
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>динамичная проходка (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">
+                                                Артикул сумок до 3ёх штук считается по стоимости как одежда
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_add-serv">
+                                <div class="order-detail_add-serv__title">Доп. услуги</div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>цветные стеночки</span>  
+                                    </div>
+                                    <div class="item-price"> <span>990 ₽</span>
+                                         <span class="subtext">465 ₽/шт</span>
+                                        </div>
+                                </div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>дополнительные образы</span>  
+                                    </div>
+                                    <div class="item-price"><span>2 990 ₽</span>
+                                         <span class="subtext">465 ₽/шт</span>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_add-params">
+                                <div class="order-detail_add-params__title">Доп. параметры</div>
+                                <div class="order-detail_add-params__note">*Отменить или изменить заказ можно не позднее, чем за 3 дня до съёмки</div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>Присутствие на съёмке</span>  
+                                    </div>
+                                    <div class="item-dropdown">
+                                        <div class="item-dropdown_top">
+                                            <span>Буду присутствовать я лично либо представитель компании</span>
+                                            <svg viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.57422 1.5L8.07422 7.5L14.5742 1.5" stroke="#242424" stroke-width="2"/>
+                                            </svg>                                                
+                                        </div>  
+                                        <div class="item-dropdown_list">
+                                            <div class="item-dropdown_list__item hidden">Буду присутствовать я лично либо представитель компании</div>
+                                            <div class="item-dropdown_list__item">Не буду присутствовать, отправлю вещи курьером</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>Техническое задание</span>  
+                                    </div>
+                                    <div class="item-dropdown">
+                                        <div class="item-dropdown_top">
+                                            <span>Заполню ТЗ самостоятельно</span>
+                                            <svg viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.57422 1.5L8.07422 7.5L14.5742 1.5" stroke="#242424" stroke-width="2"/>
+                                            </svg>                                                
+                                        </div>  
+                                        <div class="item-dropdown_list">
+                                            <div class="item-dropdown_list__item hidden">Заполню ТЗ самостоятельно</div>
+                                            <div class="item-dropdown_list__item">Стилизация на усмотрение стилиста</div>
+                                            <div class="item-dropdown_list__item">Озвучу пожелания во время съёмки</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_bottom">
+                                <div class="order-detail_bottom__tz">
+                                    <a href="#!" class="order-detail_btn add-tz-btn active">Заполнить тз</a>
+                                    <span>ТЗ не заполнено</span>
+
+                                </div>
+                                
+                                <a href="#!" class="order-detail_btn cancel-order-btn">отменить</a>
+                                <a href="#!" class="order-detail_btn add-tz-btn active">Оплатить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./template/modals-cancel-order.html')
+        @@include('./template/footer.html')
+        <script src="./js/air-datepicker.js"></script>
+    </body>
+</html>
