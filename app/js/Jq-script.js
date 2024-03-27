@@ -435,3 +435,12 @@ $(".dropdown_top").on("click", function () {
     $formItem.toggleClass("open");
     $formItem.find(".dropdown_list").slideToggle();
 });
+
+$(function(){
+    $('.add-file-input input[type="file"]').on('change', function(){
+        let fileName = $(this).val().split('\\').pop();
+        if(fileName) {
+            $(this).siblings('span').text(fileName).css('color', '#242424');
+        }
+    });
+});

@@ -114,6 +114,8 @@
         text-decoration: underline;
         position: relative;
         width: fit-content;
+        cursor: pointer;
+        
         &:hover {
             &::before {
                 width: 100%;
@@ -424,8 +426,9 @@
         line-height: 4.6rem;
         text-transform: uppercase;
         color: #242424;
-        position: absolute;
-        top: 7rem;
+        // position: absolute;
+        // top: 7rem;
+        margin-bottom: 6rem;
     }
 
     .mob {
@@ -446,20 +449,14 @@
         width: 39rem;
         position: relative;
         
-    }
-
-
-
-    
-      
-    
+    } 
 }
 
 
 .card-model--two {
     padding-bottom: 7.3rem;
     .card-model__link {
-        margin-bottom: 16.5rem;
+        margin-bottom: 8rem;
     }
 
     .card-model__right {
