@@ -3476,7 +3476,8 @@ input[type="number"] {
     position: relative;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content; }
+    width: fit-content;
+    cursor: pointer; }
     .card-model__link:hover::before {
       width: 100%;
       -webkit-transition: 1s;
@@ -3746,8 +3747,7 @@ input[type="number"] {
     line-height: 4.6rem;
     text-transform: uppercase;
     color: #242424;
-    position: absolute;
-    top: 7rem; }
+    margin-bottom: 6rem; }
   .card-model .mob {
     display: none; }
   .card-model__mswiper {
@@ -3762,7 +3762,7 @@ input[type="number"] {
 .card-model--two {
   padding-bottom: 7.3rem; }
   .card-model--two .card-model__link {
-    margin-bottom: 16.5rem; }
+    margin-bottom: 8rem; }
   .card-model--two .card-model__right {
     padding-top: 10rem; }
 
@@ -4817,9 +4817,7 @@ input[type="number"] {
       display: block; }
   .personal__tab-header {
     margin-bottom: 8rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content; }
+    width: 100%; }
   .personal__tab-wrapper-cheks {
     margin-top: 6rem; }
     .personal__tab-wrapper-cheks .record__checkbox {
@@ -5218,7 +5216,8 @@ input[type="number"] {
           -ms-flex-align: center;
               align-items: center; }
     .personal .chat__add-file {
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       .personal .chat__add-file::after {
         position: absolute;
         content: "";
@@ -5465,7 +5464,8 @@ input[type="number"] {
     font-size: 2.2rem;
     line-height: 2rem;
     letter-spacing: .02em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-left: auto; }
     .orders__filter-btn:before {
       content: '';
       position: absolute;
