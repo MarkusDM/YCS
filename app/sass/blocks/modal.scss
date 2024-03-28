@@ -105,6 +105,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @media (max-width: 48em) {
+        padding: 12rem 4rem 8rem;
+    }
+
     .modal__title {
         font-size: 5rem;
         line-height: 6rem;
@@ -113,11 +117,21 @@
         font-family: "EuropeExt";
         text-transform: uppercase;
         width: 88.6rem;
+
+        @media (max-width: 48em) {
+            font-size: 4.4rem;
+            line-height: 5rem;
+            width: 64.4rem;
+        }
     }
 
     &_order {
         .modal__title {
             margin-bottom: 4rem;
+
+            @media (max-width: 48em) {
+                margin-bottom: 6rem;
+            }
         }
 
         .modal__buttons {
@@ -129,6 +143,11 @@
             justify-content: center;
             gap: 8rem;
 
+            @media (max-width: 48em) {
+                font-size: 3rem;
+                line-height: 2.7rem;
+            }
+
             .cancel-btn {
                 color: #969696;
             }
@@ -138,6 +157,10 @@
     &_reason {
         .modal__title {
             margin: 0 auto 4rem;
+
+            @media (max-width: 48em) {
+                margin: 0 auto 4.8rem;
+            }
         }
 
         .modal__text {
@@ -146,6 +169,13 @@
             line-height: 2.183rem;
             max-width: 62.9rem;
             margin: 0 auto 4rem;
+
+            @media (max-width: 48em) {
+                font-size: 2.6rem;
+                line-height: 3.1rem;
+                max-width: 66rem;
+                margin: 0 auto 4.8rem;
+            }
         }
 
         .modal__list {
@@ -154,6 +184,20 @@
             gap: 2rem;
             width: 65.4rem;
             margin: 0 auto 5.2rem;
+
+            @media (max-width: 48em) {
+                width: 66rem;
+                margin: 0 auto 8rem;
+            }
+
+            label {
+                @media (max-width: 48em) {
+                    display: flex;
+                    gap: 2rem;
+                    font-size: 3rem;
+                    line-height: 3.9rem;
+                }
+            }
         }
 
         .btn-modal-send {
@@ -166,6 +210,12 @@
             border-bottom: 0.15rem solid #242424;
             padding-bottom: 0.9rem;
             width: 61.8rem;
+
+            @media (max-width: 48em) {
+                width: 58.8rem;
+                padding-bottom: 0.6rem;
+                border-bottom: 0.3rem solid #242424;
+            }
 
             input {
                 outline: none;

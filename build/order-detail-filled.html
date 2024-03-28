@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="./css/style.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Заполнение ТЗ</title>
+        <title>Карточка заказа (тз заполнено)</title>
     </head>
 
     <body>
@@ -50,65 +50,323 @@
 </header>
 
         <main>
-            <section class="tz">
+            <section class="order-detail">
                 <div class="container">
-                    <a href="#!" class="link go-back-link">
-                        <svg viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.469669 5.46966C0.176777 5.76255 0.176777 6.23743 0.469669 6.53032L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 5.99999L6.3033 1.75735C6.5962 1.46446 6.5962 0.989584 6.3033 0.69669C6.01041 0.403797 5.53554 0.403797 5.24264 0.69669L0.469669 5.46966ZM35 5.25L1 5.24999L1 6.74999L35 6.75L35 5.25Z" fill="#242424"></path>
-                        </svg>
-                        <span>Назад</span>
-                    </a>
-                    <div class="tz_title">Заполнение ТЗ</div>
-                    <form class="tz_form">
-                        <div class="tz_form__item">
-                            <div class="tz_input-title">введите название бренда<span class="required"> *</span></div>
-                            <div class="tz_input-wrapper">
-                                <input type="text" placeholder="Например: Gucci">
-                            </div>
-                        </div>
-                        <div class="tz_form__item">
-                            <div class="tz_input-title">дата съёмки<span class="required"> *</span></div>
-                            <div class="tz_input-wrapper">
-                                <input type="text" id="input-date" placeholder="Например: 21.12.2022">
-                            </div>
-                        </div>
-                        <div class="tz_form__item">
-                            <div class="tz_input-title">модель<span class="required"> *</span></div>
-                            <div class="tz_input-wrapper">
-                                <input type="text" placeholder="Например: Виктория">
-                            </div>
-                        </div>
-                        <div class="tz_form__item">
-                            <div class="tz_input-title">общие пожелания к съёмке</div>
-                            <div class="tz_input-wrapper">
-                                <input type="text" placeholder="Например: хочу всё быстро и круто, как у GQ">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="tz_articles">
-                        <div class="tz_article">
-                            <div class="tz_article__title">Артикул 1</div>
-                            <div class="tz_article__links">
-                                <a href="#!">редактировать</a>
-                                <a href="#!">удалить</a>
-                            </div>
-                        </div>
-                        <div class="tz_article">
-                            <div class="tz_article__title">Артикул 2</div>
-                            <div class="tz_article__links">
-                                <a href="#!">редактировать</a>
-                                <a href="#!">удалить</a>
-                            </div>
-                        </div>
+                    <div class="order-detail_top">
+                        <a href="#!" class="go-back-link order-detail_btn">
+                            <span>Назад</span>
+                        </a>
+                        <a href="#!" class="change-order-link order-detail_btn active">изменить заказ</a>
                     </div>
-                    <div class="tz_btns">
-                        <a href="#!" class="link">добавить артикул</a>
-                        <a href="#!" class="link">сохранить</a>
+
+                    <div class="order-detail_content">
+                        <div class="order-detail_left">
+                            <div class="order-detail_img">
+                                <img src="./img/personal-img1.webp" alt="" />
+                            </div>
+                            <div class="order-detail_name">Модель eKATERINA</div>
+                            <div class="order-detail_info">
+                                <div class="order-detail_info__item">
+                                    <span class="title">Дата</span>
+                                    <span>25.12.2022</span>
+                                </div>
+                                <div class="order-detail_info__item">
+                                    <span class="title">Тип заказа</span>
+                                    <span>Сборная съёмка</span>
+                                </div>
+                                <div class="order-detail_info__item">
+                                    <span class="title">Статус</span>
+                                    <span>Предоплачен</span>
+                                </div>
+                                <div class="order-detail_info__price">
+                                    <div class="order-detail_info__item">
+                                        <span class="title">Предоплата</span>
+                                        <span>12 000 ₽</span>
+                                    </div>
+                                    <div class="order-detail_info__item">
+                                        <span class="title">Стоимость</span>
+                                        <span>23 900 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-detail_right">
+                            <div class="order-detail_pricelist">
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>сумка (20 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">Артикул сумок до 3ёх штук считается по стоимости как одежда</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">1 200 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>украшения (25 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">Артикул сумок до 3ёх штук считается по стоимости как одежда</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">1 600 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>проходка для wb (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">Артикул сумок до 3ёх штук считается по стоимости как одежда</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>динамичная проходка (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">Артикул сумок до 3ёх штук считается по стоимости как одежда</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>динамичная проходка (1 шт)</span>
+
+                                        <div class="item-title__info">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.4271 18.3332C15.0104 18.3332 18.7604 14.5832 18.7604 9.99984C18.7604 5.4165 15.0104 1.6665 10.4271 1.6665C5.84375 1.6665 2.09375 5.4165 2.09375 9.99984C2.09375 14.5832 5.84375 18.3332 10.4271 18.3332Z"
+                                                    stroke="#969696"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M10.4268 6.6665V10.8332" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.4219 13.3335H10.4294" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <div class="item-title__info-block">Артикул сумок до 3ёх штук считается по стоимости как одежда</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">1 800 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_add-serv">
+                                <div class="order-detail_add-serv__title">Доп. услуги</div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>цветные стеночки</span>
+                                    </div>
+                                    <div class="item-price">
+                                        <span>990 ₽</span>
+                                        <span class="subtext">465 ₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>дополнительные образы</span>
+                                    </div>
+                                    <div class="item-price">
+                                        <span>2 990 ₽</span>
+                                        <span class="subtext">465 ₽/шт</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_add-params">
+                                <div class="order-detail_add-params__title">Доп. параметры</div>
+                                <div class="order-detail_add-params__note">*Отменить или изменить заказ можно не позднее, чем за 3 дня до съёмки</div>
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>Присутствие на съёмке</span>
+                                    </div>
+                                    <div class="item-dropdown">
+                                        <div class="item-dropdown_top">
+                                            <span>Буду присутствовать я лично либо представитель компании</span>
+                                            <svg viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.57422 1.5L8.07422 7.5L14.5742 1.5" stroke="#242424" stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <ul class="item-dropdown_list">
+                                            <li class="item-dropdown_list__item active" id="clientPres">Буду присутствовать я лично либо представитель компании</li>
+                                            <li class="item-dropdown_list__item" id="clientAbs">Не буду присутствовать, отправлю вещи курьером</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="order-detail__item">
+                                    <div class="item-title">
+                                        <span>Техническое задание</span>
+                                    </div>
+                                    <div class="item-dropdown">
+                                        <div class="item-dropdown_top">
+                                            <span>Заполню ТЗ самостоятельно</span>
+                                            <svg viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.57422 1.5L8.07422 7.5L14.5742 1.5" stroke="#242424" stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <ul class="item-dropdown_list">
+                                            <li class="item-dropdown_list__item active" id="tzOwn">Заполню ТЗ самостоятельно</li>
+                                            <li class="item-dropdown_list__item" id="tzStylist">Стилизация на усмотрение стилиста</li>
+                                            <li class="item-dropdown_list__item" id="tzShoot">Озвучу пожелания во время съёмки</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-detail_bottom">
+                                <div class="order-detail_bottom__tz order-detail_bottom__tz--filled">
+                                <span>ТЗ заполнено</span>
+                                <a href="#!" class="tz-edit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C20.8027 6.94749 20.8762 6.8376 20.9264 6.71662C20.9766 6.59565 21.0024 6.46597 21.0024 6.335C21.0024 6.20403 20.9766 6.07435 20.9264 5.95338C20.8762 5.8324 20.8027 5.72251 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="#242424"/>
+                                    </svg>
+                                    </a>
+                                    <a href="#!" class="tz-delete">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z" fill="#242424"/>
+                                            </svg>
+                                            
+                                        </a>
+                                </div>
+
+                                <a href="#!" class="order-detail_btn cancel-order-btn">отменить</a>
+                                <a href="#!" class="order-detail_btn add-tz-btn active">Оплатить</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <div class="modal modal-cancel modal-cancel_order">
+    <p class="modal__title">
+        вы уверены, что хотите отменить заказ?
+    </p>
+
+    <div class="modal__buttons">
+        <a href="#!" class="confirm-btn">
+            <span>да</span>
+        </a>
+        <a href="#!" class="cancel-btn">
+            нет
+        </a>
+    </div>
+    <button class="modal__close"></button>
+</div>
+
+<div class="modal modal-cancel modal-cancel_reason">
+    <p class="modal__title">
+        Почему вы решили отменить заказ?
+    </p>
+    <p class="modal__text">
+        Нам очень жаль, что нам не удастся в этот раз с вами посотрудничать. Мы были бы благодарны узнать причину.
+    </p>
+
+    <ul class="modal__list">
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-1" name="checkbox" value="Не успевает доставка">
+                <label for="cancel-1"><span>Не успевает доставка</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-2" name="checkbox" value="Не подошли условия сотрудничества">
+                <label for="cancel-2"><span>Не подошли условия сотрудничества</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-3" name="checkbox" value="Перезаписался YCS на другую модель">
+                <label for="cancel-3"><span>Перезаписался YCS на другую модель</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-4" name="checkbox" value="Нашли съемку раньше в другой студии">
+                <label for="cancel-4"><span>Нашли съемку раньше в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-5" name="checkbox" value="Нашли более подходящий типаж модели в другой студии">
+                <label for="cancel-5"><span>Нашли более подходящий типаж модели в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers record__checkbox-with-input">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-6" name="checkbox" value="Другое">
+                <label for="cancel-6">
+                    <span>Другое</span>
+                    <div class="other-input"><input type="text" placeholder="Укажите свою причину"></div>
+                </label>
+            </div>
+        </li>
+    </ul>
+    <button class="link btn-modal-send">отправить</button>
+    <button class="modal__close"></button>
+</div>
+
+<div class="modal modal-cancel modal-cancel_thanks">
+    <p class="modal__title">
+        Спасибо за обратную связь!
+    </p>
+    <button class="modal__close"></button>
+</div>
+
+<div class="background-blur"></div> <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__left">
