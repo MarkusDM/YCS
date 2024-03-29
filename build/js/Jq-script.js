@@ -350,9 +350,9 @@ $(".request-create_dropdown__title").on("click", function () {
     $dropdown.find(".request-create_dropdown__list").slideToggle();
 });
 
-$(".request-create_dropdown__list li").on('click', function(){
-    $(this).toggleClass('active')
-})
+$(".request-create_dropdown__list li").on("click", function () {
+    $(this).toggleClass("active");
+});
 
 let $newRequestBtn = $(".request__new-request-link");
 let $requestStep1 = $(".request-create__step-1");
@@ -364,99 +364,104 @@ let $chatBackBtn = $(".personal__tab-content_box.chat .request-back-link");
 $newRequestBtn.on("click", function () {
     $(".personal__tab-content_box.request").removeClass("active").hide();
     $(".personal__tab-content_box.request-create").addClass("active").fadeIn(200);
-    toggleBackLinkVisibility()
+    toggleBackLinkVisibility();
 });
 
 $requestBackBtn.on("click", function () {
     if ($requestStep2.hasClass("active")) {
-        $requestStep2.removeClass('active').hide();
-        $requestStep1.addClass('active').fadeIn(200);
-        if($(window).width() < 769){
+        $requestStep2.removeClass("active").hide();
+        $requestStep1.addClass("active").fadeIn(200);
+        $(".progress-numbers span:first-of-type").removeClass("complete").text("1");
+
+        if ($(window).width() < 769) {
             $progressLine.css("width", "20.6rem");
-        } else{
+        } else {
             $progressLine.css("width", "29.5rem");
         }
-        toggleBackLinkVisibility()
+        toggleBackLinkVisibility();
     } else {
-        $(".personal__tab-content_box.request-create").removeClass('active').hide();
+        $(".personal__tab-content_box.request-create").removeClass("active").hide();
 
         $(".personal__tab-content_box.request").addClass("active").fadeIn(200);
-        toggleBackLinkVisibility()
+        toggleBackLinkVisibility();
     }
 });
 
 $chatBackBtn.on("click", function () {
     $(".personal__tab-content_box.chat").removeClass("active").hide();
     $(".personal__tab-content_box.request").addClass("active").fadeIn(200);
-    toggleBackLinkVisibility()
+    toggleBackLinkVisibility();
 });
 
 $requestStep1.find(".request__create-request-link").on("click", function () {
-    $requestStep1.removeClass('active').hide();
-    $requestStep2.addClass('active').fadeIn(200);
+    $requestStep1.removeClass("active").hide();
+    $requestStep2.addClass("active").fadeIn(200);
+    $(".progress-numbers span:first-of-type").addClass("complete").text("");
 
-    if($(window).width() < 769){
+    if ($(window).width() < 769) {
         $progressLine.css("width", "38.7rem");
-    } else{
+    } else {
         $progressLine.css("width", "60.7rem");
-    } 
+    }
 });
 
 $requestStep2.find(".request__request-next-link").on("click", function () {
-    $('.personal__tab-content_box.request-create').removeClass('active').hide();
-    $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
-    toggleBackLinkVisibility()
+    $(".personal__tab-content_box.request-create").removeClass("active").hide();
+    $(".personal__tab-content_box.chat").addClass("active").fadeIn(200);
+    toggleBackLinkVisibility();
 });
 
-$('.request_item__chat-link').on('click', function(){
-    $('.personal__tab-content_box.request').removeClass('active').hide();
-    $('.personal__tab-content_box.chat').addClass('active').fadeIn(200);
-    toggleBackLinkVisibility()
-})
+$(".request_item__chat-link").on("click", function () {
+    $(".personal__tab-content_box.request").removeClass("active").hide();
+    $(".personal__tab-content_box.chat").addClass("active").fadeIn(200);
+    toggleBackLinkVisibility();
+});
 
 function toggleBackLinkVisibility() {
-    if ($('.request-create').hasClass('active') || $('.personal__tab-content_box.chat').hasClass('active')) {
-        $('.personal__back-link').hide();
-    } else {
-        $('.personal__back-link').show();
+    if ($(window).width() < 769) {
+        if ($(".request-create").hasClass("active") || $(".personal__tab-content_box.chat").hasClass("active")) {
+            $(".personal__back-link").hide();
+        } else {
+            $(".personal__back-link").show();
+        }
     }
 }
 
 //модалки
-$('.modal__close, .cancel-btn, .background-blur').on('click', function(){
-    $('body').removeClass('lock');
-    $('.background-blur').fadeOut(200);
-    $('.modal').removeClass('active');
+$(".modal__close, .cancel-btn, .background-blur").on("click", function () {
+    $("body").removeClass("lock");
+    $(".background-blur").fadeOut(200);
+    $(".modal").removeClass("active");
 });
 
-$('.cancel-order-btn').on('click', function(){
-    $('body').addClass('lock');
-    $('.background-blur').fadeIn(200);
-    $('.modal-cancel_order').addClass('active');
+$(".cancel-order-btn").on("click", function () {
+    $("body").addClass("lock");
+    $(".background-blur").fadeIn(200);
+    $(".modal-cancel_order").addClass("active");
 });
 
-$('.confirm-btn').on('click', function(){
-    $('.modal-cancel_order').removeClass('active');
-    $('.modal-cancel_reason').addClass('active');
+$(".confirm-btn").on("click", function () {
+    $(".modal-cancel_order").removeClass("active");
+    $(".modal-cancel_reason").addClass("active");
 });
 
-$('.btn-modal-send').on('click', function(){
-    $('.modal-cancel_reason').removeClass('active');
-    $('.modal-cancel_thanks').addClass('active');
+$(".btn-modal-send").on("click", function () {
+    $(".modal-cancel_reason").removeClass("active");
+    $(".modal-cancel_thanks").addClass("active");
 });
 
-$('.record__custom-checkbox').on('change', function() {
-    if ($(this).is(':checked') && $(this).val() === 'Другое') {
-        $(this).closest('.record__checkbox-with-input').find('label span').hide();
-        $(this).closest('.record__checkbox-with-input').find('.other-input').fadeIn(200);
+$(".record__custom-checkbox").on("change", function () {
+    if ($(this).is(":checked") && $(this).val() === "Другое") {
+        $(this).closest(".record__checkbox-with-input").find("label span").hide();
+        $(this).closest(".record__checkbox-with-input").find(".other-input").fadeIn(200);
     } else {
-        $(this).closest('.record__checkbox-with-input').find('label span').show();
-        $(this).closest('.record__checkbox-with-input').find('.other-input').hide();
+        $(this).closest(".record__checkbox-with-input").find("label span").show();
+        $(this).closest(".record__checkbox-with-input").find(".other-input").hide();
     }
 });
 
 //заполнение тз
-new AirDatepicker('#input-date');
+new AirDatepicker("#input-date");
 
 $(".dropdown_top").on("click", function () {
     let $formItem = $(this).closest(".tz_form__item");
@@ -464,34 +469,33 @@ $(".dropdown_top").on("click", function () {
     $formItem.find(".dropdown_list").slideToggle();
 });
 
-$(function(){
-    $('.add-file-input input[type="file"]').on('change', function(){
-        let fileName = $(this).val().split('\\').pop();
-        if(fileName) {
-            $(this).siblings('span').text(fileName).css('color', '#242424');
+$(function () {
+    $('.add-file-input input[type="file"]').on("change", function () {
+        let fileName = $(this).val().split("\\").pop();
+        if (fileName) {
+            $(this).siblings("span").text(fileName).css("color", "#242424");
         }
     });
 });
 
 //карточка заказа
-$('.item-dropdown_top').on('click', function(){
+$(".item-dropdown_top").on("click", function () {
     let $dropdown = $(this).closest(".item-dropdown");
     $dropdown.toggleClass("open");
     $dropdown.find(".item-dropdown_list").slideToggle();
 });
 
-$('.item-dropdown_list__item').on('click', function(){
+$(".item-dropdown_list__item").on("click", function () {
     let $dropdown = $(this).closest(".item-dropdown");
-    let $topSpan = $dropdown.find('.item-dropdown_top span');
+    let $topSpan = $dropdown.find(".item-dropdown_top span");
     $topSpan.text($(this).text());
     $dropdown.removeClass("open");
     $dropdown.find(".item-dropdown_list").slideUp();
     $(this).addClass("active").siblings().removeClass("active");
 
-    if ($(this).attr('id') === 'tzOwn' && $(this).hasClass('active')) {
-        $('.order-detail_bottom__tz').show();
+    if ($(this).attr("id") === "tzOwn" && $(this).hasClass("active")) {
+        $(".order-detail_bottom__tz").show();
     } else {
-        $('.order-detail_bottom__tz').hide();
+        $(".order-detail_bottom__tz").hide();
     }
 });
-

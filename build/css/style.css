@@ -5094,6 +5094,17 @@ input[type="number"] {
               width: 3.2rem;
               height: 3.2rem;
               font-size: 2rem; } }
+          .personal .request-create_progress .progress-numbers span.complete {
+            background-image: url(./../../img/icon/galka.svg);
+            -webkit-filter: invert(1);
+                    filter: invert(1);
+            background-size: 1.6rem 1.6rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none; }
+            @media (max-width: 48em) {
+              .personal .request-create_progress .progress-numbers span.complete {
+                background-size: 2rem 2rem; } }
     .personal .request-create_dropdown__desc {
       font-weight: 500;
       font-size: 1.8rem;
@@ -5977,7 +5988,7 @@ input[type="number"] {
           width: 34rem;
           margin-bottom: unset; } }
     .orders_item__info {
-      padding: 0 2rem; }
+      padding: 0 2rem 2rem; }
       @media (max-width: 48em) {
         .orders_item__info {
           padding: 3rem 1.8rem 3rem 0;
@@ -6053,8 +6064,7 @@ input[type="number"] {
                   flex-direction: row;
           gap: 0.8rem; } }
     .orders_item__link {
-      font-family: inherit;
-      padding: 0 2rem 2rem; }
+      font-family: inherit; }
       .orders_item__link::before {
         right: -2.6rem; }
         @media (max-width: 48em) {
