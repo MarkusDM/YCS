@@ -426,6 +426,228 @@
         </div>
     </section>
 </main>
+<div class="modal modal-cancel modal-cancel_order">
+    <p class="modal__title">вы уверены, что хотите отменить заказ?</p>
+    <div class="modal__buttons">
+        <a href="#!" class="confirm-btn">
+            <span>да</span>
+        </a>
+        <a href="#!" class="cancel-btn"> нет </a>
+    </div>
+    <button class="modal__close"></button>
+</div>
+
+<div class="modal modal-cancel modal-cancel_reason">
+    <p class="modal__title">Почему вы решили отменить заказ?</p>
+    <p class="modal__text">Нам очень жаль, что нам не удастся в этот раз с вами посотрудничать. Мы были бы благодарны узнать причину.</p>
+
+    <ul class="modal__list">
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-1" name="checkbox" value="Не успевает доставка" />
+                <label for="cancel-1"><span>Не успевает доставка</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-2" name="checkbox" value="Не подошли условия сотрудничества" />
+                <label for="cancel-2"><span>Не подошли условия сотрудничества</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-3" name="checkbox" value="Перезаписался YCS на другую модель" />
+                <label for="cancel-3"><span>Перезаписался YCS на другую модель</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-4" name="checkbox" value="Нашли съемку раньше в другой студии" />
+                <label for="cancel-4"><span>Нашли съемку раньше в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-5" name="checkbox" value="Нашли более подходящий типаж модели в другой студии" />
+                <label for="cancel-5"><span>Нашли более подходящий типаж модели в другой студии</span></label>
+            </div>
+        </li>
+        <li>
+            <div class="record__checkbox record__custom-checkbox-pers record__checkbox-with-input">
+                <input class="record__custom-checkbox" type="checkbox" id="cancel-6" name="checkbox" value="Другое" />
+                <label for="cancel-6">
+                    <span>Другое</span>
+                    <div class="other-input"><input type="text" placeholder="Укажите свою причину" /></div>
+                </label>
+            </div>
+        </li>
+    </ul>
+    <button class="link btn-modal-send">отправить</button>
+    <button class="modal__close"></button>
+</div>
+
+<div class="modal modal-cancel modal-cancel_thanks">
+    <p class="modal__title">Спасибо за обратную связь!</p>
+    <button class="modal__close"></button>
+</div>
+
+<!-- login -->
+<div class="modal modal-login">
+    <div class="modal-login__content">
+        <p class="modal-login__title">войти</p>
+        <form class="modal-login__form">
+            <div class="modal-login__label-box">
+                <p class="modal-login__name">введите e-mail</p>
+                <label class="modal-login__label">
+                    <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-login__input" required />
+                </label>
+            </div>
+            <div class="modal-login__label-box">
+                <p class="modal-login__name">введите пароль</p>
+                <label class="modal-login__label">
+                    <input type="password" class="modal-login__input" required />
+                </label>
+            </div>
+            <div class="modal-login__footer">
+                <button class="modal-login__submit link">войти</button>
+                <button type="button" class="modal-login__register-btn">регистрация</button>
+            </div>
+        </form>
+        <a href="#!" class="modal-login__restore"> забыли пароль? </a>
+        <p class="modal-login__error-login-text">неверный логин или пароль</p>
+    </div>
+    <button class="modal__close"></button>
+</div>
+
+<!-- registration -->
+<div class="modal modal-registration">
+    <p class="modal-registration__title">регистрация</p>
+    <form class="modal-registration__form">
+        <div class="modal-registration__label-box">
+            <p class="modal-registration__name">введите имя</p>
+            <label class="modal-registration__label">
+                <input placeholder="Например: Виктория" type="text" class="modal-registration__input" required />
+            </label>
+            <p class="modal-registration__label-error-text">Ошибка</p>
+        </div>
+        <div class="modal-registration__label-box error">
+            <p class="modal-registration__name">введите e-mail</p>
+            <label class="modal-registration__label">
+                <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-registration__input" required />
+            </label>
+            <p class="modal-registration__label-error-text">Такой e-mail уже существует</p>
+        </div>
+        <div class="modal-registration__label-box">
+            <p class="modal-registration__name">введите пароль</p>
+            <label class="modal-registration__label">
+                <input type="password" class="modal-registration__input" required />
+            </label>
+            <p class="modal-registration__label-error-text">Ошибка</p>
+        </div>
+
+        <div class="modal-registration__checkbox-wrap">
+            <label class="modal-registration__checkbox-label">
+                <input type="checkbox" checked />
+                <span class="modal-registration__checkbox-icon">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 9.70005L0 5.70005L1.4 4.30005L4 6.90005L10.6 0.300049L12 1.70005L4 9.70005Z" fill="#242424" />
+                    </svg>
+                </span>
+            </label>
+            <span class="modal-registration__checkbox-text"> Подтверждаю, что я ознакомлен и согласен с&nbsp;<a href="">условиями политики конфиденциальности</a> </span>
+        </div>
+
+        <div class="modal-registration__footer">
+            <button type="button" class="modal-registration__submit link reg-complete">зарегистрироваться</button>
+            <button type="button" class="modal-registration__login-btn">войти</button>
+        </div>
+    </form>
+
+    <button class="modal__close"></button>
+</div>
+
+<!-- reg complete -->
+<div class="modal modal-reg-complete">
+    <p class="modal-reg-complete__sub-title">Поздравляем!</p>
+    <p class="modal-reg-complete__title">вы зарегистрированы</p>
+    <p class="modal-reg-complete__text">Теперь вы можете заполнить профиль в личном кабинете или перейти на главную страницу.</p>
+    <div class="modal-reg-complete__buttons">
+        <a href="" class="feedback__submit link">
+            <span>перейти на главную</span>
+        </a>
+        <a href="" class="feedback__link"> в личный кабинет </a>
+    </div>
+    <button type="button" class="modal__close"></button>
+</div>
+
+<!-- restore pwd -->
+<div class="modal modal-restore">
+    <p class="modal-reg-complete__sub-title">Восстановление</p>
+    <p class="modal-reg-complete__title">Восстановить пароль</p>
+    <form class="modal-restore__form">
+        <label>введите e-mail</label>
+        <input type="email" placeholder="email" name="EMAIL" required />
+        <button class="link" type="submit"><span>Восстановить</span></button>
+    </form>
+    <button type="button" class="modal__close"></button>
+</div>
+
+<!-- restore-success -->
+<div class="modal modal-restore-success">
+    <span>Новые данные отправлены вам на почту</span>
+    <button type="button" class="modal__close"></button>
+</div>
+
+<!-- order -->
+<div class="modal modal-order">
+    <p class="feedback__title">заказ оплачен</p>
+    <p class="feedback__text">Спасибо за ваш заказ. статус заказа можно посмотреть в личном кабинете</p>
+    <div class="feedback__buttons">
+        <a href="" class="feedback__submit link">
+            <span>перейти на главную</span>
+        </a>
+        <a href="" class="feedback__link"> в личный кабинет </a>
+    </div>
+    <button type="button" class="modal__close" data-fancybox-close></button>
+</div>
+
+<!-- feedback -->
+<div class="modal modal-feedback">
+    <p class="feedback__sub-title desktop">мы подберем для вас удобную дату съемок</p>
+    <p class="feedback__title">Оставьте заявку</p>
+    <p class="feedback__text">НАШ МЕНЕДЖЕР ПЕРЕЗВОНИТ ВАМ, ЧТОБЫ ОБСУДИТЬ СТОИМОСТЬ И УСЛОВИЯ СЪЁМКИ</p>
+    <form class="feedback__form">
+        <div class="feedback__form-item">
+            <p class="feedback__form-name">введите имя</p>
+            <label class="feedback__form-label">
+                <input placeholder="Например: Алексей" type="text" class="feedback__input" required />
+            </label>
+        </div>
+        <div class="feedback__form-item">
+            <p class="feedback__form-name">введите номер телефона</p>
+            <label class="feedback__form-label">
+                <input placeholder="+ 7" type="text" class="feedback__input" required />
+            </label>
+        </div>
+        <button type="button" class="feedback__submit link feedback-complete">
+            <span>отправить</span>
+        </button>
+    </form>
+    <button type="button" class="modal__close"></button>
+</div>
+
+<!-- feedback-complete -->
+<div class="modal modal-fb-complete">
+    <p class="feedback__title">Заявка отправлена</p>
+    <p class="feedback__text">В скоро времени с вами свяжется наш менеджер</p>
+    <a href="" class="feedback__submit link">
+        <span>перейти на главную</span>
+    </a>
+    <button type="button" class="modal__close"></button>
+</div>
+
+<div class="background-blur"></div>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
@@ -544,7 +766,7 @@
 
 
 
-<div class="cancellation-modal">
+<!-- <div class="cancellation-modal">
     <div class="cancellation-modal__container">
         <div class="cancellation-modal__close"></div>
         <div class="cancellation-modal__content">
@@ -553,7 +775,7 @@
         </div>
        
     </div>
-</div>
+</div> -->
 
 
 <div class="tt-modal">
@@ -575,8 +797,6 @@
 <script src="./js/main.js"></script>
 <script src="./js/homerion.js"></script>
 <script src="./js/jquery.maskedinput.min.js"></script>
-
-
 
 
 </body>
