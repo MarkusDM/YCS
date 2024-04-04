@@ -159,13 +159,13 @@ $(document).ready(function () {
         content.addClass("active"); // 4
     });
 
-    $(".restore-modal__close").click(function () {
-        $(".restore-modal").removeClass("active"); // 3
-    });
+    // $(".restore-modal__close").click(function () {
+    //     $(".restore-modal").removeClass("active"); // 3
+    // });
 
-    $(".restore-open").click(function () {
-        $(".restore-modal").addClass("active"); // 3
-    });
+    // $(".restore-open").click(function () {
+    //     $(".restore-modal").addClass("active"); // 3
+    // });
 
     $(".record__photo-input-file input[type=file]").on("change", function () {
         let file = this.files[0];
@@ -180,13 +180,13 @@ $(document).ready(function () {
         $(".add-popup").removeClass("active");
     });
 
-    $(".tt-modal-open").click(function () {
-        $(".tt-modal").addClass("active");
-    });
+    // $(".tt-modal-open").click(function () {
+    //     $(".tt-modal").addClass("active");
+    // });
 
-    $(".tt-modal__close").click(function () {
-        $(".tt-modal").removeClass("active");
-    });
+    // $(".tt-modal__close").click(function () {
+    //     $(".tt-modal").removeClass("active");
+    // });
 });
 
 const players = Array.from(document.querySelectorAll(".web-video")).map((p) => new Plyr(p));
@@ -420,7 +420,8 @@ function toggleBackLinkVisibility() {
 }
 
 //модалки
-$(".modal__close, .cancel-btn, .background-blur").on("click", function () {
+$(".modal__close, .cancel-btn, .background-blur").on("click", function (e) {
+    e.stopPropagation()
     $("body").removeClass("lock");
     $(".background-blur").fadeOut(200);
     $(".modal").removeClass("active");
@@ -639,3 +640,18 @@ $(".feedback .feedback__submit").on("click", function (e) {
         return;
     }
 });
+
+//tz-success
+$(".modal-tz-success .link").on("click", function (e) {
+    e.preventDefault()
+    $("body").removeClass("lock");
+    $(".background-blur").fadeOut(200);
+    $(".modal-tz-success").removeClass("active");
+});
+
+//example modal
+$('.example-open').on('click', function(){
+    $(this).find(".modal-example").addClass("active");
+    $("body").addClass("lock");
+    $(".background-blur").fadeIn(200);
+})

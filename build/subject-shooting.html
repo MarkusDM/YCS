@@ -426,6 +426,7 @@
         </div>
     </section>
 </main>
+<!-- cancel order -->
 <div class="modal modal-cancel modal-cancel_order">
     <p class="modal__title">вы уверены, что хотите отменить заказ?</p>
     <div class="modal__buttons">
@@ -437,6 +438,7 @@
     <button class="modal__close"></button>
 </div>
 
+<!-- cancel reason -->
 <div class="modal modal-cancel modal-cancel_reason">
     <p class="modal__title">Почему вы решили отменить заказ?</p>
     <p class="modal__text">Нам очень жаль, что нам не удастся в этот раз с вами посотрудничать. Мы были бы благодарны узнать причину.</p>
@@ -486,6 +488,7 @@
     <button class="modal__close"></button>
 </div>
 
+<!-- cancel thanks -->
 <div class="modal modal-cancel modal-cancel_thanks">
     <p class="modal__title">Спасибо за обратную связь!</p>
     <button class="modal__close"></button>
@@ -499,7 +502,7 @@
             <div class="modal-login__label-box">
                 <p class="modal-login__name">введите e-mail</p>
                 <label class="modal-login__label">
-                    <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-login__input" required />
+                    <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-login__input email" required />
                 </label>
             </div>
             <div class="modal-login__label-box">
@@ -533,7 +536,7 @@
         <div class="modal-registration__label-box error">
             <p class="modal-registration__name">введите e-mail</p>
             <label class="modal-registration__label">
-                <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-registration__input" required />
+                <input placeholder="Например: viktoria12344@ya.ru" type="email" class="modal-registration__input email" required />
             </label>
             <p class="modal-registration__label-error-text">Такой e-mail уже существует</p>
         </div>
@@ -586,7 +589,7 @@
     <p class="modal-reg-complete__title">Восстановить пароль</p>
     <form class="modal-restore__form">
         <label>введите e-mail</label>
-        <input type="email" placeholder="email" name="EMAIL" required />
+        <input class="email" type="email" placeholder="email" name="EMAIL" required />
         <button class="link" type="submit"><span>Восстановить</span></button>
     </form>
     <button type="button" class="modal__close"></button>
@@ -608,7 +611,7 @@
         </a>
         <a href="" class="feedback__link"> в личный кабинет </a>
     </div>
-    <button type="button" class="modal__close" data-fancybox-close></button>
+    <button type="button" class="modal__close"></button>
 </div>
 
 <!-- feedback -->
@@ -626,7 +629,7 @@
         <div class="feedback__form-item">
             <p class="feedback__form-name">введите номер телефона</p>
             <label class="feedback__form-label">
-                <input placeholder="+ 7" type="text" class="feedback__input" required />
+                <input placeholder="+ 7" type="text" class="feedback__input phone" required />
             </label>
         </div>
         <button type="button" class="feedback__submit link feedback-complete">
@@ -636,7 +639,7 @@
     <button type="button" class="modal__close"></button>
 </div>
 
-<!-- feedback-complete -->
+<!-- feedback complete -->
 <div class="modal modal-fb-complete">
     <p class="feedback__title">Заявка отправлена</p>
     <p class="feedback__text">В скоро времени с вами свяжется наш менеджер</p>
@@ -645,6 +648,86 @@
     </a>
     <button type="button" class="modal__close"></button>
 </div>
+
+<!-- tz -->
+<div class="modal modal-tz-success">
+    <span>ваше ТЗ успешно загружено</span>
+    <button class="link">Хорошо</button>
+    <button class="modal__close"></button>
+</div>
+
+<!-- example -->
+<!-- <div class="modal modal-example">
+    <div class="modal-example__content-wrap">
+        <div class="modal-example__content">
+            <div class="modal-example__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img1.webp" alt="">
+                    </div>
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img2.webp" alt="">
+                    </div>
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img3.webp" alt="">
+                    </div>
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img4.webp" alt="">
+                    </div>
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img1.webp" alt="">
+                    </div>
+                    <div class="modal-example__slide swiper-slide">
+                        <img src="img/modal-example-img2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-example__footer">
+                <div class="modal-example__thumb-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img1.webp" alt="">
+                        </div>
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img2.webp" alt="">
+                        </div>
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img3.webp" alt="">
+                        </div>
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img4.webp" alt="">
+                        </div>
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img1.webp" alt="">
+                        </div>
+                        <div class="modal-example__thumb-slide swiper-slide">
+                            <img src="img/modal-example-img2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination modal-example__pagination">
+                    <div class="pagination__fraction modal-example__fraction"></div>
+                    <div class="pagination__arrows modal-example__pagination-arrows">
+                        <div class="pagination__prev modal-example__prev">
+                            <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.219669 5.79119C-0.0732231 6.08409 -0.0732231 6.55896 0.219669 6.85185L4.99264 11.6248C5.28553 11.9177 5.76041 11.9177 6.0533 11.6248C6.34619 11.3319 6.34619 10.8571 6.0533 10.5642L1.81066 6.32152L6.0533 2.07888C6.3462 1.78599 6.3462 1.31112 6.0533 1.01822C5.76041 0.725331 5.28554 0.725331 4.99264 1.01822L0.219669 5.79119ZM34.75 5.57153L0.75 5.57152L0.75 7.07152L34.75 7.07153L34.75 5.57153Z" />
+                            </svg>
+                        </div>
+                        <div class="pagination__next modal-example__next">
+                            <svg  viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.2803 5.79119C35.5732 6.08409 35.5732 6.55896 35.2803 6.85185L30.5074 11.6248C30.2145 11.9177 29.7396 11.9177 29.4467 11.6248C29.1538 11.3319 29.1538 10.8571 29.4467 10.5642L33.6893 6.32152L29.4467 2.07888C29.1538 1.78599 29.1538 1.31112 29.4467 1.01822C29.7396 0.725331 30.2145 0.725331 30.5074 1.01822L35.2803 5.79119ZM0.75 5.57153L34.75 5.57152L34.75 7.07152L0.75 7.07153L0.75 5.57153Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="modal-example__title">
+            Каталог в стиле asos
+        </p>
+    </div>
+    <button type="button" class="modal__close"></button>
+</div> -->
 
 <div class="background-blur"></div>
 
@@ -736,7 +819,7 @@
     </div>
 </footer>
 
-<div class="restore-modal">
+<!-- <div class="restore-modal">
     <div class="restore-modal__container">
         <div class="restore-modal__close"></div>
         <div class="restore-modal__title">
@@ -749,7 +832,7 @@
             <button class="link"><span>Восстановить</span></button>
         </form>
     </div>
-</div>
+</div> -->
 
 
 <div class="add-popup">
@@ -778,16 +861,16 @@
 </div> -->
 
 
-<div class="tt-modal">
+<!-- <div class="tt-modal">
     <div class="tt-modal__container">
         <div class="tt-modal__close"></div>
         <div class="tt-modal__content">
             <div class="cancellation-modal__title">ваше ТЗ успешно загружено</div>
             
         </div>
-       
+
     </div>
-</div>
+</div> -->
 
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
