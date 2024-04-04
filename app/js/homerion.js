@@ -78,18 +78,18 @@ $(document).ready(function () {
         }
     });
 
-    const loginSlider = new Swiper('.modal-login__content', {
-        speed: 400,
-        slidesPerView: 1,
-        spaceBetween: rem(25),
-        autoHeight: true,
-        allowTouchMove: false,
+    // const loginSlider = new Swiper('.modal-login__content', {
+    //     speed: 400,
+    //     slidesPerView: 1,
+    //     spaceBetween: rem(25),
+    //     autoHeight: true,
+    //     allowTouchMove: false,
 
-        navigation: {
-            nextEl: '.modal-login__register-btn',
-            prevEl: '.modal-login__login-btn',
-        },
-    });
+    //     navigation: {
+    //         nextEl: '.modal-login__register-btn',
+    //         prevEl: '.modal-login__login-btn',
+    //     },
+    // });
 
     $('.modal-example').each(function () {
         let thumb = new Swiper($(this).find('.modal-example__thumb-slider')[0], {
@@ -217,39 +217,39 @@ $(document).ready(function () {
     });
 
     // Modal-login checkbox
-    $('.modal-login__checkbox-label > input').change(function () {
-        $(this).parent().toggleClass('active');
-    });
+    // $('.modal-login__checkbox-label > input').change(function () {
+    //     $(this).parent().toggleClass('active');
+    // });
 
     // Modal
-    $.fancybox.defaults.smallBtn = false;
-    $.fancybox.defaults.arrows = false;
-    $.fancybox.defaults.infobar = false;
-    $.fancybox.defaults.touch = false;
-    $.fancybox.defaults.toolbar = false;
-    $.fancybox.defaults.baseTpl =
-        '<div class="fancybox-container" role="dialog" tabindex=" -1">' +
-        '<div class="fancybox-bg"></div>' +
-        '<div class="fancybox-stage modal__stage"></div>' +
-        '<div class="fancybox-caption"><div class="fancybox-caption__body"></div></div>';
+    // $.fancybox.defaults.smallBtn = false;
+    // $.fancybox.defaults.arrows = false;
+    // $.fancybox.defaults.infobar = false;
+    // $.fancybox.defaults.touch = false;
+    // $.fancybox.defaults.toolbar = false;
+    // $.fancybox.defaults.baseTpl =
+    //     '<div class="fancybox-container" role="dialog" tabindex=" -1">' +
+    //     '<div class="fancybox-bg"></div>' +
+    //     '<div class="fancybox-stage modal__stage"></div>' +
+    //     '<div class="fancybox-caption"><div class="fancybox-caption__body"></div></div>';
 
-    $('.example-open').click(function () {
-        let src = $(this).find('.modal-example')[0];
+    // $('.example-open').click(function () {
+    //     let src = $(this).find('.modal-example')[0];
 
-        $.fancybox.open({
-            src  : src,
-            type : 'inline',
-            opts : {}
-        });
-    });
+    //     $.fancybox.open({
+    //         src  : src,
+    //         type : 'inline',
+    //         opts : {}
+    //     });
+    // });
 
-    $('.feedback-open').click(function () {
-        $.fancybox.open({
-            src  : '.modal-feedback',
-            type : 'inline',
-            opts : {}
-        });
-    });
+    // $('.feedback-open').click(function () {
+    //     $.fancybox.open({
+    //         src  : '.modal-feedback',
+    //         type : 'inline',
+    //         opts : {}
+    //     });
+    // });
     /*$('.feedback__submit').click(function () {
         $.fancybox.close();
     });*/
@@ -262,25 +262,25 @@ $(document).ready(function () {
         });
     });*/
 
-    $('.order-complete').click(function () {
-        $.fancybox.open({
-            src  : '.modal-order',
-            type : 'inline',
-            opts : {},
-        });
-    });
+    // $('.order-complete').click(function () {
+    //     $.fancybox.open({
+    //         src  : '.modal-order',
+    //         type : 'inline',
+    //         opts : {},
+    //     });
+    // });
 
-    $('.login-open').click(function () {
-        $.fancybox.open({
-            src  : '.modal-login',
-            type : 'inline',
-            opts : {
-                beforeClose: function () {
-                    loginSlider.slideTo(0);
-                },
-            },
-        });
-    });
+    // $('.login-open').click(function () {
+    //     $.fancybox.open({
+    //         src  : '.modal-login',
+    //         type : 'inline',
+    //         opts : {
+    //             beforeClose: function () {
+    //                 loginSlider.slideTo(0);
+    //             },
+    //         },
+    //     });
+    // });
 
     /*$('.reg-complete').click(function () {
         $.fancybox.close();
