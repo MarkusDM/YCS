@@ -279,6 +279,7 @@ function remToPx(remValue) {
 $(function () {
     $(".model__like").on("click", function (e) {
         e.preventDefault();
+        e.stopPropagation()
         $(this).toggleClass("active");
 
         if ($(this).hasClass("active")) {
@@ -297,7 +298,8 @@ $(function () {
 
 //уведомления о съемках
 $(function () {
-    $(".model__notif").on("click", function () {
+    $(".model__notif").on("click", function (e) {
+        e.stopPropagation()
         let cardWrapper = $(this).closest(".model-wrapper");
         let notifBlock = cardWrapper.find(".model__notif-details");
         let favIco = cardWrapper.find(".model__like");
@@ -309,7 +311,8 @@ $(function () {
 });
 
 $(function () {
-    $(".model__notif-details_close").on("click", function () {
+    $(".model__notif-details_close").on("click", function (e) {
+        e.stopPropagation()
         let cardWrapper = $(this).closest(".model-wrapper");
         let favIco = cardWrapper.find(".model__like");
         let notifIco = cardWrapper.find(".model__notif");
@@ -328,7 +331,8 @@ $(function () {
 });
 
 //удаление модели из избранных
-$(".personal__tab-models-wrapper .model__like").on("click", function () {
+$(".personal__tab-models-wrapper .model__like").on("click", function (e) {
+    e.stopPropagation()
     if ($(this).hasClass("active")) {
         let modelCard = $(this).closest(".model-wrapper");
         modelCard.remove();
@@ -439,8 +443,11 @@ $(".confirm-btn").on("click", function () {
 });
 
 $(".btn-modal-send").on("click", function () {
-    $(".modal-cancel_reason").removeClass("active");
-    $(".modal-cancel_thanks").addClass("active");
+    if($('.modal-cancel_reason .record__custom-checkbox:checked').length){
+        $(".modal-cancel_reason").removeClass("active");
+        $("body").removeClass("lock");
+        $(".background-blur").fadeOut(200);
+    }
 });
 
 $(".record__custom-checkbox").on("change", function () {
@@ -494,7 +501,7 @@ $(".item-dropdown_list__item").on("click", function () {
 });
 
 //login modal
-$(".header__lk").on("click", function () {
+$(".header__login-btn").on("click", function () {
     $("body").addClass("lock");
     $(".background-blur").fadeIn(200);
     $(".modal-login").addClass("active");
@@ -510,39 +517,39 @@ $(".modal-registration__login-btn").on("click", function () {
     $(".modal-login").addClass("active");
 });
 
-$(".modal-login__submit").on("click", function () {
-    let allInputsFilled = true;
-    $(".modal-login input").each(function () {
-        if ($(this).val() === "") {
-            allInputsFilled = false;
-            return false;
-        }
-    });
-    if (allInputsFilled) {
-        $("body").removeClass("lock");
-        $(".background-blur").fadeOut(200);
-        $(".modal").removeClass("active");
-    } else {
-        return;
-    }
-});
+// $(".modal-login__submit").on("click", function () {
+//     let allInputsFilled = true;
+//     $(".modal-login input").each(function () {
+//         if ($(this).val() === "") {
+//             allInputsFilled = false;
+//             return false;
+//         }
+//     });
+//     if (allInputsFilled) {
+//         $("body").removeClass("lock");
+//         $(".background-blur").fadeOut(200);
+//         $(".modal").removeClass("active");
+//     } else {
+//         return;
+//     }
+// });
 
 // reg modal
-$(".modal-registration__submit.reg-complete").on("click", function () {
-    let allInputsFilled = true;
-    $(".modal-registration input").each(function () {
-        if ($(this).val() === "") {
-            allInputsFilled = false;
-            return false;
-        }
-    });
-    if (allInputsFilled) {
-        $(".modal-registration").removeClass("active");
-        $(".modal-reg-complete").addClass("active");
-    } else {
-        return;
-    }
-});
+// $(".modal-registration__submit.reg-complete").on("click", function () {
+//     let allInputsFilled = true;
+//     $(".modal-registration input").each(function () {
+//         if ($(this).val() === "") {
+//             allInputsFilled = false;
+//             return false;
+//         }
+//     });
+//     if (allInputsFilled) {
+//         $(".modal-registration").removeClass("active");
+//         $(".modal-reg-complete").addClass("active");
+//     } else {
+//         return;
+//     }
+// });
 
 //restore modal
 $(".modal-login__restore").on("click", function () {
