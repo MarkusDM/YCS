@@ -662,3 +662,36 @@ $('.example-open').on('click', function(){
     $("body").addClass("lock");
     $(".background-blur").fadeIn(200);
 })
+
+
+$(document).ready(function() {
+    $('.file-input').each(function() {
+        let fileInput = $(this);
+        const uploadLabel = fileInput.siblings('.upload-label');
+        const fileInfo = fileInput.siblings('.file-info');
+        const fileName = fileInfo.find('.file-name');
+        const removeButton = fileInfo.find('.remove-button');
+
+        uploadLabel.click(function() {
+            fileInput.click();
+        });
+
+        fileInput.change(function() {
+            const file = $(this)[0].files[0];
+            if (file) {
+                fileName.text(file.name);
+                fileInfo.show();
+                uploadLabel.hide();
+            } else {
+                fileInfo.hide();
+                uploadLabel.show();
+            }
+        });
+
+        removeButton.click(function() {
+            fileInput.val('');
+            fileInfo.hide();
+            uploadLabel.show();
+        });
+    });
+});

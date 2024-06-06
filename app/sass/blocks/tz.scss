@@ -374,4 +374,50 @@
             }
         }
     }
+
+    .file-input-container {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .upload-label {
+        font-size: 1.8rem;
+        text-decoration: underline;
+        color: #969696;
+        cursor: pointer;
+        display: inline-block;
+        @media only all and  (max-width: 48em) {
+            font-size: 2.2rem;
+         }
+    }
+    
+    .file-info {
+        display: none;
+        font-size: 1.8rem;
+    text-decoration: underline;
+    color: #969696;
+    cursor: pointer;
+    @media only all and  (max-width: 48em) {
+        font-size: 2.2rem;
+     }
+    }
+    
+    .remove-button {
+        margin-left: 0.3rem;
+        color: #969696;
+        font-size: 1.7rem;
+        margin-top: 0.3rem;
+        @media only all and  (max-width: 48em) {
+            margin-left: 0.6rem;
+            font-size: 2rem;
+            margin-top: 0.4rem;
+         }
+    }
+
+    .file-input {
+        position: absolute;
+        left: -9999px;
+    }
+   
 }

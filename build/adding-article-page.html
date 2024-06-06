@@ -69,10 +69,14 @@
                         <div class="tz_form__item tz_form__item--product-pic">
                             <div class="tz_input-title">Фото изделия (при желании и наличии)</div>
                             <span class="hint">Если нет фото изделия, можно прописать текстом в комментарии. Ссылки не открываются!</span>
-                            <label class="add-file-input">
-                                <span>загрузить</span>
-                                <input type="file" />
-                            </label>
+                            <div class="file-input-container">
+                                <input type="file" class="file-input">
+                                <label class="upload-label">Загрузка</label>
+                                <div class="file-info">
+                                    <span class="file-name"></span>
+                                    <button class="remove-button" type="button">x</button>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="tz_form__item">
@@ -124,12 +128,13 @@
 
                         <div class="tz_form__text">При полной смене образа требуется создать другой артикул.</div>
 
-                        <div class="tz_form__item">
-                            <div class="tz_input-title">Фото образа (при наличии)</div>
-                            <label class="add-file-input">
-                                <span>загрузить</span>
-                                <input type="file" />
-                            </label>
+                        <div class="file-input-container">
+                            <input type="file" class="file-input">
+                            <label class="upload-label">Загрузка</label>
+                            <div class="file-info">
+                                <span class="file-name"></span>
+                                <button class="remove-button" type="button">x</button>
+                            </div>
                         </div>
                         <div class="tz_form__item tz_form__item--textarea">
                             <div class="tz_input-title">Комментарий</div>

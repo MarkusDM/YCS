@@ -9,7 +9,6 @@
     "air-datepicker": "^3.5.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
-    "gulp-sourcemaps": "^3.0.0",
     "inputmask": "^5.0.8",
     "jquery": "^3.7.1",
     "jquery-zoom": "^1.7.21",
@@ -24,7 +23,8 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
   },
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint",
