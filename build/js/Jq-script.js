@@ -279,7 +279,7 @@ function remToPx(remValue) {
 $(function () {
     $(".model__like").on("click", function (e) {
         e.preventDefault();
-        e.stopPropagation()
+        // e.stopPropagation()
         $(this).toggleClass("active");
 
         if ($(this).hasClass("active")) {
@@ -299,7 +299,8 @@ $(function () {
 //уведомления о съемках
 $(function () {
     $(".model__notif").on("click", function (e) {
-        e.stopPropagation()
+        e.preventDefault();
+        e.stopPropagation();
         let cardWrapper = $(this).closest(".model-wrapper");
         let notifBlock = cardWrapper.find(".model__notif-details");
         let favIco = cardWrapper.find(".model__like");
@@ -346,7 +347,7 @@ $(".request-create_dropdown__title").on("click", function () {
     $dropdown.find(".request-create_dropdown__list").slideToggle();
 });
 
-$(".request-create_dropdown__list li").on("click", function () {
+$(".request-create_dropdown__list").on("click", "li", function () {
     $(this).toggleClass("active");
 });
 
@@ -693,5 +694,50 @@ $(document).ready(function() {
             fileInfo.hide();
             uploadLabel.show();
         });
+    });
+});
+
+
+
+$(document).ready(function() {
+    let selectedFile = null;
+
+    $('.chat__add-file input').on('change', function(event) {
+        selectedFile = event.target.files[0];
+        if (selectedFile) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                $('.chat__input input').data('file-info', {
+                    name: selectedFile.name,
+                    size: selectedFile.size,
+                    type: selectedFile.type,
+                    url: e.target.result
+                });
+                $('.chat__input').append(`<div class="file-info">Selected file: ${selectedFile.name}</div>`);
+            };
+            reader.readAsDataURL(selectedFile);
+        }
+    });
+
+    $('.chat__send').on('click', function() {
+        const messageText = $('.chat__input input').val();
+        const fileInfo = $('.chat__input input').data('file-info');
+
+        if (messageText || fileInfo) {
+            const messageHtml = `
+                <div class="msg msg--outgoing">
+                    <div class="msg__container">
+                        ${fileInfo ? `<a href="${fileInfo.url}" download="${fileInfo.name}">${fileInfo.name}</a>` : ''}
+                        <div class="msg__text">${messageText}</div>
+                    </div>
+                    <div class="msg__time">${new Date().toLocaleTimeString()}</div>
+                </div>
+            `;
+
+            $('.chat__msgs').append(messageHtml);
+            $('.chat__input input').val('').removeData('file-info');
+            $('.file-info').remove();
+            selectedFile = null;
+        }
     });
 });

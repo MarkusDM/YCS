@@ -879,6 +879,10 @@
                     border: 0.15rem solid #242424;
                     border-radius: 1rem 1rem 1rem 0;
 
+                    a {
+                        margin-bottom: 0.2rem;
+                    }
+
                     @media (max-width: 48em) {
                         border: 0.3rem solid #242424;
                         border-radius: 2rem 2rem 2rem 0;

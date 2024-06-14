@@ -5445,6 +5445,8 @@ input[type="number"] {
         .personal .chat .msg--incoming .msg__container {
           border: 0.15rem solid #242424;
           border-radius: 1rem 1rem 1rem 0; }
+          .personal .chat .msg--incoming .msg__container a {
+            margin-bottom: 0.2rem; }
           @media (max-width: 48em) {
             .personal .chat .msg--incoming .msg__container {
               border: 0.3rem solid #242424;
